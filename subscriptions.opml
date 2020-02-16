@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<opml version="1.1">
+  <head>
+    <title>Castro 2 Podcast Feeds</title>
+  </head>
+  <body>
+    <outline xmlUrl="https://teacherluke.libsyn.com/rss" text="Luke's ENGLISH Podcast - Learn British English with Luke Thompson" title="Luke's ENGLISH Podcast - Learn British English with Luke Thompson" type="rss" version="RSS"/>
+    <outline xmlUrl="http://italianoautomatico.podomatic.com/rss2.xml" text="Italiano Automatico Podcast" title="Italiano Automatico Podcast" type="rss" version="RSS"/>
+    <outline xmlUrl="http://renjianzhinan.fm/podcast.xml" text="&#x4EBA;&#x95F4;&#x6307;&#x5357;" title="&#x4EBA;&#x95F4;&#x6307;&#x5357;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://www.npr.org/rss/podcast.php?id=510308" text="Hidden Brain" title="Hidden Brain" type="rss" version="RSS"/>
+    <outline xmlUrl="https://rss.art19.com/tim-ferriss-show" text="The Tim Ferriss Show" title="The Tim Ferriss Show" type="rss" version="RSS"/>
+    <outline xmlUrl="https://www.npr.org/rss/podcast.php?id=510307" text="Invisibilia" title="Invisibilia" type="rss" version="RSS"/>
+    <outline xmlUrl="http://feed.tangsuanradio.com/gadio.xml" text="&#x673A;&#x6838;&#x7F51; GADIO &#x6E38;&#x620F;&#x5E7F;&#x64AD;" title="&#x673A;&#x6838;&#x7F51; GADIO &#x6E38;&#x620F;&#x5E7F;&#x64AD;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://appstories.net/episodes/feed/" text="AppStories" title="AppStories" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.megaphone.fm/travelgenius" text="Travel Genius" title="Travel Genius" type="rss" version="RSS"/>
+    <outline xmlUrl="http://feeds.99percentinvisible.org/99percentinvisible" text="99% Invisible" title="99% Invisible" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.megaphone.fm/stuffyoushouldknow" text="Stuff You Should Know" title="Stuff You Should Know" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.castfire.com/abc-news-radio/ten_percent_happier" text="Ten Percent Happier with Dan Harris" title="Ten Percent Happier with Dan Harris" type="rss" version="RSS"/>
+    <outline xmlUrl="https://www.cbc.ca/podcasting/includes/spark.xml" text="Spark from CBC Radio" title="Spark from CBC Radio" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.simplecast.com/z8Z9rs8K" text="Their Own Devices" title="Their Own Devices" type="rss" version="RSS"/>
+    <outline xmlUrl="http://kernelpanic.fm/feed" text="&#x5185;&#x6838;&#x6050;&#x614C;" title="&#x5185;&#x6838;&#x6050;&#x614C;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.mozilla-podcasts.org/irl" text="IRL - Online Life Is Real Life" title="IRL - Online Life Is Real Life" type="rss" version="RSS"/>
+    <outline xmlUrl="https://thespiral.fm/episodes/feed.xml" text="&#x6D77;&#x87BA;&#x7535;&#x53F0; | The Spiral" title="&#x6D77;&#x87BA;&#x7535;&#x53F0; | The Spiral" type="rss" version="RSS"/>
+    <outline xmlUrl="https://bitvoice.banlan.show/episodes/feed.xml" text="&#x6BD4;&#x7279;&#x65B0;&#x58F0;" title="&#x6BD4;&#x7279;&#x65B0;&#x58F0;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://www.ximalaya.com/album/12817863.xml" text="&#x5FFD;&#x5DE6;&#x5FFD;&#x53F3;" title="&#x5FFD;&#x5DE6;&#x5FFD;&#x53F3;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://www.ximalaya.com/album/5574153.xml" text="&#x65E5;&#x8C08;&#x516C;&#x56ED;" title="&#x65E5;&#x8C08;&#x516C;&#x56ED;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://nj.lizhi.fm/rss/1791589.xml" text="&#x897F;&#x74DC;&#x6CE2;&#x666E;" title="&#x897F;&#x74DC;&#x6CE2;&#x666E;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://www.ximalaya.com/album/22435060.xml" text="&#x717D;&#x98CE;&#x70B9;&#x706B;" title="&#x717D;&#x98CE;&#x70B9;&#x706B;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://www.ximalaya.com/album/14615990.xml" text="&#x9ED1;&#x6C34;&#x8BB0;" title="&#x9ED1;&#x6C34;&#x8BB0;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://www.ximalaya.com/album/226702.xml" text="&#x54C8;&#x55BD;&#x602A;&#x8C08;" title="&#x54C8;&#x55BD;&#x602A;&#x8C08;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://keepcalm.banlan.show/episodes/feed.xml" text="&#x4FDD;&#x6301;&#x51B7;&#x9759;" title="&#x4FDD;&#x6301;&#x51B7;&#x9759;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://www.npr.org/rss/podcast.php?id=510313" text="How I Built This with Guy Raz" title="How I Built This with Guy Raz" type="rss" version="RSS"/>
+    <outline xmlUrl="http://www.ximalaya.com/album/3558668.xml" text="&#x9ED1;&#x6C34;&#x516C;&#x56ED;" title="&#x9ED1;&#x6C34;&#x516C;&#x56ED;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://nj.lizhi.fm/rss/14275.xml" text="&#x5927;&#x5185;&#x5BC6;&#x8C08;" title="&#x5927;&#x5185;&#x5BC6;&#x8C08;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://feeds.jjldbk.com/all.xml" text="&#x6D25;&#x6D25;&#x4E50;&#x9053;" title="&#x6D25;&#x6D25;&#x4E50;&#x9053;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://www.npr.org/rss/podcast.php?id=510311" text="Embedded" title="Embedded" type="rss" version="RSS"/>
+    <outline xmlUrl="http://rss.lizhi.fm/rss/1959617.xml" text="&#x5F97;&#x610F;&#x5FD8;&#x5F62;&#x64AD;&#x5BA2;" title="&#x5F97;&#x610F;&#x5FD8;&#x5F62;&#x64AD;&#x5BA2;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://www.ximalaya.com/album/4127591.xml" text="&#x53CD;&#x6D3E;&#x5F71;&#x8BC4;" title="&#x53CD;&#x6D3E;&#x5F71;&#x8BC4;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://feeds.feedburner.com/Ricciotto" text="Ricciotto - Il cinema dalla parte giusta" title="Ricciotto - Il cinema dalla parte giusta" type="rss" version="RSS"/>
+    <outline xmlUrl="http://www.spreaker.com/show/2705795/episodes/feed" text="Caff&#xE8; Design" title="Caff&#xE8; Design" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.fireside.fm/bukelilun/rss" text="&#x4E0D;&#x53EF;&#x7406;&#x8BBA;" title="&#x4E0D;&#x53EF;&#x7406;&#x8BBA;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.fireside.fm/czgx/rss" text="&#x8FDF;&#x65E9;&#x66F4;&#x65B0;" title="&#x8FDF;&#x65E9;&#x66F4;&#x65B0;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.fireside.fm/randomduckpodcast/rss" text="&#x968F;&#x673A;&#x9E2D; RDP" title="&#x968F;&#x673A;&#x9E2D; RDP" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.fireside.fm/shengdongjixi/rss" text="&#x58F0;&#x4E1C;&#x51FB;&#x897F;" title="&#x58F0;&#x4E1C;&#x51FB;&#x897F;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.fireside.fm/museelogue/rss" text="&#x535A;&#x7269;&#x5FD7;" title="&#x535A;&#x7269;&#x5FD7;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://feed.thisamericanlife.org/talpodcast" text="This American Life" title="This American Life" type="rss" version="RSS"/>
+    <outline xmlUrl="http://theearfultower.libsyn.com/rss" text="The Earful Tower" title="The Earful Tower" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.fireside.fm/hyperbola/rss" text="Hyperbola" title="Hyperbola" type="rss" version="RSS"/>
+    <outline xmlUrl="https://hardimage.pro/rss" text="&#x786C;&#x5F71;&#x50CF;" title="&#x786C;&#x5F71;&#x50CF;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://yitianshijie.net/rss" text="&#x4E00;&#x5929;&#x4E16;&#x754C;" title="&#x4E00;&#x5929;&#x4E16;&#x754C;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://www.nicktalk.com/podcasts?format=rss" text="NickTalk" title="NickTalk" type="rss" version="RSS"/>
+    <outline xmlUrl="https://zheergen.club/episodes/feed.xml" text="&#x6298;&#x5C14;&#x6839;&#x64AD;&#x5BA2;" title="&#x6298;&#x5C14;&#x6839;&#x64AD;&#x5BA2;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://anyway.fm/rss.xml" text="Anyway.FM &#x8BBE;&#x8BA1;&#x6742;&#x8C08;" title="Anyway.FM &#x8BBE;&#x8BA1;&#x6742;&#x8C08;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.fireside.fm/casticle/rss" text="Casticle" title="Casticle" type="rss" version="RSS"/>
+    <outline xmlUrl="https://fourgifts.typlog.io/episodes/feed.xml" text="&#x795E;&#x7231;&#x73A9;&#x8D22;" title="&#x795E;&#x7231;&#x73A9;&#x8D22;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://www.digforfire.net/digforfire_radio_feed.xml" text="&#x6398;&#x706B;&#x7535;&#x53F0;" title="&#x6398;&#x706B;&#x7535;&#x53F0;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://www.heavybit.com/category/library/podcasts/venture-confidential/feed/" text="Venture Confidential" title="Venture Confidential" type="rss" version="RSS"/>
+    <outline xmlUrl="http://feeds.feedburner.com/segundo" text="The Bat Segundo Show &amp; Follow Your Ears" title="The Bat Segundo Show &amp; Follow Your Ears" type="rss" version="RSS"/>
+    <outline xmlUrl="https://adhk.me/episodes/feed.xml" text="&#x5C71;&#x9876;&#x6D1E;&#x4EBA;" title="&#x5C71;&#x9876;&#x6D1E;&#x4EBA;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.fireside.fm/hpup/rss" text="&#x54C8;&#x5229;&#x64AD;&#x5BA2;" title="&#x54C8;&#x5229;&#x64AD;&#x5BA2;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.megaphone.fm/replyall" text="Reply All" title="Reply All" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feeds.buzzsprout.com/640720.rss" text="A Thousand Hamlets" title="A Thousand Hamlets" type="rss" version="RSS"/>
+    <outline xmlUrl="https://c.qingting.fm/podcast/v1/vchannels/318085" text="GQ Talk" title="GQ Talk" type="rss" version="RSS"/>
+    <outline xmlUrl="https://anchor.fm/s/38fccb4/podcast/rss" text="&#x559C;&#x52A0;&#x4E00;" title="&#x559C;&#x52A0;&#x4E00;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://www.omnycontent.com/d/playlist/aaea4e69-af51-495e-afc9-a9760146922b/64b5de49-d653-47c4-afe1-ab0600144b4b/87b34f0a-5ff9-491e-957c-ab0600144b63/podcast.rss" text="How Did This Get Made?" title="How Did This Get Made?" type="rss" version="RSS"/>
+    <outline xmlUrl="https://byte.coffee/rss" text="Byte.Coffee" title="Byte.Coffee" type="rss" version="RSS"/>
+    <outline xmlUrl="https://feed.pippa.io/public/shows/5e0b6ece81be870a61107c66" text="&#x6587;&#x5316;&#x571F;&#x8C46; Culture Potato" title="&#x6587;&#x5316;&#x571F;&#x8C46; Culture Potato" type="rss" version="RSS"/>
+    <outline xmlUrl="https://www.omnycontent.com/d/playlist/aaea4e69-af51-495e-afc9-a9760146922b/14a43378-edb2-49be-8511-ab0d000a7030/d1b9612f-bb1b-4b85-9c0c-ab0d004ab37a/podcast.rss" text="Freakonomics Radio" title="Freakonomics Radio" type="rss" version="RSS"/>
+    <outline xmlUrl="https://uxcoffee.typlog.io/episodes/feed.xml" text="UX Coffee &#x8BBE;&#x8BA1;&#x5496;" title="UX Coffee &#x8BBE;&#x8BA1;&#x5496;" type="rss" version="RSS"/>
+    <outline xmlUrl="http://www.ximalaya.com/album/19758469.xml" text="&#x7EF4;&#x751F;&#x7D20;E|&#x7ECF;&#x6D4E;&#x5B66;&#x4E0E;&#x54F2;&#x5B66;&#x77E5;&#x8BC6;&#x5206;&#x4EAB;" title="&#x7EF4;&#x751F;&#x7D20;E|&#x7ECF;&#x6D4E;&#x5B66;&#x4E0E;&#x54F2;&#x5B66;&#x77E5;&#x8BC6;&#x5206;&#x4EAB;" type="rss" version="RSS"/>
+    <outline xmlUrl="https://theue.me/feed/podcast" text="&#x65E0;&#x4E1A;&#x6E38;&#x6C11; The Unemployable" title="&#x65E0;&#x4E1A;&#x6E38;&#x6C11; The Unemployable" type="rss" version="RSS"/>
+  </body>
+</opml>
