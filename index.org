@@ -26,6 +26,14 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 - [[https://github.com/placeless/squirrel_config][placeless/squirrel_config]] - Rime 鼠须管小鹤双拼配置
 - [[https://github.com/cnfeat/Rime][cnfeat/Rime]] - 鼠须管 小鹤双拼 输入法配置及配色方案
 
+** Bypass GFW
+- [[https://www.v2ray.com/][V2Ray]]
+  - [[https://guide.v2fly.org/advanced/wss_and_web.html][WebSocket + TLS + Web]]
+- [[https://github.com/trojan-gfw/trojan][trojan-gfw/trojan]]
+- [[https://github.com/yichengchen/clashX/tree/master][ClashX]] - macOS
+- [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS
+- [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/SS-Rule-Snippet]] - Surge / Quantumult / Shadowrocket / Surfboard / clash(X) 实用规则
+
 ** Podcast
 *** App
 泛用型播客客户端：
@@ -48,30 +56,35 @@ Favorites：
 
 完整 opml 格式订阅列表：[[./subscriptions.opml][subscriptions.opml]]
 
-** Bypass GFW
-- [[https://www.v2ray.com/][V2Ray]]
-  - [[https://guide.v2fly.org/advanced/wss_and_web.html][WebSocket + TLS + Web]]
-- [[https://github.com/trojan-gfw/trojan][trojan-gfw/trojan]]
-- [[https://github.com/yichengchen/clashX/tree/master][ClashX]] - macOS
-- [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS
-- [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/SS-Rule-Snippet]] - Surge / Quantumult / Shadowrocket / Surfboard / clash(X) 实用规则
+*** Articles
+- [[https://sspai.com/post/58577][播客届的京派与海派 - 少数派]]
+  - 时隔近百年，当下的中文播客圈，听众之中流行着一个说法，将中文播客分类为「陪伴型 / 湿货」和「硬核型 / 干货」两种类型。苹果发布的 2019 年最佳中文播客榜单中，不乏「大内密谈」「日谈公园」「跟宇宙结婚」这样的「闲话类」陪伴型播客，也丰盈着「忽左忽右」「博物志」「声东击西」「不可理论」等信息度相对密集、知识点充沛的播客节目。前者往往以北京为核心，主要是北方语系；后者则以上海为中心，且基本有海外背景。
 
-** Job
-[[https://github.com/jwasham/coding-interview-university][jwasham/coding-interview-university]]
-
-- [[https://github.com/greatghoul/remote-working][greatghoul/remote-working]] - 本列表只收录中国国内的资源或者对国内受众友好的国外资源
-- [[https://www.zhihu.com/question/39610449][在谷歌日本(Google Japan)工作是怎样一番体验？ - 知乎]]
+* Job
+** Prepare
+- [[https://github.com/jwasham/coding-interview-university][jwasham/coding-interview-university]]
+- [[https://github.com/geekcompany/ResumeSample][geekcompany/ResumeSample]] - 程序员简历模板系列
 - [[https://www.zhihu.com/question/24099873][如何得到 Google 的工作机会？ - 知乎]]
 
+** Resource
+- [[https://github.com/greatghoul/remote-working][greatghoul/remote-working]] - 本列表只收录中国国内的资源或者对国内受众友好的国外资源
+
+** Experience
+- [[https://www.zhihu.com/question/39610449][在谷歌日本(Google Japan)工作是怎样一番体验？ - 知乎]]
+
 * Language Learning
+** English
+- [[https://linghao.io/posts/improve-english][如何提高英语水平 - Linghao Zhang]]
+
 * Reading
+- [[https://aeon.co/][Aeon | a new world of ideas]]
+
 ** Blog
 - [[http://www.yinwang.org/][当然我在扯淡 - 王垠]]
 - [[https://blog.imalan.cn/][无文字 | 三无计划]]
 
-* Game
-** Development
-- [[https://indienova.com/groups/14][我们都爱像素风 - Indienova 小组]]
+* Computer Science
+- [[https://github.com/ossu/computer-science][ossu/computer-science]] - Path to a free self-taught education in Computer Science!
 
 * Programming
 - [[https://opensource.guide/][Open Source Guides]]
@@ -79,6 +92,11 @@ Favorites：
   - [[https://exuanbo.xyz/posts/programmer/][2018 新版索引]]
 
 * Web
+- [[https://simpleicons.org/][Simple Icons]] - Free SVG icons for popular brands
+
+* Game
+** Development
+- [[https://indienova.com/groups/14][我们都爱像素风 - Indienova 小组]]
 * Git
 ** Commands
 #+begin_src shell
@@ -175,6 +193,8 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 ** Spacemacs
 [[https://github.com/syl20bnr/spacemacs][spacemacs]] 是一款社区维护的 Emacs 配置，结合了 vim 和 Emacs 两者的优点。
 
+- [[https://github.com/syl20bnr/spacemacs/issues/3920][Environment variable warnings]] - Put ~(setq exec-path-from-shell-arguments '("-l"))~ in your ~dotspacemacs/user-init~
+
 *** Shortcuts
 #+begin_example
 C-h f & C-h C-f : Find Function definition
@@ -214,9 +234,9 @@ SPC p l : switch to project and create a layout
 
 * Org Mode
 - [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]]
+- [[https://github.com/fniessen/refcard-org-mode][fniessen/refcard-org-mode]] - Org mode syntax
 - 使用主题自带代码高亮方案 ~(org :variables org-html-htmlize-output-type 'css)~
 
-* Chrome
 * OS
 ** Linux
 ** MacOS
