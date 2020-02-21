@@ -11,11 +11,15 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 * Life
 ** Marathon
 - 知乎圆桌[[https://www.zhihu.com/roundtable/marathon2015/][《马拉松之路》]]
-- [[https://www.zhihu.com/question/21557037][有哪些配合马拉松训练的核心力量训练项目或计划？]]
+- [[https://www.zhihu.com/question/21557037][有哪些配合马拉松训练的核心力量训练项目或计划？ - 知乎]]
   - 核心力量训练是指针对核心区域肌肉（主要是腹部、下背部和骨盆部肌群）及其深层小肌肉进行的力量、稳定、平衡等能力的训练，它不同于传统的腰腹力量训练，而是使核心区域的整体原动肌和局部稳定肌均能通过训练得到发展和提高。核心力量训练的目的就是使整个机体协调起来，确保训练者在做动作时核心肌群起到稳定躯体，传输能量的作用。
+- [[https://www.zhihu.com/question/62561329][越野跑和公路跑有哪些区别？ - 知乎]]
 - [[http://thespiral.fm/episodes/4][Episode 004 — 当我们谈跑步时，我们谈些什么]]
+  - 跑步是对现实生活的逃避，是一种解脱或者说移情。
 - 动画[[https://movie.douban.com/subject/30238385/][《强风吹拂》]]
   - [[http://thespiral.fm/episodes/5][Episode 005 — 纵使强风起，人生不言弃]]
+    - 对一个跑者的最高赞美是什么。快吗？我觉得应该是强。
+    - 无论你处于什么立场、曾经有过什么样的遭遇，面对跑步这件事，所有人都得站在同一条起跑线上。不论最后是成功或失败，在这个当下，都取决于自己这幅身躯。正因为如此，才会有快乐，有痛苦，最后是无上的自由。
 
 ** IME
 *** 双拼
@@ -64,6 +68,7 @@ Favorites：
 ** Prepare
 - [[https://github.com/jwasham/coding-interview-university][jwasham/coding-interview-university]]
 - [[https://github.com/geekcompany/ResumeSample][geekcompany/ResumeSample]] - 程序员简历模板系列
+- [[https://github.com/azl397985856/fe-interview][azl397985856/fe-interview]] - 大前端面试宝典
 - [[https://www.zhihu.com/question/24099873][如何得到 Google 的工作机会？ - 知乎]]
 
 ** Resource
@@ -77,11 +82,16 @@ Favorites：
 - [[https://linghao.io/posts/improve-english][如何提高英语水平 - Linghao Zhang]]
 
 * Reading
+** Magazine
 - [[https://aeon.co/][Aeon | a new world of ideas]]
+- [[https://longform.org/][Longform]]
 
 ** Blog
 - [[http://www.yinwang.org/][当然我在扯淡 - 王垠]]
 - [[https://blog.imalan.cn/][无文字 | 三无计划]]
+
+** Article
+- [[http://catb.org/~esr/faqs/hacker-howto.html][How To Become A Hacker]]
 
 * Computer Science
 - [[https://github.com/ossu/computer-science][ossu/computer-science]] - Path to a free self-taught education in Computer Science!
@@ -98,7 +108,7 @@ Favorites：
 ** Development
 - [[https://indienova.com/groups/14][我们都爱像素风 - Indienova 小组]]
 * Git
-** Commands
+** Command
 #+begin_src shell
 git init  # 在当前目录新建一个 Git 代码库
 git clone [url]  # 下载一个项目和它的整个代码历史
