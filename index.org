@@ -8,6 +8,9 @@
 This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [[https://github.com/fniessen/org-html-themes][ReadTheOrg]] theme. I'm still learning and exploring this amazing tool.
 #+END_CENTER
 
+[[https://uses.tech/][/uses]] - A list of /uses pages detailing developer setups, gear, software and configs.
+
+
 * Life
 ** Marathon
 - 知乎圆桌[[https://www.zhihu.com/roundtable/marathon2015/][《马拉松之路》]]
@@ -47,6 +50,18 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 
 *** Explore
 - [[https://letter.getpodcast.xyz/][播客 Feed 订阅]]
+- [[https://typlog.com/podlist/][中文独立播客]] - 发现与推荐高质量的中文独立播客
+
+Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言：
+#+begin_quote
+独立 = 创作过程不受限制、影响。
+
+这个限制和影响可能来自资本、技术、商业、受众。但你不可能找到一个一刀切的标准来定义「独立」。
+
+小众厂牌 Spotify 独占，能叫独立音乐吗？微软独占的《Cuphead》叫独立游戏吗？
+
+这是要从内容本身出发去判断的，真正「独立」的内容会散发出独一无二的气质。
+#+end_quote
 
 *** Subscription
 Favorites：
@@ -89,6 +104,7 @@ Favorites：
 ** Blog
 - [[http://www.yinwang.org/][当然我在扯淡 - 王垠]]
 - [[https://blog.imalan.cn/][无文字 | 三无计划]]
+- [[https://jesor.me/][大破进击]]
 
 ** Article
 - [[http://catb.org/~esr/faqs/hacker-howto.html][How To Become A Hacker]]
@@ -103,6 +119,10 @@ Favorites：
 
 * Web
 - [[https://simpleicons.org/][Simple Icons]] - Free SVG icons for popular brands
+
+** CSS
+- [[https://github.com/robsheldon/sscaffold-css][robsheldon/sscaffold-css]] - sscaffold combines css rules from normalize.css, skeleton.css, and milligram into a single, reorganized, easy-to-use css file, with bugfixes and a few other updates and additions. It emphasizes sensible defaults and semantic HTML.
+- [[https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/][New Year, New Job? Let's Make a Grid-Powered Resume! | CSS-Tricks]]
 
 * Game
 ** Development
