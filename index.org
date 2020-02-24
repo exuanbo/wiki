@@ -26,7 +26,19 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 
 ** IME
 *** 双拼
-- [[https://sspai.com/post/33019][选择输入法的哲学：兼论双拼的优缺点]]
+- [[https://sspai.com/post/33019][选择输入法的哲学：兼论双拼的优缺点 - 少数派]]
+  - 录入文字的过程可以简单分为两个环节：1. 大脑将思考的内容转化为可以通过键盘录入的内容（比如字形、字音）；2. 通过键盘将字形或字音录入电脑并组合为最终文字。
+  - *我们的大脑更容易把思维转化为声音而不是文字* ，甚至有很多人必须先把思维转化为声音然后才能进一步转化为文字：我们见过很多人在输入的时候嘴里念念有词，这就是通过声音来辅助文字呈现的一种方式，但我们从来没见过有人说话的时候，需要拿支笔边写边说。
+  - 双拼输入法是拼音输入法的一种，因此它继承了拼音输入法在第一环节的优势；而由于简化了复合声母和韵母，在第二环节的效率追平甚至超过了五笔输入法。
+
+**** Practice
+- 强制替换电脑和手机上的输入法
+- 打印键位并贴到墙上
+- 使用讯飞输入法键位皮肤
+- 微信聊天背景设为键位图
+
+**** Resource
+- [[https://www.flypy.com/][小鹤双拼·小鹤音形 - 官方网站]]
 
 *** RIME
 **** Squirrel
@@ -37,6 +49,7 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 - [[https://www.v2ray.com/][V2Ray]]
   - [[https://guide.v2fly.org/advanced/wss_and_web.html][WebSocket + TLS + Web]]
 - [[https://github.com/trojan-gfw/trojan][trojan-gfw/trojan]]
+- [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/Trojan-Qt5]] - Windows, macOS, Linux
 - [[https://github.com/yichengchen/clashX/tree/master][ClashX]] - macOS
 - [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS
 - [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/SS-Rule-Snippet]] - Surge / Quantumult / Shadowrocket / Surfboard / clash(X) 实用规则
@@ -66,16 +79,21 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言：
 *** Subscription
 Favorites：
 - [[https://teacherluke.co.uk/][Luke's English Podcast]]
-- [[https://feeds.fireside.fm/casticle/rss][Casticle]]
-- [[http://rss.lizhi.fm/rss/1959617.xml][得意忘形播客]]
-- [[https://feeds.fireside.fm/bytecoffee/rss][Byte.Coffee]]
+- [[https://casticle.fm/][Casticle]]
+  - 是一档探索并发现优质单期英文播客的中文节目。每期节目将为你推荐三期不同主题或类型的英文播客，讲述这些播客的精彩之处，整理与其相关的信息与知识。我们希望能帮助你更高效地接触英文原生内容，并享受随之而来的快乐与启发。
+- [[http://rss.lizhi.fm/rss/1959617.xml][得意忘形]]
+  - 是一个主张追求个体自由与探寻真理的实验计划。我们见证了第一次工业革命以来科技对人类社会的极大推动与助益，但也意识到资本主义与市场经济不可避免地催生了消费文化、剥夺了个人价值、并窃取了大众时间。带着对生命的有限性与无目的性的敬畏，我们试图为读者与听众提供更全面的觉察自我与认知世界的工具，以不断重建当下的方式穿越时间、抵达生活的本质。
+- [[https://byte.coffee/][Byte.Coffee]]
+  - 一家以 Engineer 视角面对世界的字节咖啡店，提供一支独立极简、健康明亮、科学主调、人文余韵的声波咖啡豆。人间指南主播 hb 曾打趣说是「科技与人文十字路口的街角咖啡店」，我觉得需要改成「科学与人文的十字路口」，特指自然科学。技术固然重要，但背后的科学是基础是理论是根基，一名科研工作者必须谨记这一点。
 - [[https://czgx.fireside.fm/rss][迟早更新]]
+  - 这是一档探讨科技、商业、设计和生活之间混沌关系的播客节目，也是风险基金 ONES Ventures 关于热情、趣味和好奇心的音频记录。我们希望通过这档播客，能让熟悉的事物变得新鲜，让新鲜的事物变得熟悉。
 - [[http://feed.tangsuanradio.com/gadio.xml][机核网 GADIO 游戏广播]]
 - [[http://web.archive.org/web/20160604093615/http://antiwave.net/][反波 Antiwave - web.archive.org]]
 
 完整 opml 格式订阅列表：[[./subscriptions.opml][subscriptions.opml]]
 
-*** Articles
+*** Episode
+*** Article
 - [[https://sspai.com/post/58577][播客届的京派与海派 - 少数派]]
   - 时隔近百年，当下的中文播客圈，听众之中流行着一个说法，将中文播客分类为「陪伴型 / 湿货」和「硬核型 / 干货」两种类型。苹果发布的 2019 年最佳中文播客榜单中，不乏「大内密谈」「日谈公园」「跟宇宙结婚」这样的「闲话类」陪伴型播客，也丰盈着「忽左忽右」「博物志」「声东击西」「不可理论」等信息度相对密集、知识点充沛的播客节目。前者往往以北京为核心，主要是北方语系；后者则以上海为中心，且基本有海外背景。
 
@@ -123,6 +141,105 @@ Favorites：
 ** CSS
 - [[https://github.com/robsheldon/sscaffold-css][robsheldon/sscaffold-css]] - sscaffold combines css rules from normalize.css, skeleton.css, and milligram into a single, reorganized, easy-to-use css file, with bugfixes and a few other updates and additions. It emphasizes sensible defaults and semantic HTML.
 - [[https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/][New Year, New Job? Let's Make a Grid-Powered Resume! | CSS-Tricks]]
+
+** Nginx Configuration
+[[https://gist.github.com/fotock/9cf9afc2fd0f813828992ebc4fdaad6f][fotock/nginx.conf]] - Nginx SSL 安全配置最佳实践
+
+#+begin_src shell
+# 生成 dhparam.pem 文件, 在命令行执行任一方法:
+
+# 方法1: 很慢
+openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
+
+# 方法2: 较快
+# 与方法1无明显区别. 2048位也足够用, 4096更强
+openssl dhparam -dsaparam -out /etc/nginx/ssl/dhparam.pem 4096
+#+end_src
+
+*** nginx.conf
+#+begin_src conf
+# 阅读更多 http://tautt.com/best-nginx-configuration-for-security/
+
+# 不发送Nginx版本号
+server_tokens off;
+
+# 不允许浏览器在frame或iframe中显示页面
+# 避免 点击劫持(clickjacking) http://en.wikipedia.org/wiki/Clickjacking
+# 如果需要允许 [i]frames, 你可以用 SAMEORIGIN 或者用ALLOW-FROM uri 设置单个uri
+# https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options
+add_header X-Frame-Options SAMEORIGIN;
+
+# 服务用户提供的内容时, 包含 X-Content-Type-Options: nosniff 头选项，配合 Content-Type: 头选项,
+# 来禁用某些浏览器的 content-type 探测.
+# https://www.owasp.org/index.php/List_of_useful_HTTP_headers
+# 当前支持 IE > 8 http://blogs.msdn.com/b/ie/archive/2008/09/02/ie8-security-part-vi-beta-2-update.aspx
+# http://msdn.microsoft.com/en-us/library/ie/gg622941(v=vs.85).aspx
+# 火狐 '不久'支持 https://bugzilla.mozilla.org/show_bug.cgi?id=471020
+add_header X-Content-Type-Options nosniff;
+
+# 启用大部分现代浏览器内置的 the Cross-site scripting (XSS) 过滤.
+# 通常缺省情况下已经启用, 所以本选项为为本网站重启过滤器，以防其被用户禁用.
+# https://www.owasp.org/index.php/List_of_useful_HTTP_headers
+add_header X-XSS-Protection "1; mode=block";
+
+# 启用 Content Security Policy (CSP) (和支持它的浏览器(http://caniuse.com/#feat=contentsecuritypolicy)后,
+# 你可以告诉浏览器它仅能从你明确允许的域名下载内容
+# http://www.html5rocks.com/en/tutorials/security/content-security-policy/
+# https://www.owasp.org/index.php/Content_Security_Policy
+# 修改应用代码, 通过禁用css和js的 'unsafe-inline' 'unsafe-eval' 指标提高安全性
+# (对内联css和js同样适用).
+# 更多: http://www.html5rocks.com/en/tutorials/security/content-security-policy/#inline-code-considered-harmful
+add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ssl.google-analytics.com https://assets.zendesk.com https://connect.facebook.net; img-src 'self' https://ssl.google-analytics.com https://s-static.ak.facebook.com https://assets.zendesk.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.zendesk.com; font-src 'self' https://themes.googleusercontent.com; frame-src https://assets.zendesk.com https://www.facebook.com https://s-static.ak.facebook.com https://tautt.zendesk.com; object-src 'none'";
+
+# 将所有 http 跳转至 https
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+  server_name .forgott.com;
+  return 301 https://$host$request_uri;
+}
+
+server {
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
+  server_name .forgott.com;
+
+  ssl_certificate /etc/nginx/ssl/star_forgott_com.crt;
+  ssl_certificate_key /etc/nginx/ssl/star_forgott_com.key;
+
+  # 启用 session resumption 提高HTTPS性能
+  # http://vincent.bernat.im/en/blog/2011-ssl-session-reuse-rfc5077.html
+  ssl_session_cache shared:SSL:50m;
+  ssl_session_timeout 1d;
+  ssl_session_tickets off;
+
+  # DHE密码器的Diffie-Hellman参数, 推荐 2048 位
+  ssl_dhparam /etc/nginx/ssl/dhparam.pem;
+
+  # 启用服务器端保护, 防止 BEAST 攻击
+  # http://blog.ivanristic.com/2013/09/is-beast-still-a-threat.html
+  ssl_prefer_server_ciphers on;
+  # 禁用 SSLv3(enabled by default since nginx 0.8.19) since it's less secure then TLS http://en.wikipedia.org/wiki/Secure_Sockets_Layer#SSL_3.0
+  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+  # ciphers chosen for forward secrecy and compatibility
+  # http://blog.ivanristic.com/2013/08/configuring-apache-nginx-and-openssl-for-forward-secrecy.html
+  ssl_ciphers 'ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS';
+
+  # 启用 ocsp stapling (网站可以以隐私保护、可扩展的方式向访客传达证书吊销信息的机制)
+  # http://blog.mozilla.org/security/2013/07/29/ocsp-stapling-in-firefox/
+  resolver 8.8.8.8 8.8.4.4;
+  ssl_stapling on;
+  ssl_stapling_verify on;
+  ssl_trusted_certificate /etc/nginx/ssl/star_forgott_com.crt;
+
+  # 启用 HSTS(HTTP Strict Transport Security) https://developer.mozilla.org/en-US/docs/Security/HTTP_Strict_Transport_Security
+  # 避免 ssl stripping https://en.wikipedia.org/wiki/SSL_stripping#SSL_stripping
+  # 或 https://hstspreload.org/
+  add_header Strict-Transport-Security "max-age=31536000; includeSubdomains; preload";
+
+  # ... 其他配置
+}
+#+end_src
 
 * Game
 ** Development
@@ -267,6 +384,82 @@ SPC p l : switch to project and create a layout
 - [[https://github.com/fniessen/refcard-org-mode][fniessen/refcard-org-mode]] - Org mode syntax
 - 使用主题自带代码高亮方案 ~(org :variables org-html-htmlize-output-type 'css)~
 
+* Self-hosting
+[[https://github.com/awesome-selfhosted/awesome-selfhosted][awesome-selfhosted]] - This is a list of Free Software network services and web applications which can be hosted locally. Non-Free software is listed on the Non-Free page.
+
+** Analytics
+*** Ackee
+[[https://ackee.electerious.com/][Ackee]] - Self-hosted analytics tool for those who care about privacy. ~MIT~ ~Nodejs~
+
+[[https://github.com/electerious/Ackee/blob/master/docs/SSL%20and%20HTTPS.md][SSL and HTTPS]] - Nginx configuration
+#+begin_src conf
+#
+# Set "$cors_header" to avoid "if" inside location context
+# https://www.nginx.com/resources/wiki/start/topics/depth/ifisevil/
+# https://stackoverflow.com/questions/14499320/how-to-properly-setup-nginx-access-control-allow-origin-into-response-header-bas
+#
+map $http_origin $cors_header {
+    default "";
+    ~*^https://([^/]+\.)*(domainone|domaintwo)\.com$ $http_origin;
+}
+
+#
+# Redirect all www to non-www
+#
+server {
+    listen 80;
+    listen 443 ssl;
+
+    server_name www.example.com;
+
+    ssl_certificate     /etc/letsencrypt/live/example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+
+    return 301 https://example.com$request_uri;
+}
+
+#
+# Redirect all non-encrypted to encrypted
+#
+server {
+    listen 80;
+
+    server_name example.com;
+
+    return 301 https://example.com$request_uri;
+}
+
+#
+# There we go
+#
+server {
+    listen 443 ssl http2;
+
+    server_name example.com;
+
+    ssl_certificate     /etc/letsencrypt/live/example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+
+    access_log /var/log/nginx/log/example.com.access.log main;
+    error_log  /var/log/nginx/log/example.com.error.log;
+
+    location / {
+        add_header          Access-Control-Allow-Origin "$cors_header" always;
+        add_header          Access-Control-Allow-Methods "GET, POST, PATCH, OPTIONS" always;
+        add_header          Access-Control-Allow-Headers "Content-Type" always;
+        add_header          Strict-Transport-Security "max-age=31536000" always;
+        add_header          X-Frame-Options deny;
+        proxy_pass          http://localhost:3000;
+        proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
+        proxy_redirect      off;
+        proxy_buffering     off;
+        proxy_set_header    Host $host;
+        proxy_set_header    X-Real-IP $remote_addr;
+        proxy_set_header    X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}
+#+end_src
+
 * OS
 ** Linux
 ** MacOS
@@ -292,6 +485,5 @@ SPC p l : switch to project and create a layout
 
 ** Windows
 * Database
-* Algorithm
 * Design
 * Latex
