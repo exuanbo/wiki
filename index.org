@@ -114,6 +114,30 @@ Favorites：
 ** English
 - [[https://linghao.io/posts/improve-english][如何提高英语水平 - Linghao Zhang]]
 
+*** Vocabulary
+- [[https://www.zhihu.com/question/26814125][你是如何将词汇量提升到 2 万，甚至 3 万的？ - 知乎]]
+
+**** 单词表选择
+- [[https://www.wordfrequency.info/purchase.asp][Word frequency: based on 450 million word COCA corpus]]
+
+*** Grammar
+- 英语语法新思维初级/中级/高级教材
+- [[https://book.douban.com/subject/5038844/][英语常用词疑难用法手册 - 豆瓣]]
+- [[https://book.douban.com/subject/3424236/][McGraw-Hill's Essential American Idioms - 豆瓣]]
+
+*** Reading
+- "Stuff White People like"
+- "How to Be Black"
+- "Hunger of Memory"
+- "Dataclysm"
+
+*** Speaking
+- "White Girl Problems" - novel
+- "New Girl" - TV Series
+- "Girls" - TV Series
+- "Jessie" - TV Series
+- "Dream School" - Netflix TV Series
+
 * Reading
 ** Magazine
 - [[https://aeon.co/][Aeon | a new world of ideas]]
