@@ -1,5 +1,5 @@
 #+SETUPFILE: ./theme-readtheorg-local.setup
-#+HTML_HEAD: <style> #content{max-width:100%;}</style>
+#+HTML_HEAD: <style>#content { max-width:100%; }</style>
 
 #+TITLE: Exuanbo's Wiki
 #+AUTHOR: Exuanbo
@@ -8,8 +8,8 @@
 This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [[https://github.com/fniessen/org-html-themes][ReadTheOrg]] theme. I'm still learning and exploring this amazing tool.
 #+END_CENTER
 
-[[https://uses.tech/][/uses]] - A list of /uses pages detailing developer setups, gear, software and configs.
-
+- [[http://catb.org/~esr/faqs/hacker-howto.html][How To Become A Hacker]]
+- [[https://uses.tech/][/uses]] - A list of /uses pages detailing developer setups, gear, software and configs
 
 * Life
 ** Marathon
@@ -99,10 +99,13 @@ Favorites：
 
 * Job
 ** Prepare
-- [[https://github.com/jwasham/coding-interview-university][jwasham/coding-interview-university]]
+- [[https://www.zhihu.com/question/24099873][如何得到 Google 的工作机会？ - 知乎]]
 - [[https://github.com/geekcompany/ResumeSample][geekcompany/ResumeSample]] - 程序员简历模板系列
 - [[https://github.com/azl397985856/fe-interview][azl397985856/fe-interview]] - 大前端面试宝典
-- [[https://www.zhihu.com/question/24099873][如何得到 Google 的工作机会？ - 知乎]]
+- [[https://labuladong.gitbook.io/algo/][labuladong的算法小抄]]
+
+*** Interview
+[[https://github.com/jwasham/coding-interview-university][jwasham/coding-interview-university]]
 
 ** Resource
 - [[https://github.com/greatghoul/remote-working][greatghoul/remote-working]] - 本列表只收录中国国内的资源或者对国内受众友好的国外资源
@@ -112,8 +115,6 @@ Favorites：
 
 * Language Learning
 ** English
-- [[https://linghao.io/posts/improve-english][如何提高英语水平 - Linghao Zhang]]
-
 *** Vocabulary
 - [[https://www.zhihu.com/question/26814125][你是如何将词汇量提升到 2 万，甚至 3 万的？ - 知乎]]
 
@@ -147,21 +148,18 @@ Favorites：
 - [[http://www.yinwang.org/][当然我在扯淡 - 王垠]]
 - [[https://blog.imalan.cn/][无文字 | 三无计划]]
 - [[https://jesor.me/][大破进击]]
-
-** Article
-- [[http://catb.org/~esr/faqs/hacker-howto.html][How To Become A Hacker]]
+- [[https://www.phodal.com/][Phodal - 狼和凤凰 | Growth Engineer]]
 
 * Computer Science
 - [[https://github.com/ossu/computer-science][ossu/computer-science]] - Path to a free self-taught education in Computer Science!
 
 * Programming
 - [[https://opensource.guide/][Open Source Guides]]
+- [[https://github.phodal.com/][GitHub 漫游指南]] by [[https://www.phodal.com/][Phodal Huang]]
 - [[http://coolshell.cn/articles/4990.html][程序员技术练级攻略]]
   - [[https://exuanbo.xyz/posts/programmer/][2018 新版索引]]
 
 * Web
-- [[https://simpleicons.org/][Simple Icons]] - Free SVG icons for popular brands
-
 ** CSS
 - [[https://github.com/robsheldon/sscaffold-css][robsheldon/sscaffold-css]] - sscaffold combines css rules from normalize.css, skeleton.css, and milligram into a single, reorganized, easy-to-use css file, with bugfixes and a few other updates and additions. It emphasizes sensible defaults and semantic HTML.
 - [[https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/][New Year, New Job? Let's Make a Grid-Powered Resume! | CSS-Tricks]]
@@ -265,9 +263,14 @@ server {
 }
 #+end_src
 
+** Resource
+- [[https://simpleicons.org/][Simple Icons]] - Free SVG icons for popular brands
+- [[https://github.com/refactoringui/heroicons][refactoringui/heroicons]] - A set of free MIT-licensed high-quality SVG icons for UI development
+
 * Game
 ** Development
 - [[https://indienova.com/groups/14][我们都爱像素风 - Indienova 小组]]
+
 * Git
 ** Command
 #+begin_src shell
