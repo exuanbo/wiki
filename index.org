@@ -3,7 +3,7 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="readtheorg.css"/>
 #+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js"></script>
 #+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
-#+HTML_HEAD: <script>$('document').ready(function(){$('#text-table-of-contents ul').first().addClass('nav');$('body').scrollspy({target:'#text-table-of-contents'});});</script>
+#+HTML_HEAD: <script type="text/javascript">$('document').ready(function(){$('#text-table-of-contents ul').first().addClass('nav');$('body').scrollspy({target:'#text-table-of-contents'});});</script>
 
 #+TITLE: Exuanbo's Wiki
 #+AUTHOR: Exuanbo
@@ -47,6 +47,7 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 - [[https://github.com/yichengchen/clashX/tree/master][ClashX]] - macOS
 - [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS
 - [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/SS-Rule-Snippet]] - Surge / Quantumult / Shadowrocket / Surfboard / clash(X) 实用规则
+- [[https://github.com/geekdada/surgio][geekdada/surgio]] - Generating rules for Surge, Clash, Quantumult... like a PRO
 
 ** Marathon
 - 知乎圆桌[[https://www.zhihu.com/roundtable/marathon2015/][《马拉松之路》]]
@@ -99,9 +100,12 @@ Favorites：
 - [[http://feed.tangsuanradio.com/gadio.xml][机核网 GADIO 游戏广播]]
 - [[http://web.archive.org/web/20160604093615/http://antiwave.net/][反波 Antiwave - web.archive.org]]
 
-完整 opml 格式订阅列表：[[./subscriptions.opml][subscriptions.opml]]
-
 *** Episode
+** Subscriptions
+*** App
+*** Web Service
+*** Entertainment
+
 * Job
 ** Prepare
 - [[https://www.zhihu.com/question/24099873][如何得到 Google 的工作机会？ - 知乎]]
@@ -164,15 +168,18 @@ Favorites：
 * Design
 - [[https://sspai.com/tag/%E8%AE%BE%E8%AE%A1][#设计 - 少数派]]
 
-* Computer Science
-- [[https://github.com/ossu/computer-science][ossu/computer-science]] - Path to a free self-taught education in Computer Science
-- [[https://www.bilibili.com/video/av21376839/][Crash Course Computer Science - 中英字幕]]
-
-* Programming
+* Open Source
 - [[https://opensource.guide/][Open Source Guides]]
 - [[https://github.phodal.com/][GitHub 漫游指南]] by [[https://www.phodal.com/][Phodal Huang]]
-- [[http://coolshell.cn/articles/4990.html][程序员技术练级攻略]]
+
+* Computer Science
+- [[https://github.com/ossu/computer-science][ossu/computer-science]] - Path to a free self-taught education in Computer Science
+- [[https://www.bilibili.com/video/av21376839/][Crash Course Computer Science]] - 中英字幕
+
+* Programming
+- [[http://coolshell.cn/articles/4990.html][程序员技术练级攻略 - 2011年07月]]
   - [[https://exuanbo.xyz/posts/programmer/][2018 新版索引]]
+- [[https://blog.knownsec.com/Knownsec_RD_Checklist/index.html][知道创宇研发技能表]] - "聪明的人，会根据每个tip自驱动扩展"
 
 * Web
 ** CSS
@@ -282,6 +289,7 @@ server {
 - [[https://simpleicons.org/][Simple Icons]] - Free SVG icons for popular brands
 - [[https://github.com/refactoringui/heroicons][refactoringui/heroicons]] - A set of free MIT-licensed high-quality SVG icons for UI development
 
+* iOS
 * Game
 ** Development
 - [[https://indienova.com/groups/14][我们都爱像素风 - Indienova 小组]]
@@ -402,10 +410,33 @@ A dotdirectory ~~/.spacemacs.d/~ can be used instead of a dotfile. If you want t
   (with-eval-after-load 'org
     (setq org-startup-indented t)
     (setq org-html-doctype "html5")
-    ;; 使用主题自带代码高亮方案
-    (setq org-html-htmlize-output-type 'css)
     ))
 #+end_src
+
+[[https://github.com/gongzhitaao/orgcss][gongzhitaao/orgcss]]
+
+When exported to HTML, there are three options for code highlighting, controlled by the variable ~org-html-htmlize-output-type~.
+
+1. ~(setq org-html-htmlize-output-type 'inline-css)~
+
+    This is the default setting. It highlights the code according to the current Emacs theme you are using. It directly applies color to the code with inline styles, e.g., ~<span style="color: 0x000000">int</span>~.
+
+    The problem is that the highlight theme depends on the Emacs theme. If you use a dark theme in your Emacs but a light theme (usually we like light themed web pages) web pages, the exported code are hardly illegible due to the light font color, or vice versa.
+
+2. ~(setq org-html-htmlize-output-type nil)~
+
+    This configuration disables highlighting by ~htmlize~. You may use a third-party Javascript highlight library. I recommend [[https://highlightjs.org/][highlight.js]] if I need code highlight.
+
+    There are two problems:
+
+    1. The problem is that you have to rely on highlight.js support on a certain language which is occasionally missing, e.g., ~emacs-lisp~, ~org~, etc.
+    2. ~highlight.js~ by default does not recognized the tags and classes exported by org mode. You need some extra Javascript code in your Org file.
+
+3. ~(setq org-html-htmlize-output-type 'css)~
+
+    This is similar to the first optional, instead of using inline styles, this will assign classes to each component of the code, e.g., ~<span class="org-type">int</span>~, and you could create your own stylesheet for ~.org-type~.
+
+    To obtain a list of all supported org classes, run ~M-x org-html-htmlize-generate-css~.  This will create a buffer containing all the available org style class names in the current Emacs session.
 
 * LaTeX
 * OS
@@ -434,7 +465,9 @@ A dotdirectory ~~/.spacemacs.d/~ can be used instead of a dotfile. If you want t
 
 ** Windows
 * Self-hosting
-[[https://github.com/awesome-selfhosted/awesome-selfhosted][awesome-selfhosted]] - This is a list of Free Software network services and web applications which can be hosted locally. Non-Free software is listed on the Non-Free page.
+[[https://github.com/awesome-selfhosted/awesome-selfhosted][awesome-selfhosted]]
+
+This is a list of Free Software network services and web applications which can be hosted locally. Non-Free software is listed on the Non-Free page.
 
 ** Analytics
 *** Ackee
