@@ -1,9 +1,10 @@
 # -*- mode: org; -*-
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="readtheorg.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="htmlize.css"/>
 #+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js"></script>
 #+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
-#+HTML_HEAD: <script type="text/javascript">$('document').ready(function(){$('#text-table-of-contents ul').first().addClass('nav');$('body').scrollspy({target:'#text-table-of-contents'});});</script>
+#+HTML_HEAD: <script src="readtheorg.js"></script>
 
 #+TITLE: Exuanbo's Wiki
 #+AUTHOR: Exuanbo
@@ -18,6 +19,7 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 
 * Life
 ** Minimalism
+
 ** IME
 *** 双拼
 - [[https://sspai.com/post/33019][选择输入法的哲学：兼论双拼的优缺点 - 少数派]]
@@ -42,11 +44,11 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 ** Bypass GFW
 - [[https://www.v2ray.com/][V2Ray]]
   - [[https://guide.v2fly.org/advanced/wss_and_web.html][WebSocket + TLS + Web]]
-- [[https://github.com/trojan-gfw/trojan][trojan-gfw/trojan]]
+- [[https://github.com/trojan-gfw/trojan][trojan]]
 - [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/Trojan-Qt5]] - Windows, macOS, Linux
-- [[https://github.com/yichengchen/clashX/tree/master][ClashX]] - macOS
-- [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS
-- [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/SS-Rule-Snippet]] - Surge / Quantumult / Shadowrocket / Surfboard / clash(X) 实用规则
+- [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ClashX]] - macOS
+- [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS | paid app
+- [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/SS-Rule-Snippet]] - Design for Surge / Quantumult / Shadowrocket / Surfboard / clash(X)
 - [[https://github.com/geekdada/surgio][geekdada/surgio]] - Generating rules for Surge, Clash, Quantumult... like a PRO
 
 ** Marathon
@@ -101,9 +103,12 @@ Favorites：
 - [[http://web.archive.org/web/20160604093615/http://antiwave.net/][反波 Antiwave - web.archive.org]]
 
 *** Episode
+
 ** Subscriptions
 *** App
+
 *** Web Service
+
 *** Entertainment
 
 * Job
@@ -122,7 +127,9 @@ Favorites：
 ** Experience
 - [[https://www.zhihu.com/question/39610449][在谷歌日本(Google Japan)工作是怎样一番体验？ - 知乎]]
 
-* Language Learning
+* General Learning
+
+* Language
 ** English
 *** Vocabulary
 - [[https://www.zhihu.com/question/26814125][你是如何将词汇量提升到 2 万，甚至 3 万的？ - 知乎]]
@@ -164,7 +171,11 @@ Favorites：
 - [[https://jesor.me/][大破进击]]
 - [[https://www.phodal.com/][Phodal - 狼和凤凰 | Growth Engineer]]
 
+** Resource
+- [[https://manybooks.net/][50,000+ Free eBooks in the Genres you Love | Manybooks]]
+
 * Writing
+
 * Design
 - [[https://sspai.com/tag/%E8%AE%BE%E8%AE%A1][#设计 - 少数派]]
 
@@ -290,6 +301,7 @@ server {
 - [[https://github.com/refactoringui/heroicons][refactoringui/heroicons]] - A set of free MIT-licensed high-quality SVG icons for UI development
 
 * iOS
+
 * Game
 ** Development
 - [[https://indienova.com/groups/14][我们都爱像素风 - Indienova 小组]]
@@ -384,7 +396,8 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 
 * Text Editor
 ** Emacs
-- [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][mastering-emacs-in-one-year-guide/guide-zh.org at master · redguardtoo/mastering-emacs-in-one-year-guide]]
+- [[https://emacs-china.org/][Emacs China]]
+- [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][mastering-emacs-in-one-year-guide/guide-zh.org]]
 - [[http://planet.emacsen.org/][Planet Emacsen]]
 
 ** Spacemacs
@@ -398,19 +411,31 @@ A dotdirectory ~~/.spacemacs.d/~ can be used instead of a dotfile. If you want t
 *** Tips
 - [[https://github.com/syl20bnr/spacemacs/issues/3920][Environment variable warnings #3920]] - Put ~(setq exec-path-from-shell-arguments '("-l"))~ in your ~dotspacemacs/user-init~
 
+*** Layers
+
 * Org Mode
 - [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]]
 - [[https://orgmode.org/worg/index.html][Hello Worg, the Org-Mode Community!]]
 - [[https://github.com/fniessen/refcard-org-mode][fniessen/refcard-org-mode]] - Org mode syntax
-- [[https://beorgapp.com/][beorg]] - iOS | Recommand
+- [[https://beorgapp.com/][beorg]] - iOS | Recommand | in-app purchases
 - [[http://mobileorg.github.io/][Mobile Org]] - iOS | Open Source
+
+#+begin_src emacs-lisp
+(defun dotspacemacs/layers ()
+  (setq-default
+    dotspacemacs-configuration-layers '(
+      (org :variables org-enable-stiky-header t))))
+#+end_src
 
 #+begin_src emacs-lisp
 (defun dotspacemacs/user-config ()
   (with-eval-after-load 'org
     (setq org-startup-indented t)
+    (setq org-html-inline-images t)
+    (setq org-export-with-sub-superscripts nil)
     (setq org-html-doctype "html5")
-    ))
+    (setq org-html-htmlize-output-type 'css)
+    (setq org-html-head-include-default-style nil)))
 #+end_src
 
 [[https://github.com/gongzhitaao/orgcss][gongzhitaao/orgcss]]
@@ -439,8 +464,11 @@ When exported to HTML, there are three options for code highlighting, controlled
     To obtain a list of all supported org classes, run ~M-x org-html-htmlize-generate-css~.  This will create a buffer containing all the available org style class names in the current Emacs session.
 
 * LaTeX
+
 * OS
 ** Linux
+*** Server
+
 ** MacOS
 - [[https://github.com/jaywcjlove/awesome-mac][Awesome Mac]]
 - [[https://github.com/serhii-londar/open-source-mac-os-apps][Awesome macOS open source applications]]
@@ -464,16 +492,17 @@ When exported to HTML, there are three options for code highlighting, controlled
   #+end_src
 
 ** Windows
+
 * Self-hosting
 [[https://github.com/awesome-selfhosted/awesome-selfhosted][awesome-selfhosted]]
 
 This is a list of Free Software network services and web applications which can be hosted locally. Non-Free software is listed on the Non-Free page.
 
 ** Analytics
-*** Ackee
 [[https://ackee.electerious.com/][Ackee]] - Self-hosted analytics tool for those who care about privacy. ~MIT~ ~Nodejs~
 
-[[https://github.com/electerious/Ackee/blob/master/docs/SSL%20and%20HTTPS.md][SSL and HTTPS]] - Nginx configuration
+[[https://github.com/electerious/Ackee/blob/master/docs/SSL%20and%20HTTPS.md][Ackee/docs/SSL and HTTPS]] - Nginx configuration
+
 #+begin_src conf
 #
 # Set "$cors_header" to avoid "if" inside location context
