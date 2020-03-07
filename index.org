@@ -1,10 +1,10 @@
 # -*- mode: org; -*-
 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="readtheorg.css"/>
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/readtheorg.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/htmlize.css"/>
 #+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js"></script>
 #+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
-#+HTML_HEAD: <script src="readtheorg.js"></script>
+#+HTML_HEAD: <script src="assets/readtheorg.js"></script>
 
 #+TITLE: Exuanbo's Wiki
 #+AUTHOR: Exuanbo
@@ -13,6 +13,7 @@
 This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [[https://github.com/fniessen/org-html-themes][ReadTheOrg]] theme, inspired by [[https://geekplux.com/][GeekPlux]]. I'm still learning and exploring this amazing tool.
 #+END_CENTER
 
+* Things Should Know
 - [[http://catb.org/~esr/faqs/hacker-howto.html][How To Become A Hacker]]
 - [[http://www.catb.org/~esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]]
 - [[https://uses.tech/][/uses]] - A list of /uses pages detailing developer setups, gear, software and configs
@@ -38,26 +39,28 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 
 *** RIME
 **** Squirrel
-- [[https://github.com/placeless/squirrel_config][placeless/squirrel_config]] - Rime 鼠须管小鹤双拼配置
-- [[https://github.com/cnfeat/Rime][cnfeat/Rime]] - 鼠须管 小鹤双拼 输入法配置及配色方案
+- [[https://github.com/placeless/squirrel_config][placeless/ *squirrel_config*]] - Rime 鼠须管小鹤双拼配置
+- [[https://github.com/cnfeat/Rime][cnfeat/ *Rime*]] - 鼠须管 小鹤双拼 输入法配置及配色方案
 
 ** Bypass GFW
 - [[https://www.v2ray.com/][V2Ray]]
   - [[https://guide.v2fly.org/advanced/wss_and_web.html][WebSocket + TLS + Web]]
 - [[https://github.com/trojan-gfw/trojan][trojan]]
-- [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/Trojan-Qt5]] - Windows, macOS, Linux
-- [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ClashX]] - macOS
+  - [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/ *Trojan-Qt5*]] - Windows, macOS, Linux
+- [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ *ClashX*]] - macOS
 - [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS | paid app
-- [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/SS-Rule-Snippet]] - Design for Surge / Quantumult / Shadowrocket / Surfboard / clash(X)
-- [[https://github.com/geekdada/surgio][geekdada/surgio]] - Generating rules for Surge, Clash, Quantumult... like a PRO
+- [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ *SS-Rule-Snippet*]] - Design for Surge, Quantumult, Shadowrocket, Surfboard, clash(X)
+- [[https://github.com/geekdada/surgio][geekdada/ *surgio*]] - Generating rules for Surge, Clash, Quantumult... like a PRO
 
 ** Marathon
 - 知乎圆桌[[https://www.zhihu.com/roundtable/marathon2015/][《马拉松之路》]]
 - [[https://www.zhihu.com/question/21557037][有哪些配合马拉松训练的核心力量训练项目或计划？ - 知乎]]
-  - 核心力量训练是指针对核心区域肌肉（主要是腹部、下背部和骨盆部肌群）及其深层小肌肉进行的力量、稳定、平衡等能力的训练，它不同于传统的腰腹力量训练，而是使核心区域的整体原动肌和局部稳定肌均能通过训练得到发展和提高。核心力量训练的目的就是使整个机体协调起来，确保训练者在做动作时核心肌群起到稳定躯体，传输能量的作用。
+
+  核心力量训练是指针对核心区域肌肉（主要是腹部、下背部和骨盆部肌群）及其深层小肌肉进行的力量、稳定、平衡等能力的训练，它不同于传统的腰腹力量训练，而是使核心区域的整体原动肌和局部稳定肌均能通过训练得到发展和提高。核心力量训练的目的就是使整个机体协调起来，确保训练者在做动作时核心肌群起到稳定躯体，传输能量的作用。
 - [[https://www.zhihu.com/question/62561329][越野跑和公路跑有哪些区别？ - 知乎]]
 - [[http://thespiral.fm/episodes/4][Episode 004 — 当我们谈跑步时，我们谈些什么]]
-  - 跑步是对现实生活的逃避，是一种解脱或者说移情。
+
+  跑步是对现实生活的逃避，是一种解脱或者说移情。
 - 动画[[https://movie.douban.com/subject/30238385/][《强风吹拂》]]
   - [[http://thespiral.fm/episodes/5][Episode 005 — 纵使强风起，人生不言弃]]
     - 对一个跑者的最高赞美是什么。快吗？我觉得应该是强。
@@ -65,10 +68,12 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 
 ** Podcast
 - [[https://sspai.com/post/58577][播客届的京派与海派 - 少数派]]
-  - 时隔近百年，当下的中文播客圈，听众之中流行着一个说法，将中文播客分类为「陪伴型 / 湿货」和「硬核型 / 干货」两种类型。苹果发布的 2019 年最佳中文播客榜单中，不乏「大内密谈」「日谈公园」「跟宇宙结婚」这样的「闲话类」陪伴型播客，也丰盈着「忽左忽右」「博物志」「声东击西」「不可理论」等信息度相对密集、知识点充沛的播客节目。前者往往以北京为核心，主要是北方语系；后者则以上海为中心，且基本有海外背景。
+
+  时隔近百年，当下的中文播客圈，听众之中流行着一个说法，将中文播客分类为「陪伴型 / 湿货」和「硬核型 / 干货」两种类型。苹果发布的 2019 年最佳中文播客榜单中，不乏「大内密谈」「日谈公园」「跟宇宙结婚」这样的「闲话类」陪伴型播客，也丰盈着「忽左忽右」「博物志」「声东击西」「不可理论」等信息度相对密集、知识点充沛的播客节目。前者往往以北京为核心，主要是北方语系；后者则以上海为中心，且基本有海外背景。
 
 *** App
 泛用型播客客户端：
+
 - [[https://castro.fm/][Castro]] - iOS | Recommand
 - [[https://overcast.fm/][Overcast]] - iOS
 - [[https://www.pocketcasts.com/][Pocket Casts]] - Android & iOS
@@ -90,15 +95,20 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言：
 
 *** Subscription
 Favorites：
+
 - [[https://teacherluke.co.uk/][Luke's English Podcast]]
 - [[https://casticle.fm/][Casticle]]
-  - 是一档探索并发现优质单期英文播客的中文节目。每期节目将为你推荐三期不同主题或类型的英文播客，讲述这些播客的精彩之处，整理与其相关的信息与知识。我们希望能帮助你更高效地接触英文原生内容，并享受随之而来的快乐与启发。
+
+  这是一档探索并发现优质单期英文播客的中文节目。每期节目将为你推荐三期不同主题或类型的英文播客，讲述这些播客的精彩之处，整理与其相关的信息与知识。我们希望能帮助你更高效地接触英文原生内容，并享受随之而来的快乐与启发。
 - [[http://rss.lizhi.fm/rss/1959617.xml][得意忘形]]
-  - 是一个主张追求个体自由与探寻真理的实验计划。我们见证了第一次工业革命以来科技对人类社会的极大推动与助益，但也意识到资本主义与市场经济不可避免地催生了消费文化、剥夺了个人价值、并窃取了大众时间。带着对生命的有限性与无目的性的敬畏，我们试图为读者与听众提供更全面的觉察自我与认知世界的工具，以不断重建当下的方式穿越时间、抵达生活的本质。
+
+  这是一个主张追求个体自由与探寻真理的实验计划。我们见证了第一次工业革命以来科技对人类社会的极大推动与助益，但也意识到资本主义与市场经济不可避免地催生了消费文化、剥夺了个人价值、并窃取了大众时间。带着对生命的有限性与无目的性的敬畏，我们试图为读者与听众提供更全面的觉察自我与认知世界的工具，以不断重建当下的方式穿越时间、抵达生活的本质。
 - [[https://byte.coffee/][Byte.Coffee]]
-  - 一家以 Engineer 视角面对世界的字节咖啡店，提供一支独立极简、健康明亮、科学主调、人文余韵的声波咖啡豆。人间指南主播 hb 曾打趣说是「科技与人文十字路口的街角咖啡店」，我觉得需要改成「科学与人文的十字路口」，特指自然科学。技术固然重要，但背后的科学是基础是理论是根基，一名科研工作者必须谨记这一点。
+
+  一家以 Engineer 视角面对世界的字节咖啡店，提供一支独立极简、健康明亮、科学主调、人文余韵的声波咖啡豆。人间指南主播 hb 曾打趣说是「科技与人文十字路口的街角咖啡店」，我觉得需要改成「科学与人文的十字路口」，特指自然科学。技术固然重要，但背后的科学是基础是理论是根基，一名科研工作者必须谨记这一点。
 - [[https://czgx.fireside.fm/rss][迟早更新]]
-  - 这是一档探讨科技、商业、设计和生活之间混沌关系的播客节目，也是风险基金 ONES Ventures 关于热情、趣味和好奇心的音频记录。我们希望通过这档播客，能让熟悉的事物变得新鲜，让新鲜的事物变得熟悉。
+
+  这是一档探讨科技、商业、设计和生活之间混沌关系的播客节目，也是风险基金 ONES Ventures 关于热情、趣味和好奇心的音频记录。我们希望通过这档播客，能让熟悉的事物变得新鲜，让新鲜的事物变得熟悉。
 - [[http://feed.tangsuanradio.com/gadio.xml][机核网 GADIO 游戏广播]]
 - [[http://web.archive.org/web/20160604093615/http://antiwave.net/][反波 Antiwave - web.archive.org]]
 
@@ -114,15 +124,15 @@ Favorites：
 * Job
 ** Prepare
 - [[https://www.zhihu.com/question/24099873][如何得到 Google 的工作机会？ - 知乎]]
-- [[https://github.com/geekcompany/ResumeSample][geekcompany/ResumeSample]] - 程序员简历模板系列
-- [[https://github.com/azl397985856/fe-interview][azl397985856/fe-interview]] - 大前端面试宝典
+- [[https://github.com/geekcompany/ResumeSample][geekcompany/ *ResumeSample*]] - 程序员简历模板系列
+- [[https://github.com/azl397985856/fe-interview][azl397985856/ *fe-interview*]] - 大前端面试宝典
 - [[https://labuladong.gitbook.io/algo/][labuladong的算法小抄]]
 
 *** Interview
-[[https://github.com/jwasham/coding-interview-university][jwasham/coding-interview-university]]
+- [[https://github.com/jwasham/coding-interview-university][jwasham/ *coding-interview-university*]]
 
 ** Resource
-- [[https://github.com/greatghoul/remote-working][greatghoul/remote-working]] - 本列表只收录中国国内的资源或者对国内受众友好的国外资源
+- [[https://github.com/greatghoul/remote-working][greatghoul/ *remote-working*]] - 本列表只收录中国国内的资源或者对国内受众友好的国外资源
 
 ** Experience
 - [[https://www.zhihu.com/question/39610449][在谷歌日本(Google Japan)工作是怎样一番体验？ - 知乎]]
@@ -184,7 +194,7 @@ Favorites：
 - [[https://github.phodal.com/][GitHub 漫游指南]] by [[https://www.phodal.com/][Phodal Huang]]
 
 * Computer Science
-- [[https://github.com/ossu/computer-science][ossu/computer-science]] - Path to a free self-taught education in Computer Science
+- [[https://github.com/ossu/computer-science][ossu/ *computer-science*]] - Path to a free self-taught education in Computer Science
 - [[https://www.bilibili.com/video/av21376839/][Crash Course Computer Science]] - 中英字幕
 
 * Programming
@@ -194,11 +204,11 @@ Favorites：
 
 * Web
 ** CSS
-- [[https://github.com/robsheldon/sscaffold-css][robsheldon/sscaffold-css]] - Combines css rules from normalize.css and skeleton.css
-- [[https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/][New Year, New Job? Let's Make a Grid-Powered Resume! | CSS-Tricks]]
+- [[https://github.com/robsheldon/sscaffold-css][robsheldon/ *sscaffold-css*]] - Combines css rules from normalize.css and skeleton.css
+- [[https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/][Let's Make a Grid-Powered Resume! | CSS-Tricks]]
 
 ** Nginx Configuration
-[[https://gist.github.com/fotock/9cf9afc2fd0f813828992ebc4fdaad6f][fotock/nginx.conf]] - Nginx SSL 安全配置最佳实践
+[[https://gist.github.com/fotock/9cf9afc2fd0f813828992ebc4fdaad6f][fotock/ *nginx.conf*]] - Nginx SSL 安全配置最佳实践
 
 #+begin_src shell
 # 生成 dhparam.pem 文件, 在命令行执行任一方法:
@@ -298,7 +308,7 @@ server {
 
 ** Resource
 - [[https://simpleicons.org/][Simple Icons]] - Free SVG icons for popular brands
-- [[https://github.com/refactoringui/heroicons][refactoringui/heroicons]] - A set of free MIT-licensed high-quality SVG icons for UI development
+- [[https://github.com/refactoringui/heroicons][refactoringui/ *heroicons*]] - A set of free MIT-licensed high-quality SVG icons for UI development
 
 * iOS
 
@@ -309,6 +319,7 @@ server {
 * Git
 ** Pull-Request steps
 [[http://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/][The beginner's guide to contributing to a GitHub project]]
+
 1. Fork the project and clone locally
 2. ~git remote add upstream git@github.com:xxx/xxx.git~
 3. ~git checkout -b newBranch~
@@ -317,7 +328,9 @@ server {
 6. ~git push origin~
 
 ** Github Pages
-- [[https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages][How to fix HTTP 404 on Github Pages?]] If you don't use Jekyll, the workaround is to place a file named ~.nojekyll~ in the root directory.
+- [[https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages][How to fix HTTP 404 on Github Pages?]]
+
+  If you don't use Jekyll, the workaround is to place a file named ~.nojekyll~ in the root directory.
 
 ** Command
 #+begin_src shell
@@ -397,40 +410,89 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 * Text Editor
 ** Emacs
 - [[https://emacs-china.org/][Emacs China]]
-- [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][mastering-emacs-in-one-year-guide/guide-zh.org]]
+- [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][*mastering-emacs-in-one-year-guide* /guide-zh.org]]
 - [[http://planet.emacsen.org/][Planet Emacsen]]
 
 ** Spacemacs
-[[https://github.com/syl20bnr/spacemacs][spacemacs]] 是一款社区维护的 Emacs 配置，结合了 vim 和 Emacs 两者的优点。
+[[https://github.com/syl20bnr/spacemacs][syl20bnr/ *spacemacs*]] - A community-driven Emacs distribution
 
 *** Dotfile Configuration
 A dotdirectory ~~/.spacemacs.d/~ can be used instead of a dotfile. If you want to use this option, move ~~/.spacemacs~ to ~~/.spacemacs.d/init.el~.
 
-参考 [[https://github.com/zilongshanren/spacemacs-private][子龙山人的个人配置]] 和 GeekPlux 的 [[https://github.com/geekplux/dotfiles][dotfiles]]
-
-*** Tips
-- [[https://github.com/syl20bnr/spacemacs/issues/3920][Environment variable warnings #3920]] - Put ~(setq exec-path-from-shell-arguments '("-l"))~ in your ~dotspacemacs/user-init~
-
-*** Layers
-
-* Org Mode
-- [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]]
-- [[https://orgmode.org/worg/index.html][Hello Worg, the Org-Mode Community!]]
-- [[https://github.com/fniessen/refcard-org-mode][fniessen/refcard-org-mode]] - Org mode syntax
-- [[https://beorgapp.com/][beorg]] - iOS | Recommand | in-app purchases
-- [[http://mobileorg.github.io/][Mobile Org]] - iOS | Open Source
+可参考 [[https://github.com/zilongshanren/spacemacs-private][子龙山人的个人配置]] 和 GeekPlux 的 [[https://github.com/geekplux/dotfiles][dotfiles]]
 
 #+begin_src emacs-lisp
 (defun dotspacemacs/layers ()
   (setq-default
-    dotspacemacs-configuration-layers '(
-      (org :variables org-enable-stiky-header t))))
+    dotspacemacs-configuration-layers
+      '((auto-completion :variables
+                         auto-completion-return-key-behavior 'complete
+                         auto-completion-tab-key-behavior 'cycle
+                         auto-completion-enable-snippets-in-popup t
+                         auto-completion-enable-help-tooltip nil
+                         auto-completion-enable-sort-by-usage t
+                         :disabled-for org markdown)
+        syntax-checking
+        ivy
+        better-defaults
+        html
+        emacs-lisp
+        (org :variables
+             org-enable-sticky-header t
+             org-want-todo-bindings t)
+        latex
+        (markdown :variables
+                  markdown-live-preview-engine 'vmd)
+        git
+        (colors :variables
+                colors-enable-nyan-cat-progress-bar (display-graphic-p))
+        osx)))
+#+end_src
+
+#+begin_src emacs-lisp
+(defun dotspacemacs/init ()
+  (setq-default
+    dotspacemacs-elpa-https nil
+    dotspacemacs-maximized-at-startup t))
+#+end_src
+
+#+begin_src emacs-lisp
+(defun dotspacemacs/user-config ()
+  (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
+  (load custom-file 'no-error 'no-message))
+#+end_src
+
+*** Tips
+- [[https://github.com/syl20bnr/spacemacs/issues/3920][Environment variable warnings #3920]]
+
+  Put ~(setq exec-path-from-shell-arguments '("-l"))~ in your ~dotspacemacs/user-init~
+
+** Doom Emacs
+[[https://github.com/hlissner/doom-emacs][hlissner/ *doom-emacs*]] - An Emacs configuration for the stubborn martian vimmer
+
+- [[https://github.com/hlissner/emacs-doom-themes][hlissner/ *emacs-doom-themes*]]
+
+*** Tips
+- [[https://github.com/hlissner/doom-emacs/issues/397][Need doom/toggle-maximized command #397]]
+
+  #+begin_src emacs-lisp
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+  #+end_src
+
+* Org Mode
+- [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]]
+- [[https://orgmode.org/worg/index.html][Hello Worg, the Org-Mode Community!]]
+- [[https://github.com/fniessen/refcard-org-mode][fniessen/ *refcard-org-mode*]] - Org mode syntax
+
+** Configuration
+#+begin_src emacs-lisp
+dotspacemacs-configuration-layers '(
+  (org :variables org-enable-stiky-header t))
 #+end_src
 
 #+begin_src emacs-lisp
 (defun dotspacemacs/user-config ()
   (with-eval-after-load 'org
-    (setq org-startup-indented t)
     (setq org-html-inline-images t)
     (setq org-export-with-sub-superscripts nil)
     (setq org-html-doctype "html5")
@@ -438,30 +500,32 @@ A dotdirectory ~~/.spacemacs.d/~ can be used instead of a dotfile. If you want t
     (setq org-html-head-include-default-style nil)))
 #+end_src
 
-[[https://github.com/gongzhitaao/orgcss][gongzhitaao/orgcss]]
+[[https://github.com/gongzhitaao/orgcss][gongzhitaao/ *orgcss*]]
 
 When exported to HTML, there are three options for code highlighting, controlled by the variable ~org-html-htmlize-output-type~.
 
 1. ~(setq org-html-htmlize-output-type 'inline-css)~
 
-    This is the default setting. It highlights the code according to the current Emacs theme you are using. It directly applies color to the code with inline styles, e.g., ~<span style="color: 0x000000">int</span>~.
+  This is the default setting. It highlights the code according to the current Emacs theme you are using. It directly applies color to the code with inline styles, e.g., ~<span style="color: 0x000000">int</span>~.
 
-    The problem is that the highlight theme depends on the Emacs theme. If you use a dark theme in your Emacs but a light theme (usually we like light themed web pages) web pages, the exported code are hardly illegible due to the light font color, or vice versa.
-
+  The problem is that the highlight theme depends on the Emacs theme. If you use a dark theme in your Emacs but a light theme (usually we like light themed web pages) web pages, the exported code are hardly illegible due to the light font color, or vice versa.
 2. ~(setq org-html-htmlize-output-type nil)~
 
-    This configuration disables highlighting by ~htmlize~. You may use a third-party Javascript highlight library. I recommend [[https://highlightjs.org/][highlight.js]] if I need code highlight.
+  This configuration disables highlighting by ~htmlize~. You may use a third-party Javascript highlight library. I recommend [[https://highlightjs.org/][highlight.js]] if I need code highlight.
 
-    There are two problems:
+  There are two problems:
 
-    1. The problem is that you have to rely on highlight.js support on a certain language which is occasionally missing, e.g., ~emacs-lisp~, ~org~, etc.
-    2. ~highlight.js~ by default does not recognized the tags and classes exported by org mode. You need some extra Javascript code in your Org file.
-
+  1. The problem is that you have to rely on highlight.js support on a certain language which is occasionally missing, e.g., ~emacs-lisp~, ~org~, etc.
+  2. ~highlight.js~ by default does not recognized the tags and classes exported by org mode. You need some extra Javascript code in your Org file.
 3. ~(setq org-html-htmlize-output-type 'css)~
 
-    This is similar to the first optional, instead of using inline styles, this will assign classes to each component of the code, e.g., ~<span class="org-type">int</span>~, and you could create your own stylesheet for ~.org-type~.
+  This is similar to the first optional, instead of using inline styles, this will assign classes to each component of the code, e.g., ~<span class="org-type">int</span>~, and you could create your own stylesheet for ~.org-type~.
 
-    To obtain a list of all supported org classes, run ~M-x org-html-htmlize-generate-css~.  This will create a buffer containing all the available org style class names in the current Emacs session.
+  To obtain a list of all supported org classes, run ~M-x org-html-htmlize-generate-css~.  This will create a buffer containing all the available org style class names in the current Emacs session.
+
+** App
+- [[https://beorgapp.com/][beorg]] - iOS | Recommand | in-app purchases
+- [[http://mobileorg.github.io/][Mobile Org]] - iOS | Open Source
 
 * LaTeX
 
@@ -476,7 +540,7 @@ When exported to HTML, there are three options for code highlighting, controlled
 - [[http://brew.sh/][Homebrew]]
   - [[https://github.com/phinze/homebrew-cask][homebrew-cask]]
   - ~brew leavese~ Show installed formulae that are not dependencies of another installed formula
-  - [[https://github.com/beeftornado/homebrew-rmtree][beeftornado/homebrew-rmtree]] - Remove a formula and its unused dependencies
+  - [[https://github.com/beeftornado/homebrew-rmtree][beeftornado/ *homebrew-rmtree*]] - Remove a formula and its unused dependencies
 - [[https://github.com/gnachman/iTerm2][iTerm2]]
 - [[http://www.alfredapp.com/][Alfred]]
   - [[http://www.alfredworkflow.com/][alfredworkflow]]
@@ -485,10 +549,33 @@ When exported to HTML, there are three options for code highlighting, controlled
 - [[http://sourabhbajaj.com/mac-setup/index.html][Mac OS X Setup Guide]]
 - 改变 Launchpad 中应用图标的大小
   #+begin_src shell
-  defaults write com.apple.dock springboard-columns -int 列数
-  defaults write com.apple.dock springboard-rows -int 行数
-  defaults write com.apple.dock ResetLaunchPad -bool TRUE
-  killall Dock
+defaults write com.apple.dock springboard-columns -int 列数
+defaults write com.apple.dock springboard-rows -int 行数
+defaults write com.apple.dock ResetLaunchPad -bool TRUE
+killall Dock
+  #+end_src
+
+*** Tips
+- Use iconutil to Create an icns File Manually
+
+  from [[https://stackoverflow.com/questions/12306223/how-to-manually-create-icns-files-using-iconutil][stackoverflow.com/questions/12306223]]
+
+  #+begin_src shell
+mkdir MyIcon.iconset
+
+# convert a 1024x1024 png (named "Icon1024.png") to the required icns file
+sips -z 16 16     Icon1024.png --out MyIcon.iconset/icon_16x16.png
+sips -z 32 32     Icon1024.png --out MyIcon.iconset/icon_16x16@2x.png
+sips -z 32 32     Icon1024.png --out MyIcon.iconset/icon_32x32.png
+sips -z 64 64     Icon1024.png --out MyIcon.iconset/icon_32x32@2x.png
+sips -z 128 128   Icon1024.png --out MyIcon.iconset/icon_128x128.png
+sips -z 256 256   Icon1024.png --out MyIcon.iconset/icon_128x128@2x.png
+sips -z 256 256   Icon1024.png --out MyIcon.iconset/icon_256x256.png
+sips -z 512 512   Icon1024.png --out MyIcon.iconset/icon_256x256@2x.png
+sips -z 512 512   Icon1024.png --out MyIcon.iconset/icon_512x512.png
+cp Icon1024.png MyIcon.iconset/icon_512x512@2x.png
+
+iconutil -c icns MyIcon.iconset
   #+end_src
 
 ** Windows

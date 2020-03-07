@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700&display=swap);
 h1,h2,h3,h4,h5,h6,legend{font-family:"Roboto Slab",ff-tisa-web-pro,Georgia,Arial,sans-serif;font-weight:700;margin-top:0}
 h1{color:#4e3163;font-size:175%}
 .subtitle{font-size:95%}
@@ -63,7 +63,7 @@ body{margin:0}
 .mobile-hide{display:none}
 }
 @media screen and (max-width:768px){
-#content{margin-left:0;padding:1.618em .75em;}
+#content{margin-left:0;padding:1.618em .75em}
 #content.shift{position:fixed;min-width:100%;left:85%;top:0;height:100%;overflow:hidden}
 }
 @media screen and (min-width:1400px){
@@ -141,7 +141,7 @@ hr{display:block;height:1px;border:0;border-top:1px solid #e1e4e5;margin:24px 0;
 #toggle-sidebar{display:block;background-color:#e0d6e9;text-align:center;padding:.6em;margin-bottom:.6em}
 #toggle-sidebar h2{margin:0;padding:0}
 }
-#table-of-contents{position:fixed;top:0;left:0;width:25%;overflow-x:hidden;overflow-y:scroll;height:calc(100vh - 77.45px);background:#343131;z-index:200}
+#table-of-contents{padding-bottom:1em;position:fixed;top:0;left:0;width:25%;overflow-x:hidden;overflow-y:scroll;height:calc(100vh - 77.45px);background:#343131;z-index:200}
 #table-of-contents h2 a{display:none}
 #table-of-contents h2{z-index:200;background-color:#715ab1;text-align:center;padding:.809em;display:block;color:#fcfcfc;font-size:100%;margin-bottom:.809em}
 @media screen and (max-width:768px){
