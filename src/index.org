@@ -1,22 +1,22 @@
 # -*- mode: org; -*-
 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/readtheorg.css"/>
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/htmlize.css"/>
-#+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js"></script>
-#+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
-#+HTML_HEAD: <script src="assets/readtheorg.js"></script>
+#+HTML_HEAD: <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="manifest" href="site.webmanifest">
+#+HTML_HEAD: <style type="text/css">[ inject-inline ./../dist/style.css ]</style>
+#+HTML_HEAD: <script type="text/javascript">[ inject-inline ./../dist/script.js ]</script>
 
 #+TITLE: Exuanbo's Wiki
 #+AUTHOR: Exuanbo
 
 #+BEGIN_CENTER
-This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [[https://github.com/fniessen/org-html-themes][ReadTheOrg]] theme, inspired by [[https://geekplux.com/][GeekPlux]]. I'm still learning and exploring this amazing tool.
+This document is built using Emacs [[https://orgmode.org/][Org mode]] with [[https://gulpjs.com/][gulp.js]], inspired by [[https://geekplux.com/][GeekPlux]].
+Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm still learning and exploring the amazing
+[[https://orgmode.org/][Org mode]].
 #+END_CENTER
 
-* Things Should Know
 - [[http://catb.org/~esr/faqs/hacker-howto.html][How To Become A Hacker]]
-- [[http://www.catb.org/~esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]]
-- [[https://uses.tech/][/uses]] - A list of /uses pages detailing developer setups, gear, software and configs
+- [[http://catb.org/~esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]]
+- [[https://uses.tech/][/uses]] - A list of =/uses= pages detailing developer setups, gear, software and
+  configs.
 
 * Life
 ** Minimalism
@@ -24,9 +24,14 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 ** IME
 *** 双拼
 - [[https://sspai.com/post/33019][选择输入法的哲学：兼论双拼的优缺点 - 少数派]]
-  - 录入文字的过程可以简单分为两个环节：1. 大脑将思考的内容转化为可以通过键盘录入的内容（比如字形、字音）；2. 通过键盘将字形或字音录入电脑并组合为最终文字。
-  - *我们的大脑更容易把思维转化为声音而不是文字* ，甚至有很多人必须先把思维转化为声音然后才能进一步转化为文字：我们见过很多人在输入的时候嘴里念念有词，这就是通过声音来辅助文字呈现的一种方式，但我们从来没见过有人说话的时候，需要拿支笔边写边说。
-  - 双拼输入法是拼音输入法的一种，因此它继承了拼音输入法在第一环节的优势；而由于简化了复合声母和韵母，在第二环节的效率追平甚至超过了五笔输入法。
+  - 录入文字的过程可以简单分为两个环节：1. 大脑将思考的内容转化为可以通过键盘录
+    入的内容（比如字形、字音）；2. 通过键盘将字形或字音录入电脑并组合为最终文字。
+  - *我们的大脑更容易把思维转化为声音而不是文字* ，甚至有很多人必须先把思维转化
+    为声音然后才能进一步转化为文字：我们见过很多人在输入的时候嘴里念念有词，这就
+    是通过声音来辅助文字呈现的一种方式，但我们从来没见过有人说话的时候，需要拿支
+    笔边写边说。
+  - 双拼输入法是拼音输入法的一种，因此它继承了拼音输入法在第一环节的优势；而由于
+    简化了复合声母和韵母，在第二环节的效率追平甚至超过了五笔输入法。
 
 **** Practice
 - 强制替换电脑和手机上的输入法
@@ -49,14 +54,19 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
   - [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/ *Trojan-Qt5*]] - Windows, macOS, Linux
 - [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ *ClashX*]] - macOS
 - [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS | paid app
-- [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ *SS-Rule-Snippet*]] - Design for Surge, Quantumult, Shadowrocket, Surfboard, clash(X)
-- [[https://github.com/geekdada/surgio][geekdada/ *surgio*]] - Generating rules for Surge, Clash, Quantumult... like a PRO
+- [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ *SS-Rule-Snippet*]] - Design for Surge, Quantumult, Shadowrocket,
+  Surfboard, clash(X)
+- [[https://github.com/geekdada/surgio][geekdada/ *surgio*]] - Generating rules for Surge, Clash, Quantumult... like a
+  PRO
 
 ** Marathon
 - 知乎圆桌[[https://www.zhihu.com/roundtable/marathon2015/][《马拉松之路》]]
 - [[https://www.zhihu.com/question/21557037][有哪些配合马拉松训练的核心力量训练项目或计划？ - 知乎]]
 
-  核心力量训练是指针对核心区域肌肉（主要是腹部、下背部和骨盆部肌群）及其深层小肌肉进行的力量、稳定、平衡等能力的训练，它不同于传统的腰腹力量训练，而是使核心区域的整体原动肌和局部稳定肌均能通过训练得到发展和提高。核心力量训练的目的就是使整个机体协调起来，确保训练者在做动作时核心肌群起到稳定躯体，传输能量的作用。
+  核心力量训练是指针对核心区域肌肉（主要是腹部、下背部和骨盆部肌群）及其深层小肌
+  肉进行的力量、稳定、平衡等能力的训练，它不同于传统的腰腹力量训练，而是使核心区
+  域的整体原动肌和局部稳定肌均能通过训练得到发展和提高。核心力量训练的目的就是使
+  整个机体协调起来，确保训练者在做动作时核心肌群起到稳定躯体，传输能量的作用。
 - [[https://www.zhihu.com/question/62561329][越野跑和公路跑有哪些区别？ - 知乎]]
 - [[http://thespiral.fm/episodes/4][Episode 004 — 当我们谈跑步时，我们谈些什么]]
 
@@ -64,12 +74,19 @@ This document is built using Emacs [[https://orgmode.org/][Org mode]] with the [
 - 动画[[https://movie.douban.com/subject/30238385/][《强风吹拂》]]
   - [[http://thespiral.fm/episodes/5][Episode 005 — 纵使强风起，人生不言弃]]
     - 对一个跑者的最高赞美是什么。快吗？我觉得应该是强。
-    - 无论你处于什么立场、曾经有过什么样的遭遇，面对跑步这件事，所有人都得站在同一条起跑线上。不论最后是成功或失败，在这个当下，都取决于自己这幅身躯。正因为如此，才会有快乐，有痛苦，最后是无上的自由。
+    - 无论你处于什么立场、曾经有过什么样的遭遇，面对跑步这件事，所有人都得站在同
+      一条起跑线上。不论最后是成功或失败，在这个当下，都取决于自己这幅身躯。正因
+      为如此，才会有快乐，有痛苦，最后是无上的自由。
 
 ** Podcast
 - [[https://sspai.com/post/58577][播客届的京派与海派 - 少数派]]
 
-  时隔近百年，当下的中文播客圈，听众之中流行着一个说法，将中文播客分类为「陪伴型 / 湿货」和「硬核型 / 干货」两种类型。苹果发布的 2019 年最佳中文播客榜单中，不乏「大内密谈」「日谈公园」「跟宇宙结婚」这样的「闲话类」陪伴型播客，也丰盈着「忽左忽右」「博物志」「声东击西」「不可理论」等信息度相对密集、知识点充沛的播客节目。前者往往以北京为核心，主要是北方语系；后者则以上海为中心，且基本有海外背景。
+  时隔近百年，当下的中文播客圈，听众之中流行着一个说法，将中文播客分类为「陪伴型
+  / 湿货」和「硬核型 / 干货」两种类型。苹果发布的 2019 年最佳中文播客榜单中，不
+  乏「大内密谈」「日谈公园」「跟宇宙结婚」这样的「闲话类」陪伴型播客，也丰盈着
+  「忽左忽右」「博物志」「声东击西」「不可理论」等信息度相对密集、知识点充沛的播
+  客节目。前者往往以北京为核心，主要是北方语系；后者则以上海为中心，且基本有海外
+  背景。
 
 *** App
 泛用型播客客户端：
@@ -99,16 +116,27 @@ Favorites：
 - [[https://teacherluke.co.uk/][Luke's English Podcast]]
 - [[https://casticle.fm/][Casticle]]
 
-  这是一档探索并发现优质单期英文播客的中文节目。每期节目将为你推荐三期不同主题或类型的英文播客，讲述这些播客的精彩之处，整理与其相关的信息与知识。我们希望能帮助你更高效地接触英文原生内容，并享受随之而来的快乐与启发。
+  这是一档探索并发现优质单期英文播客的中文节目。每期节目将为你推荐三期不同主题或
+  类型的英文播客，讲述这些播客的精彩之处，整理与其相关的信息与知识。我们希望能帮
+  助你更高效地接触英文原生内容，并享受随之而来的快乐与启发。
 - [[http://rss.lizhi.fm/rss/1959617.xml][得意忘形]]
 
-  这是一个主张追求个体自由与探寻真理的实验计划。我们见证了第一次工业革命以来科技对人类社会的极大推动与助益，但也意识到资本主义与市场经济不可避免地催生了消费文化、剥夺了个人价值、并窃取了大众时间。带着对生命的有限性与无目的性的敬畏，我们试图为读者与听众提供更全面的觉察自我与认知世界的工具，以不断重建当下的方式穿越时间、抵达生活的本质。
+  这是一个主张追求个体自由与探寻真理的实验计划。我们见证了第一次工业革命以来科技
+  对人类社会的极大推动与助益，但也意识到资本主义与市场经济不可避免地催生了消费文
+  化、剥夺了个人价值、并窃取了大众时间。带着对生命的有限性与无目的性的敬畏，我们
+  试图为读者与听众提供更全面的觉察自我与认知世界的工具，以不断重建当下的方式穿越
+  时间、抵达生活的本质。
 - [[https://byte.coffee/][Byte.Coffee]]
 
-  一家以 Engineer 视角面对世界的字节咖啡店，提供一支独立极简、健康明亮、科学主调、人文余韵的声波咖啡豆。人间指南主播 hb 曾打趣说是「科技与人文十字路口的街角咖啡店」，我觉得需要改成「科学与人文的十字路口」，特指自然科学。技术固然重要，但背后的科学是基础是理论是根基，一名科研工作者必须谨记这一点。
+  一家以 Engineer 视角面对世界的字节咖啡店，提供一支独立极简、健康明亮、科学主调、
+  人文余韵的声波咖啡豆。人间指南主播 hb 曾打趣说是「科技与人文十字路口的街角咖啡
+  店」，我觉得需要改成「科学与人文的十字路口」，特指自然科学。技术固然重要，但背
+  后的科学是基础是理论是根基，一名科研工作者必须谨记这一点。
 - [[https://czgx.fireside.fm/rss][迟早更新]]
 
-  这是一档探讨科技、商业、设计和生活之间混沌关系的播客节目，也是风险基金 ONES Ventures 关于热情、趣味和好奇心的音频记录。我们希望通过这档播客，能让熟悉的事物变得新鲜，让新鲜的事物变得熟悉。
+  这是一档探讨科技、商业、设计和生活之间混沌关系的播客节目，也是风险基金 ONES
+  Ventures 关于热情、趣味和好奇心的音频记录。我们希望通过这档播客，能让熟悉的事
+  物变得新鲜，让新鲜的事物变得熟悉。
 - [[http://feed.tangsuanradio.com/gadio.xml][机核网 GADIO 游戏广播]]
 - [[http://web.archive.org/web/20160604093615/http://antiwave.net/][反波 Antiwave - web.archive.org]]
 
@@ -194,7 +222,8 @@ Favorites：
 - [[https://github.phodal.com/][GitHub 漫游指南]] by [[https://www.phodal.com/][Phodal Huang]]
 
 * Computer Science
-- [[https://github.com/ossu/computer-science][ossu/ *computer-science*]] - Path to a free self-taught education in Computer Science
+- [[https://github.com/ossu/computer-science][ossu/ *computer-science*]] - Path to a free self-taught education in Computer
+  Science
 - [[https://www.bilibili.com/video/av21376839/][Crash Course Computer Science]] - 中英字幕
 
 * Programming
@@ -203,8 +232,58 @@ Favorites：
 - [[https://blog.knownsec.com/Knownsec_RD_Checklist/index.html][知道创宇研发技能表]] - "聪明的人，会根据每个tip自驱动扩展"
 
 * Web
+** Node.js
+** Gulp.js
+[[https://gulpjs.com/][gulp.js]] - The streaming build system
+
+#+begin_src javascript
+function defaultTask(cb) {
+  // place code for your default task here
+  cb();
+}
+
+exports.default = defaultTask
+#+end_src
+
+*** Plugins
+- gulp-rename
+- gulp-inject-inline
+
+**** Javascript
+- gulp-concat
+- gulp-uglify
+
+**** CSS
+- gulp-concat-css
+- gulp-postcss
+- gulp-purgecss
+
+**** HTML
+- gulp-htmlmin
+
+** PostCSS
+[[https://postcss.org/][PostCSS - a tool for transforming CSS with JavaScript]]
+
+*** Plugins
+- [[https://github.com/postcss/postcss-import][postcss/ *postcss-import*]] - PostCSS plugin to inline @import rules content
+- @fullhuman/postcss-purgecss
+- autoprefixer
+- cssnano - A modular minifier based on the PostCSS ecosystem
+
+  #+begin_src javascript
+const plugins = [
+  cssnano({
+    preset: ['default', { discardComments: { removeAll: true } }]
+  })
+]
+  #+end_src
+
+** Tailwind CSS
+[[https://tailwindcss.com/][Tailwind CSS - A Utility-First CSS Framework for Rapidly Building Custom Designs]]
+
 ** CSS
-- [[https://github.com/robsheldon/sscaffold-css][robsheldon/ *sscaffold-css*]] - Combines css rules from normalize.css and skeleton.css
+- [[https://github.com/robsheldon/sscaffold-css][robsheldon/ *sscaffold-css*]] - Combines css rules from normalize.css and
+  skeleton.css
 - [[https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/][Let's Make a Grid-Powered Resume! | CSS-Tricks]]
 
 ** Nginx Configuration
@@ -308,7 +387,8 @@ server {
 
 ** Resource
 - [[https://simpleicons.org/][Simple Icons]] - Free SVG icons for popular brands
-- [[https://github.com/refactoringui/heroicons][refactoringui/ *heroicons*]] - A set of free MIT-licensed high-quality SVG icons for UI development
+- [[https://github.com/refactoringui/heroicons][refactoringui/ *heroicons*]] - A set of free MIT-licensed high-quality SVG icons
+  for UI development
 
 * iOS
 
@@ -330,7 +410,8 @@ server {
 ** Github Pages
 - [[https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages][How to fix HTTP 404 on Github Pages?]]
 
-  If you don't use Jekyll, the workaround is to place a file named ~.nojekyll~ in the root directory.
+  If you don't use Jekyll, the workaround is to place a file named =.nojekyll=
+  in the root directory.
 
 ** Command
 #+begin_src shell
@@ -413,11 +494,25 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 - [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][*mastering-emacs-in-one-year-guide* /guide-zh.org]]
 - [[http://planet.emacsen.org/][Planet Emacsen]]
 
+#+begin_src emacs-lisp
+;; evil
+(setq-default evil-escape-key-sequence "jk"
+              evil-escape-delay 0.2)
+#+end_src
+
+*** Packages
+- [[https://github.com/NicolasPetton/gulp-task-runner][NicolasPetton/ *gulp-task-runner*]] - Run gulp tasks from Emacs =M-x gulp=
+- [[https://magit.vc/][It's Magit! A Git Porcelain inside Emacs]]
+- [[https://github.com/alphapapa/magit-todos][alphapapa/ *magit-todos*]] - Show source files' TODOs (and FIXMEs, etc) in Magit
+  status buffer
+
+
 ** Spacemacs
 [[https://github.com/syl20bnr/spacemacs][syl20bnr/ *spacemacs*]] - A community-driven Emacs distribution
 
 *** Dotfile Configuration
-A dotdirectory ~~/.spacemacs.d/~ can be used instead of a dotfile. If you want to use this option, move ~~/.spacemacs~ to ~~/.spacemacs.d/init.el~.
+A dotdirectory =/.spacemacs.d= can be used instead of a dotfile. If you want
+to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
 
 可参考 [[https://github.com/zilongshanren/spacemacs-private][子龙山人的个人配置]] 和 GeekPlux 的 [[https://github.com/geekplux/dotfiles][dotfiles]]
 
@@ -465,18 +560,42 @@ A dotdirectory ~~/.spacemacs.d/~ can be used instead of a dotfile. If you want t
 *** Tips
 - [[https://github.com/syl20bnr/spacemacs/issues/3920][Environment variable warnings #3920]]
 
-  Put ~(setq exec-path-from-shell-arguments '("-l"))~ in your ~dotspacemacs/user-init~
+  Put ~(setq exec-path-from-shell-arguments '("-l"))~ in your
+  ~dotspacemacs/user-init~
 
 ** Doom Emacs
 [[https://github.com/hlissner/doom-emacs][hlissner/ *doom-emacs*]] - An Emacs configuration for the stubborn martian vimmer
 
 - [[https://github.com/hlissner/emacs-doom-themes][hlissner/ *emacs-doom-themes*]]
 
-*** Tips
+  #+begin_src emacs-lisp
+(use-package doom-themes
+  :config
+  ;; Global settings
+  (setq doom-themes-enable-bold nil) ; if nil, bold is universally disabled
+  (load-theme 'doom-one t)
+
+  ;; Enable custom neotree theme (all-the-icons must be installed!)
+  (doom-themes-neotree-config)
+
+  ;; Corrects (and improves) org-mode's native fontification.
+  (doom-themes-org-config))
+  #+end_src
+
+*** Hacks
 - [[https://github.com/hlissner/doom-emacs/issues/397][Need doom/toggle-maximized command #397]]
 
   #+begin_src emacs-lisp
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+  #+end_src
+- [[https://github.com/hlissner/doom-emacs/blob/develop/modules/lang/org/README.org][modules/lang/org]]
+
+  TAB was changed to toggle only the visibility state of the current subtree,
+  rather than cycle through it recursively. This can be reversed with:
+
+  #+begin_src emacs-lisp
+(after! evil-org
+  (remove-hook 'org-tab-first-hook #'+org-cycle-only-current-subtree-h))
   #+end_src
 
 * Org Mode
@@ -493,35 +612,135 @@ dotspacemacs-configuration-layers '(
 #+begin_src emacs-lisp
 (defun dotspacemacs/user-config ()
   (with-eval-after-load 'org
-    (setq org-html-inline-images t)
-    (setq org-export-with-sub-superscripts nil)
-    (setq org-html-doctype "html5")
-    (setq org-html-htmlize-output-type 'css)
-    (setq org-html-head-include-default-style nil)))
+    (setq ; some settings
+      )))
 #+end_src
 
-[[https://github.com/gongzhitaao/orgcss][gongzhitaao/ *orgcss*]]
+#+begin_src emacs-lisp
+(setq org-html-inline-images t
+      org-export-with-sub-superscripts nil
+      org-html-doctype "html5"
+      org-html-html5-fancy t ; enable new block elements introduced with the HTML5 standard
+      org-html-htmlize-output-type 'css
+      org-html-head-include-default-style nil)
+#+end_src
 
-When exported to HTML, there are three options for code highlighting, controlled by the variable ~org-html-htmlize-output-type~.
+- [[https://github.com/gongzhitaao/orgcss][gongzhitaao/ *orgcss*]]
+
+When exported to HTML, there are three options for code highlighting, controlled
+by the variable ~org-html-htmlize-output-type~.
 
 1. ~(setq org-html-htmlize-output-type 'inline-css)~
 
-  This is the default setting. It highlights the code according to the current Emacs theme you are using. It directly applies color to the code with inline styles, e.g., ~<span style="color: 0x000000">int</span>~.
+  This is the default setting. It highlights the code according to the current
+   Emacs theme you are using. It directly applies color to the code with inline
+   styles, e.g., ~<span style="color: 0x000000">int</span>~.
 
-  The problem is that the highlight theme depends on the Emacs theme. If you use a dark theme in your Emacs but a light theme (usually we like light themed web pages) web pages, the exported code are hardly illegible due to the light font color, or vice versa.
+  The problem is that the highlight theme depends on the Emacs theme. If you use
+   a dark theme in your Emacs but a light theme (usually we like light themed
+   web pages) web pages, the exported code are hardly illegible due to the light
+   font color, or vice versa.
 2. ~(setq org-html-htmlize-output-type nil)~
 
-  This configuration disables highlighting by ~htmlize~. You may use a third-party Javascript highlight library. I recommend [[https://highlightjs.org/][highlight.js]] if I need code highlight.
+  This configuration disables highlighting by =htmlize=. You may use a
+   third-party Javascript highlight library. I recommend [[https://highlightjs.org/][highlight.js]] if I need
+   code highlight.
 
   There are two problems:
 
-  1. The problem is that you have to rely on highlight.js support on a certain language which is occasionally missing, e.g., ~emacs-lisp~, ~org~, etc.
-  2. ~highlight.js~ by default does not recognized the tags and classes exported by org mode. You need some extra Javascript code in your Org file.
+  1. The problem is that you have to rely on highlight.js support on a certain
+     language which is occasionally missing, e.g., =emacs-lisp=, =org=, etc.
+  2. =highlight.js= by default does not recognized the tags and classes exported
+     by org mode. You need some extra Javascript code in your Org file.
 3. ~(setq org-html-htmlize-output-type 'css)~
 
-  This is similar to the first optional, instead of using inline styles, this will assign classes to each component of the code, e.g., ~<span class="org-type">int</span>~, and you could create your own stylesheet for ~.org-type~.
+  This is similar to the first optional, instead of using inline styles, this
+   will assign classes to each component of the code, e.g., ~<span
+   class="org-type">int</span>~, and you could create your own stylesheet for
+   ~.org-type~.
 
-  To obtain a list of all supported org classes, run ~M-x org-html-htmlize-generate-css~.  This will create a buffer containing all the available org style class names in the current Emacs session.
+  To obtain a list of all supported org classes, run =M-x
+   org-html-htmlize-generate-css=.  This will create a buffer containing all the
+   available org style class names in the current Emacs session.
+
+** Hacks
+- [[https://emacs.stackexchange.com/questions/3374/set-the-background-of-org-exported-code-blocks-according-to-theme][org mode - Set the background of org-exported <code> blocks according to
+  them...]]
+
+  #+begin_src emacs-lisp
+(defun my/org-inline-css-hook (exporter)
+  "Insert custom inline css to automatically set the
+background of code to whatever theme I'm using's background"
+  (when (eq exporter 'html)
+    (let* ((my-pre-bg (face-background 'default))
+           (my-pre-fg (face-foreground 'default)))
+      (setq
+       org-html-head-extra
+       (concat
+        org-html-head-extra
+        (format "<style type=\"text/css\">\n pre.src {background-color: %s; color: %s;}</style>\n"
+                my-pre-bg my-pre-fg))))))
+
+(add-hook 'org-export-before-processing-hook 'my/org-inline-css-hook)
+  #+end_src
+
+  the same way to insert inline CSS or Javascript from local files:
+
+  #+begin_src emacs-lisp
+(defun my/org-inline-source-hook (exporter)
+  (when (eq exporter 'html)
+    (setq org-html-head-extra (concat
+                              "<style type=\"text/css\">\n"
+                              "<!--/*--><![CDATA[/*><!--*/\n"
+                              (with-temp-buffer
+                                (insert-file-contents "style.css")
+                                (buffer-string))
+                              "\n"
+                              "/*]]>*/-->\n"
+                              "</style>\n"
+                              "<script type=\"text/javascript\">\n"
+                              "<!--/*--><![CDATA[/*><!--*/\n"
+                              (with-temp-buffer
+                                (insert-file-contents "script.js")
+                                (buffer-string))
+                              "\n"
+                              "/*]]>*/-->\n"
+                              "</script>\n"))))
+
+(add-hook 'org-export-before-processing-hook 'my/org-inline-source-hook)
+  #+end_src
+
+- [[https://stackoverflow.com/questions/19614104/how-to-tell-org-mode-to-embed-my-css-file-on-html-export][emacs - how to tell org-mode to embed my css file on HTML export? - Stack
+  Ove...]]
+- [[https://emacs-china.org/t/org-mode-html/10120][有没有办法让org-mode导出的html页面漂亮一点？ - Emacs-general - Emacs China]]
+- [[https://github.com/hlissner/doom-emacs/pull/461][Feature: +style feature that provide better org HTML export default by
+  fuxialexander · Pull Request #461 · hlissner/doom-emacs]]
+- [[https://github.com/MetroWind/dotfiles-mac/blob/a202acf00072e9bfa2271fec41dcce2421552ae9/emacs/files/.emacs-pkgs/mw-org.el#L134][MetroWind/ *dotfiles-mac*]]
+
+  #+begin_src emacs-lisp
+;; Embed inline CSS read from a file.
+(defun my-org-inline-css-hook (exporter)
+  "Insert custom inline css"
+  (when (eq exporter 'html)
+    (let* ((dir (ignore-errors (file-name-directory (buffer-file-name))))
+           (path (concat dir "style.css"))
+           (homestyle (and (or (null dir) (null (file-exists-p path)))
+                           (not (null-or-unboundp 'my-org-inline-css-file))))
+           (final (if homestyle my-org-inline-css-file path)))
+      (if (file-exists-p final)
+          (progn
+            (setq-local org-html-head-include-default-style nil)
+            (setq-local org-html-head (concat
+                                       "<style type=\"text/css\">\n"
+                                       "<!--/*--><![CDATA[/*><!--*/\n"
+                                       (with-temp-buffer
+                                         (insert-file-contents final)
+                                         (buffer-string))
+                                       "/*]]>*/-->\n"
+                                       "</style>\n")))))))
+
+(add-hook 'org-export-before-processing-hook 'my-org-inline-css-hook)
+  #+end_src
 
 ** App
 - [[https://beorgapp.com/][beorg]] - iOS | Recommand | in-app purchases
@@ -539,8 +758,10 @@ When exported to HTML, there are three options for code highlighting, controlled
 - [[https://github.com/robbyrussell/oh-my-zsh][oh-my-zsh]]
 - [[http://brew.sh/][Homebrew]]
   - [[https://github.com/phinze/homebrew-cask][homebrew-cask]]
-  - ~brew leavese~ Show installed formulae that are not dependencies of another installed formula
-  - [[https://github.com/beeftornado/homebrew-rmtree][beeftornado/ *homebrew-rmtree*]] - Remove a formula and its unused dependencies
+  - ~brew leavese~ Show installed formulae that are not dependencies of another
+    installed formula
+  - [[https://github.com/beeftornado/homebrew-rmtree][beeftornado/ *homebrew-rmtree*]] - Remove a formula and its unused
+    dependencies
 - [[https://github.com/gnachman/iTerm2][iTerm2]]
 - [[http://www.alfredapp.com/][Alfred]]
   - [[http://www.alfredworkflow.com/][alfredworkflow]]
@@ -583,10 +804,11 @@ iconutil -c icns MyIcon.iconset
 * Self-hosting
 [[https://github.com/awesome-selfhosted/awesome-selfhosted][awesome-selfhosted]]
 
-This is a list of Free Software network services and web applications which can be hosted locally. Non-Free software is listed on the Non-Free page.
+This is a list of Free Software network services and web applications which can
+be hosted locally. Non-Free software is listed on the Non-Free page.
 
 ** Analytics
-[[https://ackee.electerious.com/][Ackee]] - Self-hosted analytics tool for those who care about privacy. ~MIT~ ~Nodejs~
+[[https://ackee.electerious.com/][Ackee]] - Self-hosted analytics tool for those who care about privacy. =MIT= =Nodejs=
 
 [[https://github.com/electerious/Ackee/blob/master/docs/SSL%20and%20HTTPS.md][Ackee/docs/SSL and HTTPS]] - Nginx configuration
 

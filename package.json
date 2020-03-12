@@ -1,0 +1,35 @@
+{
+  "name": "wiki",
+  "version": "1.0.0",
+  "description": "Wiki page built with Emacs and gulp.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exuanbo/wiki.git"
+  },
+  "author": "exuanbo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/exuanbo/wiki/issues"
+  },
+  "homepage": "https://github.com/exuanbo/wiki#readme",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-inject-inline": "^0.5.4",
+    "gulp-postcss": "^8.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "browserslist": [
+    "last 1 version"
+  ]
+}
