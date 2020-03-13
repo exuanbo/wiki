@@ -221,6 +221,49 @@ Favorites：
 - [[https://opensource.guide/][Open Source Guides]]
 - [[https://github.phodal.com/][GitHub 漫游指南]] by [[https://www.phodal.com/][Phodal Huang]]
 
+** Github Pages
+- [[https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages][How to fix HTTP 404 on Github Pages?]]
+
+  If you don't use Jekyll, the workaround is to place a file named =.nojekyll=
+  in the root directory.
+
+** Github Actions
+- [[https://help.github.com/en/actions/configuring-and-managing-workflows/caching-dependencies-to-speed-up-workflows][Caching dependencies to speed up workflows - GitHub Help]]
+
+  #+begin_src yaml
+name: Caching with npm
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Cache node modules
+      uses: actions/cache@v1
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build
+      run: npm build
+
+    - name: Test
+      run: npm test
+  #+end_src
+
 * Computer Science
 - [[https://github.com/ossu/computer-science][ossu/ *computer-science*]] - Path to a free self-taught education in Computer
   Science
@@ -232,6 +275,9 @@ Favorites：
 - [[https://blog.knownsec.com/Knownsec_RD_Checklist/index.html][知道创宇研发技能表]] - "聪明的人，会根据每个tip自驱动扩展"
 
 * Web
+- [[https://codeguide.co/][Code Guide by @mdo]] - Standards for developing consistent, flexible, and
+  sustainable HTML and CSS
+
 ** Node.js
 ** Gulp.js
 [[https://gulpjs.com/][gulp.js]] - The streaming build system
@@ -285,6 +331,12 @@ const plugins = [
 - [[https://github.com/robsheldon/sscaffold-css][robsheldon/ *sscaffold-css*]] - Combines css rules from normalize.css and
   skeleton.css
 - [[https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/][Let's Make a Grid-Powered Resume! | CSS-Tricks]]
+- [[https://css-tricks.com/scale-svg/][How to Scale SVG | CSS-Tricks]]
+
+** Static Site Generator
+*** Hugo
+- [[https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter][dirkolbrich/ *hugo-theme-tailwindcss-starter*]] - Starter files for a Hugo theme
+  with Tailwindcss
 
 ** Nginx Configuration
 [[https://gist.github.com/fotock/9cf9afc2fd0f813828992ebc4fdaad6f][fotock/ *nginx.conf*]] - Nginx SSL 安全配置最佳实践
@@ -386,9 +438,12 @@ server {
 #+end_src
 
 ** Resource
+- [[https://favicon.io/favicon-generator/][The best Favicon Generator (completely free) | Favicon.io]]
 - [[https://simpleicons.org/][Simple Icons]] - Free SVG icons for popular brands
 - [[https://github.com/refactoringui/heroicons][refactoringui/ *heroicons*]] - A set of free MIT-licensed high-quality SVG icons
   for UI development
+- [[https://iconmonstr.com/][iconmonstr - Free simple icons for your next project]]
+- [[https://github.com/yoksel/url-encoder/][Url encoder for SVG]]
 
 * iOS
 
@@ -397,6 +452,36 @@ server {
 - [[https://indienova.com/groups/14][我们都爱像素风 - Indienova 小组]]
 
 * Git
+** Hacks
+*** Hook
+- sync to Dropbox after commit
+
+  1. ~vim ~/.gitconfig~
+
+    #+begin_src conf
+[core]
+  hooksPath = /Users/xuanbo/Dropbox/git/hooks # your hook file folder
+    #+end_src
+
+  2. ~vim ~/Dropbox/git/hooks/post-commit~
+
+    #+begin_src bash
+#!/usr/bin/env bash
+
+set -e # always immediately exit upon error
+
+# directory config. ending slashes are important!
+src_dir="$HOME/repos/"
+dest_dir="$HOME/Dropbox/repos/"
+
+# run the sync
+rsync -arv --delete-after --delete-excluded --progress \
+  --filter="dir-merge,- .gitignore" \
+  --exclude-from="$HOME/.gitignoreglobal" \
+  --chmod="F-w" \
+  "$src_dir" "$dest_dir"
+    #+end_src
+
 ** Pull-Request steps
 [[http://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/][The beginner's guide to contributing to a GitHub project]]
 
@@ -406,12 +491,6 @@ server {
 4. Do something and commit
 5. ~git pull --rebase upstream master~
 6. ~git push origin~
-
-** Github Pages
-- [[https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages][How to fix HTTP 404 on Github Pages?]]
-
-  If you don't use Jekyll, the workaround is to place a file named =.nojekyll=
-  in the root directory.
 
 ** Command
 #+begin_src shell
@@ -506,7 +585,6 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 - [[https://github.com/alphapapa/magit-todos][alphapapa/ *magit-todos*]] - Show source files' TODOs (and FIXMEs, etc) in Magit
   status buffer
 
-
 ** Spacemacs
 [[https://github.com/syl20bnr/spacemacs][syl20bnr/ *spacemacs*]] - A community-driven Emacs distribution
 
@@ -571,12 +649,19 @@ to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
   #+begin_src emacs-lisp
 (use-package doom-themes
   :config
-  ;; Global settings
-  (setq doom-themes-enable-bold nil) ; if nil, bold is universally disabled
+  ;; Global settings (defaults)
+  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+        doom-themes-enable-italic t) ; if nil, italics is universally disabled
   (load-theme 'doom-one t)
+
+  ;; Enable flashing mode-line on errors
+  (doom-themes-visual-bell-config)
 
   ;; Enable custom neotree theme (all-the-icons must be installed!)
   (doom-themes-neotree-config)
+  ;; or for treemacs users
+  (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
+  (doom-themes-treemacs-config)
 
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
@@ -597,6 +682,9 @@ to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
 (after! evil-org
   (remove-hook 'org-tab-first-hook #'+org-cycle-only-current-subtree-h))
   #+end_src
+
+** Visual Studio Code
+- [[https://zhuanlan.zhihu.com/p/73561114][从 Emacs 和 Vim 到 VSCode - 知乎]]
 
 * Org Mode
 - [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]]
@@ -713,6 +801,8 @@ background of code to whatever theme I'm using's background"
 - [[https://stackoverflow.com/questions/19614104/how-to-tell-org-mode-to-embed-my-css-file-on-html-export][emacs - how to tell org-mode to embed my css file on HTML export? - Stack
   Ove...]]
 - [[https://emacs-china.org/t/org-mode-html/10120][有没有办法让org-mode导出的html页面漂亮一点？ - Emacs-general - Emacs China]]
+- [[https://github.com/rgb-24bit/org-html-theme-list][rgb-24bit/ *org-html-theme-list*]] - 这个仓库用于存放我收集的
+  =org-export-to-html= 样式或主题
 - [[https://github.com/hlissner/doom-emacs/pull/461][Feature: +style feature that provide better org HTML export default by
   fuxialexander · Pull Request #461 · hlissner/doom-emacs]]
 - [[https://github.com/MetroWind/dotfiles-mac/blob/a202acf00072e9bfa2271fec41dcce2421552ae9/emacs/files/.emacs-pkgs/mw-org.el#L134][MetroWind/ *dotfiles-mac*]]
@@ -763,12 +853,15 @@ background of code to whatever theme I'm using's background"
   - [[https://github.com/beeftornado/homebrew-rmtree][beeftornado/ *homebrew-rmtree*]] - Remove a formula and its unused
     dependencies
 - [[https://github.com/gnachman/iTerm2][iTerm2]]
+  - [[https://iterm2.com/documentation-shell-integration.html][Shell Integration - iTerm2]]
+  - [[https://www.iterm2.com/documentation-utilities.html][Utilities - iTerm2]]
 - [[http://www.alfredapp.com/][Alfred]]
   - [[http://www.alfredworkflow.com/][alfredworkflow]]
 
 *** Setup
 - [[http://sourabhbajaj.com/mac-setup/index.html][Mac OS X Setup Guide]]
 - 改变 Launchpad 中应用图标的大小
+
   #+begin_src shell
 defaults write com.apple.dock springboard-columns -int 列数
 defaults write com.apple.dock springboard-rows -int 行数

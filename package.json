@@ -1,7 +1,7 @@
 {
   "name": "wiki",
   "version": "1.0.0",
-  "description": "Wiki page built with Emacs and gulp.js",
+  "description": "Wiki page built with Emacs Org mode and gulp.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
