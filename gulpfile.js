@@ -16,7 +16,7 @@ const css = () => {
     purgecss({
       content: ['src/index.html'],
       fontFace: true,
-      whitelist: ['active', 'nav', 'toggle-sidebar', 'close-sidebar', 'permalink']
+      whitelist: ['active', 'nav', 'toggle-sidebar', 'sticky', 'close-sidebar', 'permalink']
     }),
     cssnano({
       preset: ['default', { discardComments: { removeAll: true } }]
