@@ -1,6 +1,6 @@
 # -*- mode: org; -*-
 
-#+HTML_HEAD: <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="manifest" href="site.webmanifest">
+#+HTML_HEAD: [ inject-inline ./../assets/head.html ]
 #+HTML_HEAD: <style type="text/css">[ inject-inline ./../dist/style.css ]</style>
 #+HTML_HEAD: <script type="text/javascript">[ inject-inline ./../dist/script.js ]</script>
 
