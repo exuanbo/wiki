@@ -18,10 +18,10 @@ const css = () => {
       fontFace: true,
       whitelist: ['active', 'nav', 'toggle-sidebar', 'close-sidebar', 'permalink']
     }),
-    autoprefixer(),
     cssnano({
       preset: ['default', { discardComments: { removeAll: true } }]
-    })
+    }),
+    autoprefixer()
   ]
   return src(['assets/default.css', 'assets/readtheorg.css'])
     .pipe(concatCss('style.css'))
@@ -55,8 +55,8 @@ const clean = () => {
   return del(['dist/style.css', 'dist/script.js'])
 }
 
+exports.default = series(parallel(css, js, favicon), html, clean)
 exports.css = css
 exports.js = js
 exports.html = html
 exports.clean = clean
-exports.default = series(parallel(css, js, favicon), html, clean)
