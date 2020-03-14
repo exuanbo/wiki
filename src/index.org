@@ -100,6 +100,7 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm sti
 - [[https://typlog.com/podlist/][中文独立播客]] - 发现与推荐高质量的中文独立播客
 
 Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言：
+
 #+begin_quote
 独立 = 创作过程不受限制、影响。
 
@@ -230,7 +231,7 @@ Favorites：
 ** Github Actions
 - [[https://help.github.com/en/actions/configuring-and-managing-workflows/caching-dependencies-to-speed-up-workflows][Caching dependencies to speed up workflows - GitHub Help]]
 
-  #+begin_src yaml
+  #+BEGIN_SRC yaml
 name: Caching with npm
 
 on: push
@@ -262,7 +263,7 @@ jobs:
 
     - name: Test
       run: npm test
-  #+end_src
+  #+END_SRC
 
 * Computer Science
 - [[https://github.com/ossu/computer-science][ossu/ *computer-science*]] - Path to a free self-taught education in Computer
@@ -274,6 +275,10 @@ jobs:
   - [[https://exuanbo.xyz/posts/programmer/][2018 新版索引]]
 - [[https://blog.knownsec.com/Knownsec_RD_Checklist/index.html][知道创宇研发技能表]] - "聪明的人，会根据每个tip自驱动扩展"
 
+** Functional Programming
+*** Haskell
+- [[http://learnyouahaskell.com/chapters][Learn You a Haskell for Great Good!]]
+
 * Web
 - [[https://codeguide.co/][Code Guide by @mdo]] - Standards for developing consistent, flexible, and
   sustainable HTML and CSS
@@ -282,14 +287,14 @@ jobs:
 ** Gulp.js
 [[https://gulpjs.com/][gulp.js]] - The streaming build system
 
-#+begin_src javascript
+#+BEGIN_SRC javascript
 function defaultTask(cb) {
   // place code for your default task here
   cb();
 }
 
 exports.default = defaultTask
-#+end_src
+#+END_SRC
 
 *** Plugins
 - gulp-rename
@@ -316,13 +321,13 @@ exports.default = defaultTask
 - autoprefixer
 - cssnano - A modular minifier based on the PostCSS ecosystem
 
-  #+begin_src javascript
+  #+BEGIN_SRC javascript
 const plugins = [
   cssnano({
     preset: ['default', { discardComments: { removeAll: true } }]
   })
 ]
-  #+end_src
+  #+END_SRC
 
 ** Tailwind CSS
 [[https://tailwindcss.com/][Tailwind CSS - A Utility-First CSS Framework for Rapidly Building Custom Designs]]
@@ -341,7 +346,7 @@ const plugins = [
 ** Nginx Configuration
 [[https://gist.github.com/fotock/9cf9afc2fd0f813828992ebc4fdaad6f][fotock/ *nginx.conf*]] - Nginx SSL 安全配置最佳实践
 
-#+begin_src shell
+#+BEGIN_SRC shell
 # 生成 dhparam.pem 文件, 在命令行执行任一方法:
 
 # 方法1: 很慢
@@ -350,10 +355,11 @@ openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
 # 方法2: 较快
 # 与方法1无明显区别. 2048位也足够用, 4096更强
 openssl dhparam -dsaparam -out /etc/nginx/ssl/dhparam.pem 4096
-#+end_src
+#+END_SRC
 
 *** nginx.conf
-#+begin_src conf
+
+#+BEGIN_SRC conf
 # 阅读更多 http://tautt.com/best-nginx-configuration-for-security/
 
 # 不发送Nginx版本号
@@ -435,7 +441,7 @@ server {
 
   # ... 其他配置
 }
-#+end_src
+#+END_SRC
 
 ** Resource
 - [[https://favicon.io/favicon-generator/][The best Favicon Generator (completely free) | Favicon.io]]
@@ -458,14 +464,14 @@ server {
 
   1. ~vim ~/.gitconfig~
 
-    #+begin_src conf
+    #+BEGIN_SRC conf
 [core]
   hooksPath = /Users/xuanbo/Dropbox/git/hooks # your hook file folder
-    #+end_src
+    #+END_SRC
 
   2. ~vim ~/Dropbox/git/hooks/post-commit~
 
-    #+begin_src bash
+    #+BEGIN_SRC bash
 #!/usr/bin/env bash
 
 set -e # always immediately exit upon error
@@ -480,7 +486,7 @@ rsync -arv --delete-after --delete-excluded --progress \
   --exclude-from="$HOME/.gitignoreglobal" \
   --chmod="F-w" \
   "$src_dir" "$dest_dir"
-    #+end_src
+    #+END_SRC
 
 ** Pull-Request steps
 [[http://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/][The beginner's guide to contributing to a GitHub project]]
@@ -493,7 +499,8 @@ rsync -arv --delete-after --delete-excluded --progress \
 6. ~git push origin~
 
 ** Command
-#+begin_src shell
+
+#+BEGIN_SRC shell
 git init  # 在当前目录新建一个 Git 代码库
 git clone [url]  # 下载一个项目和它的整个代码历史
 git config --list # 显示当前的 Git 配置
@@ -565,7 +572,7 @@ git reset [commit] # 重置当前分支的指针为指定 commit，同时重置�
 git reset --hard [commit] # 重置当前分支的 HEAD 为指定 commit，同时重置暂存区和工作区，与指定 commit 一致
 git reset --keep [commit] # 重置当前 HEAD 为指定 commit，但保持暂存区和工作区不变
 git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者的所有变化都将被前者抵消，并且应用到当前分支
-#+end_src
+#+END_SRC
 
 * Text Editor
 ** Emacs
@@ -573,17 +580,18 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 - [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][*mastering-emacs-in-one-year-guide* /guide-zh.org]]
 - [[http://planet.emacsen.org/][Planet Emacsen]]
 
-#+begin_src emacs-lisp
+#+BEGIN_SRC emacs-lisp
 ;; evil
 (setq-default evil-escape-key-sequence "jk"
               evil-escape-delay 0.2)
-#+end_src
+#+END_SRC
 
 *** Packages
 - [[https://github.com/NicolasPetton/gulp-task-runner][NicolasPetton/ *gulp-task-runner*]] - Run gulp tasks from Emacs =M-x gulp=
 - [[https://magit.vc/][It's Magit! A Git Porcelain inside Emacs]]
-- [[https://github.com/alphapapa/magit-todos][alphapapa/ *magit-todos*]] - Show source files' TODOs (and FIXMEs, etc) in Magit
   status buffer
+- [[https://github.com/hlissner/emacs-solaire-mode][hlissner/ *emacs-solaire-mode*]] - helps visually distinguish visiting windows
+  from other types of windows by giving them a slightly different background
 
 ** Spacemacs
 [[https://github.com/syl20bnr/spacemacs][syl20bnr/ *spacemacs*]] - A community-driven Emacs distribution
@@ -594,7 +602,7 @@ to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
 
 可参考 [[https://github.com/zilongshanren/spacemacs-private][子龙山人的个人配置]] 和 GeekPlux 的 [[https://github.com/geekplux/dotfiles][dotfiles]]
 
-#+begin_src emacs-lisp
+#+BEGIN_SRC emacs-lisp
 (defun dotspacemacs/layers ()
   (setq-default
     dotspacemacs-configuration-layers
@@ -620,20 +628,20 @@ to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
         (colors :variables
                 colors-enable-nyan-cat-progress-bar (display-graphic-p))
         osx)))
-#+end_src
+#+END_SRC
 
-#+begin_src emacs-lisp
+#+BEGIN_SRC emacs-lisp
 (defun dotspacemacs/init ()
   (setq-default
     dotspacemacs-elpa-https nil
     dotspacemacs-maximized-at-startup t))
-#+end_src
+#+END_SRC
 
-#+begin_src emacs-lisp
+#+BEGIN_SRC emacs-lisp
 (defun dotspacemacs/user-config ()
   (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
   (load custom-file 'no-error 'no-message))
-#+end_src
+#+END_SRC
 
 *** Tips
 - [[https://github.com/syl20bnr/spacemacs/issues/3920][Environment variable warnings #3920]]
@@ -646,7 +654,7 @@ to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
 
 - [[https://github.com/hlissner/emacs-doom-themes][hlissner/ *emacs-doom-themes*]]
 
-  #+begin_src emacs-lisp
+  #+BEGIN_SRC emacs-lisp
 (use-package doom-themes
   :config
   ;; Global settings (defaults)
@@ -665,23 +673,49 @@ to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
 
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
-  #+end_src
+  #+END_SRC
 
 *** Hacks
 - [[https://github.com/hlissner/doom-emacs/issues/397][Need doom/toggle-maximized command #397]]
 
-  #+begin_src emacs-lisp
+  #+BEGIN_SRC emacs-lisp
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
-  #+end_src
+  #+END_SRC
+
 - [[https://github.com/hlissner/doom-emacs/blob/develop/modules/lang/org/README.org][modules/lang/org]]
 
   TAB was changed to toggle only the visibility state of the current subtree,
   rather than cycle through it recursively. This can be reversed with:
 
-  #+begin_src emacs-lisp
+  #+BEGIN_SRC emacs-lisp
 (after! evil-org
   (remove-hook 'org-tab-first-hook #'+org-cycle-only-current-subtree-h))
-  #+end_src
+  #+END_SRC
+
+- [[https://github.com/hlissner/doom-emacs/blob/develop/docs/faq.org#doom-crashes-when][Doom crashes when…]]
+
+  On some systems (particularly MacOS), manipulating the fringes or window
+  margins can cause Emacs to crash. This is most prominent in the Doom Dashboard
+  (which tries to center its contents), in org-mode buffers (which uses
+  =org-indent-mode= to create virtual indentation), or magit. There is currently
+  no known fix for this, as it can’t be reliably reproduced. Your best bet is to
+  reinstall/rebuild Emacs or disable the errant plugins/modules. e.g.
+
+  To disable org-indent-mode:
+
+  #+BEGIN_SRC emacs-lisp
+(after! org
+  (setq org-startup-indented nil))
+  #+END_SRC
+
+  Or disable the =:ui doom-dashboard= & =:tools magit= modules (see [[https://github.com/hlissner/doom-emacs/issues/1170][#1170]]).
+
+*** Modules
+    - [[https://github.com/hlissner/doom-emacs/blob/develop/modules/term/vterm/README.org][term/vterm]] - =+vterm/toggle= (=SPC o t=): Toggle vterm pop up window in the
+      current project
+
+** Other configuration
+   - [[https://github.com/purcell/emacs.d][*purcell* /emacs.d]] - An Emacs configuration bundle with batteries included
 
 ** Visual Studio Code
 - [[https://zhuanlan.zhihu.com/p/73561114][从 Emacs 和 Vim 到 VSCode - 知乎]]
@@ -692,28 +726,37 @@ to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
 - [[https://github.com/fniessen/refcard-org-mode][fniessen/ *refcard-org-mode*]] - Org mode syntax
 
 ** Configuration
-#+begin_src emacs-lisp
-dotspacemacs-configuration-layers '(
-  (org :variables org-enable-stiky-header t))
-#+end_src
+*** General
 
-#+begin_src emacs-lisp
-(defun dotspacemacs/user-config ()
-  (with-eval-after-load 'org
-    (setq ; some settings
-      )))
-#+end_src
-
-#+begin_src emacs-lisp
-(setq org-html-inline-images t
-      org-export-with-sub-superscripts nil
+#+BEGIN_SRC emacs-lisp
+(setq org-export-with-sub-superscripts nil
       org-html-doctype "html5"
       org-html-html5-fancy t ; enable new block elements introduced with the HTML5 standard
-      org-html-htmlize-output-type 'css
-      org-html-head-include-default-style nil)
-#+end_src
+      org-html-head-include-default-style nil
+      org-html-htmlize-output-type 'css)
+#+END_SRC
 
-- [[https://github.com/gongzhitaao/orgcss][gongzhitaao/ *orgcss*]]
+- [[https://emacs.stackexchange.com/questions/41220/org-mode-disable-indentation-when-promoting-and-demoting-trees-subtrees][Org-mode : disable indentation when promoting and demoting trees + subtrees
+  -...]]
+
+  #+BEGIN_SRC emacs-lisp
+(setq org-adapt-indentation nil)
+  #+END_SRC
+
+*** for Spacemacs
+
+#+BEGIN_SRC emacs-lisp
+dotspacemacs-configuration-layers '(
+  (org :variables org-enable-stiky-header t))
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+(defun dotspacemacs/user-config ()
+  (with-eval-after-load 'org
+    (setq ... )))
+#+END_SRC
+
+*** [[https://github.com/gongzhitaao/orgcss][gongzhitaao/ *orgcss*]]
 
 When exported to HTML, there are three options for code highlighting, controlled
 by the variable ~org-html-htmlize-output-type~.
@@ -721,18 +764,19 @@ by the variable ~org-html-htmlize-output-type~.
 1. ~(setq org-html-htmlize-output-type 'inline-css)~
 
   This is the default setting. It highlights the code according to the current
-   Emacs theme you are using. It directly applies color to the code with inline
-   styles, e.g., ~<span style="color: 0x000000">int</span>~.
+   Emacs theme you are using. It directly applies color to the code with
+   inline styles, e.g., ~<span style="color: 0x000000">int</span>~.
 
   The problem is that the highlight theme depends on the Emacs theme. If you use
    a dark theme in your Emacs but a light theme (usually we like light themed
    web pages) web pages, the exported code are hardly illegible due to the light
    font color, or vice versa.
+
 2. ~(setq org-html-htmlize-output-type nil)~
 
   This configuration disables highlighting by =htmlize=. You may use a
-   third-party Javascript highlight library. I recommend [[https://highlightjs.org/][highlight.js]] if I need
-   code highlight.
+   third-party Javascript highlight library. I recommend [[https://highlightjs.org/][highlight.js]] if I
+   need code highlight.
 
   There are two problems:
 
@@ -740,12 +784,12 @@ by the variable ~org-html-htmlize-output-type~.
      language which is occasionally missing, e.g., =emacs-lisp=, =org=, etc.
   2. =highlight.js= by default does not recognized the tags and classes exported
      by org mode. You need some extra Javascript code in your Org file.
+
 3. ~(setq org-html-htmlize-output-type 'css)~
 
   This is similar to the first optional, instead of using inline styles, this
    will assign classes to each component of the code, e.g., ~<span
-   class="org-type">int</span>~, and you could create your own stylesheet for
-   ~.org-type~.
+   class="org-type">int</span>~, and you could create your own stylesheet for ~.org-type~.
 
   To obtain a list of all supported org classes, run =M-x
    org-html-htmlize-generate-css=.  This will create a buffer containing all the
@@ -755,7 +799,7 @@ by the variable ~org-html-htmlize-output-type~.
 - [[https://emacs.stackexchange.com/questions/3374/set-the-background-of-org-exported-code-blocks-according-to-theme][org mode - Set the background of org-exported <code> blocks according to
   them...]]
 
-  #+begin_src emacs-lisp
+  #+BEGIN_SRC emacs-lisp
 (defun my/org-inline-css-hook (exporter)
   "Insert custom inline css to automatically set the
 background of code to whatever theme I'm using's background"
@@ -770,11 +814,11 @@ background of code to whatever theme I'm using's background"
                 my-pre-bg my-pre-fg))))))
 
 (add-hook 'org-export-before-processing-hook 'my/org-inline-css-hook)
-  #+end_src
+  #+END_SRC
 
   the same way to insert inline CSS or Javascript from local files:
 
-  #+begin_src emacs-lisp
+  #+BEGIN_SRC emacs-lisp
 (defun my/org-inline-source-hook (exporter)
   (when (eq exporter 'html)
     (setq org-html-head-extra (concat
@@ -796,7 +840,7 @@ background of code to whatever theme I'm using's background"
                               "</script>\n"))))
 
 (add-hook 'org-export-before-processing-hook 'my/org-inline-source-hook)
-  #+end_src
+  #+END_SRC
 
 - [[https://stackoverflow.com/questions/19614104/how-to-tell-org-mode-to-embed-my-css-file-on-html-export][emacs - how to tell org-mode to embed my css file on HTML export? - Stack
   Ove...]]
@@ -807,7 +851,7 @@ background of code to whatever theme I'm using's background"
   fuxialexander · Pull Request #461 · hlissner/doom-emacs]]
 - [[https://github.com/MetroWind/dotfiles-mac/blob/a202acf00072e9bfa2271fec41dcce2421552ae9/emacs/files/.emacs-pkgs/mw-org.el#L134][MetroWind/ *dotfiles-mac*]]
 
-  #+begin_src emacs-lisp
+  #+BEGIN_SRC emacs-lisp
 ;; Embed inline CSS read from a file.
 (defun my-org-inline-css-hook (exporter)
   "Insert custom inline css"
@@ -830,7 +874,7 @@ background of code to whatever theme I'm using's background"
                                        "</style>\n")))))))
 
 (add-hook 'org-export-before-processing-hook 'my-org-inline-css-hook)
-  #+end_src
+  #+END_SRC
 
 ** App
 - [[https://beorgapp.com/][beorg]] - iOS | Recommand | in-app purchases
@@ -850,8 +894,14 @@ background of code to whatever theme I'm using's background"
   - [[https://github.com/phinze/homebrew-cask][homebrew-cask]]
   - ~brew leavese~ Show installed formulae that are not dependencies of another
     installed formula
-  - [[https://github.com/beeftornado/homebrew-rmtree][beeftornado/ *homebrew-rmtree*]] - Remove a formula and its unused
-    dependencies
+  - [[https://github.com/ggPeti/homebrew-rmrec][ggPeti/ *homebrew-rmrec*]] - Quick and simple command to remove a Homebrew
+    package and its dependencies
+
+      #+BEGIN_SRC shell
+brew tap ggpeti/rmrec
+brew rmrec pkgname
+      #+END_SRC
+
 - [[https://github.com/gnachman/iTerm2][iTerm2]]
   - [[https://iterm2.com/documentation-shell-integration.html][Shell Integration - iTerm2]]
   - [[https://www.iterm2.com/documentation-utilities.html][Utilities - iTerm2]]
@@ -862,19 +912,19 @@ background of code to whatever theme I'm using's background"
 - [[http://sourabhbajaj.com/mac-setup/index.html][Mac OS X Setup Guide]]
 - 改变 Launchpad 中应用图标的大小
 
-  #+begin_src shell
+  #+BEGIN_SRC shell
 defaults write com.apple.dock springboard-columns -int 列数
 defaults write com.apple.dock springboard-rows -int 行数
 defaults write com.apple.dock ResetLaunchPad -bool TRUE
 killall Dock
-  #+end_src
+  #+END_SRC
 
 *** Tips
 - Use iconutil to Create an icns File Manually
 
   from [[https://stackoverflow.com/questions/12306223/how-to-manually-create-icns-files-using-iconutil][stackoverflow.com/questions/12306223]]
 
-  #+begin_src shell
+  #+BEGIN_SRC shell
 mkdir MyIcon.iconset
 
 # convert a 1024x1024 png (named "Icon1024.png") to the required icns file
@@ -890,9 +940,12 @@ sips -z 512 512   Icon1024.png --out MyIcon.iconset/icon_512x512.png
 cp Icon1024.png MyIcon.iconset/icon_512x512@2x.png
 
 iconutil -c icns MyIcon.iconset
-  #+end_src
+  #+END_SRC
 
 ** Windows
+
+* Hardware
+- [[https://www.caldigit.com/][CalDigit – Considerate. Authentic. Design.]]
 
 * Self-hosting
 [[https://github.com/awesome-selfhosted/awesome-selfhosted][awesome-selfhosted]]
@@ -905,7 +958,7 @@ be hosted locally. Non-Free software is listed on the Non-Free page.
 
 [[https://github.com/electerious/Ackee/blob/master/docs/SSL%20and%20HTTPS.md][Ackee/docs/SSL and HTTPS]] - Nginx configuration
 
-#+begin_src conf
+#+BEGIN_SRC conf
 #
 # Set "$cors_header" to avoid "if" inside location context
 # https://www.nginx.com/resources/wiki/start/topics/depth/ifisevil/
@@ -971,4 +1024,4 @@ server {
         proxy_set_header    X-Forwarded-For $proxy_add_x_forwarded_for;
     }
 }
-#+end_src
+#+END_SRC

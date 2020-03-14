@@ -10,10 +10,10 @@ h6{font-size:100%}
 h4,h5,h6{color:#715ab1;font-weight:300}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:100%;height:100%;overflow-x:hidden}
 body{background:#e3dedd;color:#404040;font-family:Lato,proxima-nova,"Helvetica Neue",Arial,sans-serif;font-weight:400;margin:0;min-height:100%;overflow-x:hidden}
-#content{background:#fff;height:100%;margin-left:25%;max-width:800px;min-height:100%;padding:1.618em 3.236em}
+#content{background:#fff;height:100%;margin-left:20%;max-width:1024px;min-height:100%;padding:1.618em 3.236em}
 p{font-size:16px;line-height:24px;margin:0 0 24px 0}
 b,strong{font-weight:700}
-blockquote{background-color:#f0f0f0;border-left:5px solid #ccc;font-style:italic;line-height:24px;margin:0 0 24px 0;padding:6px 20px}
+blockquote{max-width:fit-content;background-color:#f0f0f0;border-left:5px solid #ccc;font-style:italic;line-height:24px;margin:0 0 24px 0;padding:6px 20px}
 dl,ol,ul{line-height:24px;list-style-image:none;margin:0 0 24px 0;padding:0}
 li{margin-left:24px}
 dd{margin:0}
@@ -33,7 +33,7 @@ dl dt{font-weight:700}
 dl ol,dl p,dl table,dl ul{margin-bottom:12px!important}
 dl dd{margin:0 0 12px 24px}
 @media print{
-.codeblock,pre.src{white-space:pre.src-wrap}
+.codeblock{white-space:pre}
 }
 @media print{
 body,html,section{background:0 0!important}
@@ -78,12 +78,12 @@ img{width:100%;height:auto}
 @media screen and (max-width:480px){
 #content .sidebar{width:100%}
 }
-code{background:#fbf8ef;border:solid 1px #e1e4e5;font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;font-size:87.5%;max-width:100%;overflow-x:auto;padding:1px 4px;hyphens:none}
+code{background:#fbf8ef;border:solid 1px #e1e4e5;font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;font-size:87.5%;max-width:100%;overflow-x:auto;padding:1px 4px;white-space:nowrap;}
 .codeblock-example{border:1px solid #e1e4e5;border-bottom:none;padding:24px;padding-top:48px;font-weight:500;background:#fff;position:relative}
 .codeblock-example:after{content:"Example";position:absolute;top:0;left:0;background:#9b59b6;color:#fff;padding:6px 12px}
 .codeblock-example.prettyprint-example-only{border:1px solid #e1e4e5;margin-bottom:24px}
 #content .literal-block,.codeblock,pre.src{border:1px solid #e1e4e5;padding:12px;overflow-x:auto;background:#fff;margin:1px 0 24px 0}
-pre.src{display:block;font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;font-size:14px;line-height:1.5;margin:1px 0 24px 0;overflow:auto;padding:12px;white-space:pre}
+pre.src{display:block;max-width:fit-content;font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;font-size:14px;line-height:1.5;margin:1px 0 24px 0;overflow:auto;padding:12px;white-space:pre}
 pre.src:before{top:0;right:0;padding:0 8px;border:1px solid #e1e4e5}
 .example{background:#fbf8ef;border:1px solid #e1e4e5;color:#404040;font-size:12px;line-height:1.5;margin-bottom:24px;padding:12px}
 table{border-collapse:collapse;border-spacing:0;empty-cells:show;margin-bottom:24px;border-bottom:1px solid #e1e4e5}
@@ -143,7 +143,7 @@ hr{display:block;height:1px;border:0;border-top:1px solid #e1e4e5;margin:24px 0;
 #toggle-sidebar{display:block;background-color:#e0d6e9;text-align:center;padding:.6em;margin-bottom:.6em}
 #toggle-sidebar h2{margin:0;padding:0}
 }
-#table-of-contents{position:fixed;top:0;left:0;width:25%;overflow-x:hidden;overflow-y:scroll;height:calc(100vh - 77.45px);background:#343131;z-index:200}
+#table-of-contents{position:fixed;top:0;left:0;width:20%;overflow-x:hidden;overflow-y:scroll;height:calc(100vh - 77.45px);background:#343131;z-index:200}
 #table-of-contents h2 a{display:none}
 #table-of-contents h2{z-index:200;background-color:#715ab1;text-align:center;padding:.809em;display:block;color:#fcfcfc;font-size:100%;margin-bottom:.809em}
 @media screen and (max-width:768px){
@@ -168,7 +168,7 @@ ul.nav li.active a{color:gray!important;font-weight:700;background-color:#fff;bo
 ul.nav>li.active>a{color:#000!important}
 footer{color:#999}
 footer p{margin-bottom:12px}
-#copyright,#postamble{position:fixed;bottom:0;left:0;width:25%;color:#fcfcfc;background:#1f1d1d;font-family:Lato,proxima-nova,"Helvetica Neue",Arial,sans-serif;font-size:90%;z-index:400;padding:12px}
+#copyright,#postamble{position:fixed;bottom:0;left:0;width:20%;color:#fcfcfc;background:#1f1d1d;font-family:Lato,proxima-nova,"Helvetica Neue",Arial,sans-serif;font-size:90%;z-index:400;padding:12px}
 @media screen and (max-width:768px){
 #copyright,#postamble{display:none}
 }
