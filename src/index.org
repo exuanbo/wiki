@@ -67,10 +67,12 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm sti
   肉进行的力量、稳定、平衡等能力的训练，它不同于传统的腰腹力量训练，而是使核心区
   域的整体原动肌和局部稳定肌均能通过训练得到发展和提高。核心力量训练的目的就是使
   整个机体协调起来，确保训练者在做动作时核心肌群起到稳定躯体，传输能量的作用。
+
 - [[https://www.zhihu.com/question/62561329][越野跑和公路跑有哪些区别？ - 知乎]]
 - [[http://thespiral.fm/episodes/4][Episode 004 — 当我们谈跑步时，我们谈些什么]]
 
   跑步是对现实生活的逃避，是一种解脱或者说移情。
+
 - 动画[[https://movie.douban.com/subject/30238385/][《强风吹拂》]]
   - [[http://thespiral.fm/episodes/5][Episode 005 — 纵使强风起，人生不言弃]]
     - 对一个跑者的最高赞美是什么。快吗？我觉得应该是强。
@@ -120,6 +122,7 @@ Favorites：
   这是一档探索并发现优质单期英文播客的中文节目。每期节目将为你推荐三期不同主题或
   类型的英文播客，讲述这些播客的精彩之处，整理与其相关的信息与知识。我们希望能帮
   助你更高效地接触英文原生内容，并享受随之而来的快乐与启发。
+
 - [[http://rss.lizhi.fm/rss/1959617.xml][得意忘形]]
 
   这是一个主张追求个体自由与探寻真理的实验计划。我们见证了第一次工业革命以来科技
@@ -127,17 +130,20 @@ Favorites：
   化、剥夺了个人价值、并窃取了大众时间。带着对生命的有限性与无目的性的敬畏，我们
   试图为读者与听众提供更全面的觉察自我与认知世界的工具，以不断重建当下的方式穿越
   时间、抵达生活的本质。
+
 - [[https://byte.coffee/][Byte.Coffee]]
 
   一家以 Engineer 视角面对世界的字节咖啡店，提供一支独立极简、健康明亮、科学主调、
   人文余韵的声波咖啡豆。人间指南主播 hb 曾打趣说是「科技与人文十字路口的街角咖啡
   店」，我觉得需要改成「科学与人文的十字路口」，特指自然科学。技术固然重要，但背
   后的科学是基础是理论是根基，一名科研工作者必须谨记这一点。
+
 - [[https://czgx.fireside.fm/rss][迟早更新]]
 
   这是一档探讨科技、商业、设计和生活之间混沌关系的播客节目，也是风险基金 ONES
   Ventures 关于热情、趣味和好奇心的音频记录。我们希望通过这档播客，能让熟悉的事
   物变得新鲜，让新鲜的事物变得熟悉。
+
 - [[http://feed.tangsuanradio.com/gadio.xml][机核网 GADIO 游戏广播]]
 - [[http://web.archive.org/web/20160604093615/http://antiwave.net/][反波 Antiwave - web.archive.org]]
 
@@ -279,9 +285,34 @@ jobs:
 *** Haskell
 - [[http://learnyouahaskell.com/chapters][Learn You a Haskell for Great Good!]]
 
+**** Environment Setup
+- [[https://www.haskell.org/platform/][Haskell Platform]] - Installs GHC, Cabal, and some other tools, along with a
+  starter set of libraries in a global location on your system.
+
+  #+BEGIN_SRC shell
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+curl -sSL https://get.haskellstack.org/ | sh
+  #+END_SRC
+
+** Python
+*** Installation
+
+*** Tips
+- [[https://stackoverflow.com/questions/11248073/what-is-the-easiest-way-to-remove-all-packages-installed-by-pip][What is the easiest way to remove all packages installed by pip?]]
+
+  #+BEGIN_SRC shell
+pip freeze > requirements.txt
+pip uninstall -r requirements.txt -y
+
+# or a single command without any file
+pip uninstall -y -r <(pip freeze)
+  #+END_SRC
+
 * Web
 - [[https://codeguide.co/][Code Guide by @mdo]] - Standards for developing consistent, flexible, and
   sustainable HTML and CSS
+- [[https://github.com/gothinkster/realworld][gothinkster/ *realworld*]] - Exemplary fullstack Medium.com clone powered by
+  React, Angular, Node, Django, and many more
 
 ** Node.js
 ** Gulp.js
@@ -460,7 +491,7 @@ server {
 * Git
 ** Hacks
 *** Hook
-- sync to Dropbox after commit
+- auto sync to Dropbox after commit
 
   1. ~vim ~/.gitconfig~
 
@@ -477,13 +508,13 @@ server {
 set -e # always immediately exit upon error
 
 # directory config. ending slashes are important!
-src_dir="$HOME/repos/"
-dest_dir="$HOME/Dropbox/repos/"
+src_dir="$HOME/repositories/"
+dest_dir="$HOME/Dropbox/repositories/"
 
 # run the sync
 rsync -arv --delete-after --delete-excluded --progress \
   --filter="dir-merge,- .gitignore" \
-  --exclude-from="$HOME/.gitignoreglobal" \
+  --exclude-from="$HOME/.gitignore_global" \ # if exists
   --chmod="F-w" \
   "$src_dir" "$dest_dir"
     #+END_SRC
@@ -580,6 +611,22 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 - [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][*mastering-emacs-in-one-year-guide* /guide-zh.org]]
 - [[http://planet.emacsen.org/][Planet Emacsen]]
 
+#+BEGIN_EXAMPLE
+        +===============================+
+        |                               |
+    +===============================+   |
+    |                               |   |
++===============================+   |   |
+|              |                |   |   | ..... Frame 3
+|   Window 2   |                |   |   |
+|              |                |   |---+
+|--------------|    Window 1    |   | ......... Frame 2
+|              |                |---+
+|   Window 3   |                |
+|              |                | ............. Frame 1
++-------------------------------+
+#+END_EXAMPLE
+
 #+BEGIN_SRC emacs-lisp
 ;; evil
 (setq-default evil-escape-key-sequence "jk"
@@ -596,6 +643,8 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 ** Spacemacs
 [[https://github.com/syl20bnr/spacemacs][syl20bnr/ *spacemacs*]] - A community-driven Emacs distribution
 
+- [[https://github.com/syl20bnr/spacemacs/blob/develop/EXPERIMENTAL.org#spacemacs-dumps-using-the-portable-dumper][Spacemacs dumps using the portable dumper]]
+
 *** Dotfile Configuration
 A dotdirectory =/.spacemacs.d= can be used instead of a dotfile. If you want
 to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
@@ -603,45 +652,111 @@ to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
 可参考 [[https://github.com/zilongshanren/spacemacs-private][子龙山人的个人配置]] 和 GeekPlux 的 [[https://github.com/geekplux/dotfiles][dotfiles]]
 
 #+BEGIN_SRC emacs-lisp
-(defun dotspacemacs/layers ()
-  (setq-default
-    dotspacemacs-configuration-layers
-      '((auto-completion :variables
-                         auto-completion-return-key-behavior 'complete
-                         auto-completion-tab-key-behavior 'cycle
-                         auto-completion-enable-snippets-in-popup t
-                         auto-completion-enable-help-tooltip nil
-                         auto-completion-enable-sort-by-usage t
-                         :disabled-for org markdown)
-        syntax-checking
-        ivy
-        better-defaults
-        html
-        emacs-lisp
-        (org :variables
-             org-enable-sticky-header t
-             org-want-todo-bindings t)
-        latex
-        (markdown :variables
-                  markdown-live-preview-engine 'vmd)
-        git
-        (colors :variables
-                colors-enable-nyan-cat-progress-bar (display-graphic-p))
-        osx)))
+dotspacemacs-configuration-layers
+'(
+  (auto-completion :variables
+                  auto-completion-idle-delay 0
+                  auto-completion-enable-snippets-in-popup t
+                  auto-completion-enable-sort-by-usage t
+                  :disabled-for org markdown)
+
+  syntax-checking
+  (spell-checking :variables
+                  ;;spell-checking-enable-by-default nil
+                  enable-flyspell-auto-completion t)
+
+  ivy
+  lsp
+  (c-c++ :variables c-c++-backend 'lsp-ccls)
+  (python :variables python-backend 'lsp)
+  (javascript :variables javascript-backend 'lsp)
+  html
+  emacs-lisp
+  (org :variables
+      org-projectile-file "TODOs.org"
+      org-want-todo-bindings t)
+
+  latex
+  markdown
+  yaml
+  (colors :variables colors-enable-nyan-cat-progress-bar t)
+  (shell :variables
+        shell-default-shell 'ansi-term
+        shell-default-term-shell "/bin/zsh")
+
+  treemacs
+  git
+  better-defaults
+  osx)
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+dotspacemacs-additional-packages
+'(
+  eterm-256color)
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+dotspacemacs-excluded-packages
+'(
+  ;; auto-completion layer
+  auto-complete
+  company-quickhelp
+
+  ;; spell-checking layer
+  auto-dictionary
+
+  ;; colors layer
+  rainbow-identifiers)
 #+END_SRC
 
 #+BEGIN_SRC emacs-lisp
 (defun dotspacemacs/init ()
   (setq-default
     dotspacemacs-elpa-https nil
-    dotspacemacs-maximized-at-startup t))
+    dotspacemacs-loading-progress-bar nil
+    dotspacemacs-maximized-at-startup t
+    dotspacemacs-whitespace-cleanup 'trailing))
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+(defun dotspacemacs/user-init ()
+  (add-to-list 'default-frame-alist
+               '(ns-transparent-titlebar . t))
+  (add-to-list 'default-frame-alist
+               '(ns-appearance . dark)))
 #+END_SRC
 
 #+BEGIN_SRC emacs-lisp
 (defun dotspacemacs/user-config ()
+  (add-hook 'term-mode-hook 'eterm-256color-mode)
+
+  (setq-default evil-escape-key-sequence "jk"
+                evil-escape-delay 0.2)
+
+  (with-eval-after-load 'org
+    (setq org-startup-indented nil
+          org-export-with-sub-superscripts nil
+          org-html-doctype "html5"
+          org-html-html5-fancy t
+          org-html-head-include-default-style nil
+          org-html-htmlize-output-type 'css))
+
+  (with-eval-after-load 'org-agenda
+    (require 'org-projectile)
+    (mapcar '(lambda (file)
+               (when (file-exists-p file)
+                 (push file org-agenda-files)))
+            (org-projectile-todo-files)))
+
   (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
   (load custom-file 'no-error 'no-message))
 #+END_SRC
+
+*** Layers
+- [[https://develop.spacemacs.org/layers/+checkers/spell-checking/README.html][Spell Checking layer]]
+
+  ~brew install ispell~
 
 *** Tips
 - [[https://github.com/syl20bnr/spacemacs/issues/3920][Environment variable warnings #3920]]
@@ -674,6 +789,8 @@ to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
   #+END_SRC
+
+- [[https://github.com/hlissner/doom-snippets][hlissner/ *doom-snippets*]] - The Doom Emacs snippets library
 
 *** Hacks
 - [[https://github.com/hlissner/doom-emacs/issues/397][Need doom/toggle-maximized command #397]]
@@ -711,14 +828,22 @@ to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
   Or disable the =:ui doom-dashboard= & =:tools magit= modules (see [[https://github.com/hlissner/doom-emacs/issues/1170][#1170]]).
 
 *** Modules
-    - [[https://github.com/hlissner/doom-emacs/blob/develop/modules/term/vterm/README.org][term/vterm]] - =+vterm/toggle= (=SPC o t=): Toggle vterm pop up window in the
-      current project
+- [[https://github.com/hlissner/doom-emacs/blob/develop/modules/term/vterm/README.org][term/vterm]] - =+vterm/toggle= (=SPC o t=): Toggle vterm pop up window in the
+  current project
+- [[https://github.com/hlissner/doom-snippets][editor/snippets]]
 
 ** Other configuration
-   - [[https://github.com/purcell/emacs.d][*purcell* /emacs.d]] - An Emacs configuration bundle with batteries included
+- [[https://github.com/purcell/emacs.d][*purcell* /emacs.d]] - An Emacs configuration bundle with batteries included
+
+** Vim
+- [[https://github.com/amix/vimrc][amix/ *vimrc*]] - The ultimate Vim configuration
+  - [[https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim][basic.vim]]
+- [[https://github.com/editor-bootstrap/vim-bootstrap][vim-bootstrap]] - is generator provides a simple method of generating a .vimrc
+  configuration for vim
 
 ** Visual Studio Code
 - [[https://zhuanlan.zhihu.com/p/73561114][从 Emacs 和 Vim 到 VSCode - 知乎]]
+- [[https://github.com/VSpaceCode/VSpaceCode][VSpaceCode]] - Spacemacs' like keybindings for Visual Studio Code
 
 * Org Mode
 - [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]]
@@ -746,8 +871,10 @@ to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
 *** for Spacemacs
 
 #+BEGIN_SRC emacs-lisp
-dotspacemacs-configuration-layers '(
-  (org :variables org-enable-stiky-header t))
+dotspacemacs-configuration-layers
+'((org :variables
+       org-projectile-file "TODOs.org"
+       org-want-todo-bindings t))
 #+END_SRC
 
 #+BEGIN_SRC emacs-lisp
@@ -764,19 +891,19 @@ by the variable ~org-html-htmlize-output-type~.
 1. ~(setq org-html-htmlize-output-type 'inline-css)~
 
   This is the default setting. It highlights the code according to the current
-   Emacs theme you are using. It directly applies color to the code with
-   inline styles, e.g., ~<span style="color: 0x000000">int</span>~.
+  Emacs theme you are using. It directly applies color to the code with
+  inline styles, e.g., ~<span style="color: 0x000000">int</span>~.
 
   The problem is that the highlight theme depends on the Emacs theme. If you use
-   a dark theme in your Emacs but a light theme (usually we like light themed
-   web pages) web pages, the exported code are hardly illegible due to the light
-   font color, or vice versa.
+  a dark theme in your Emacs but a light theme (usually we like light themed
+  web pages) web pages, the exported code are hardly illegible due to the light
+  font color, or vice versa.
 
 2. ~(setq org-html-htmlize-output-type nil)~
 
   This configuration disables highlighting by =htmlize=. You may use a
-   third-party Javascript highlight library. I recommend [[https://highlightjs.org/][highlight.js]] if I
-   need code highlight.
+  third-party Javascript highlight library. I recommend [[https://highlightjs.org/][highlight.js]] if I
+  need code highlight.
 
   There are two problems:
 
@@ -788,12 +915,12 @@ by the variable ~org-html-htmlize-output-type~.
 3. ~(setq org-html-htmlize-output-type 'css)~
 
   This is similar to the first optional, instead of using inline styles, this
-   will assign classes to each component of the code, e.g., ~<span
-   class="org-type">int</span>~, and you could create your own stylesheet for ~.org-type~.
+  will assign classes to each component of the code, e.g., ~<span
+  class="org-type">int</span>~, and you could create your own stylesheet for ~.org-type~.
 
   To obtain a list of all supported org classes, run =M-x
-   org-html-htmlize-generate-css=.  This will create a buffer containing all the
-   available org style class names in the current Emacs session.
+  org-html-htmlize-generate-css=.  This will create a buffer containing all the
+  available org style class names in the current Emacs session.
 
 ** Hacks
 - [[https://emacs.stackexchange.com/questions/3374/set-the-background-of-org-exported-code-blocks-according-to-theme][org mode - Set the background of org-exported <code> blocks according to
@@ -883,6 +1010,25 @@ background of code to whatever theme I'm using's background"
 * LaTeX
 
 * OS
+- [[https://www.atlassian.com/git/tutorials/dotfiles][How to store dotfiles | Atlassian Git Tutorial]] - The best way to store your
+  dotfiles: A bare Git repository
+
+  #+BEGIN_SRC shell
+git init --bare $HOME/.cfg
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+config config --local status.showUntrackedFiles no
+echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.zshrc
+  #+END_SRC
+
+  #+BEGIN_SRC shell
+config status
+config add .vimrc
+config commit -m "Add vimrc"
+config add .zshrc
+config commit -m "Add zshrc"
+config push
+  #+END_SRC
+
 ** Linux
 *** Server
 
@@ -918,6 +1064,12 @@ defaults write com.apple.dock springboard-rows -int 行数
 defaults write com.apple.dock ResetLaunchPad -bool TRUE
 killall Dock
   #+END_SRC
+
+*** Zsh
+=.zshenv= is sourced on all invocations of the shell, unless the =-f= option is
+set. It should contain commands to set the command search path, plus other
+important environment variables. =.zshenv= should not contain commands that
+produce output or assume the shell is attached to a tty.
 
 *** Tips
 - Use iconutil to Create an icns File Manually

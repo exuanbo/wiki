@@ -83,7 +83,7 @@ code{background:#fbf8ef;border:solid 1px #e1e4e5;font-family:Consolas,"Andale Mo
 .codeblock-example:after{content:"Example";position:absolute;top:0;left:0;background:#9b59b6;color:#fff;padding:6px 12px}
 .codeblock-example.prettyprint-example-only{border:1px solid #e1e4e5;margin-bottom:24px}
 #content .literal-block,.codeblock,pre.src{border:1px solid #e1e4e5;padding:12px;overflow-x:auto;background:#fff;margin:1px 0 24px 0}
-pre.src{display:block;max-width:fit-content;font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;font-size:14px;line-height:1.5;margin:1px 0 24px 0;overflow:auto;padding:12px;white-space:pre}
+pre.src{display:block;font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;font-size:14px;line-height:1.5;margin:1px 0 24px 0;overflow:auto;padding:12px;white-space:pre}
 pre.src:before{top:0;right:0;padding:0 8px;border:1px solid #e1e4e5}
 .example{background:#fbf8ef;border:1px solid #e1e4e5;color:#404040;font-size:12px;line-height:1.5;margin-bottom:24px;padding:12px}
 table{border-collapse:collapse;border-spacing:0;empty-cells:show;margin-bottom:24px;border-bottom:1px solid #e1e4e5}
