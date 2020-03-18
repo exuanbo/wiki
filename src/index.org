@@ -43,6 +43,8 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm sti
 - [[https://www.flypy.com/][小鹤双拼·小鹤音形 - 官方网站]]
 
 *** RIME
+- [[https://github.com/alswl/Rime][alswl/ *Rime*]] - Rime configuration for Squirrel (macOS) & fcitx-rime
+
 **** Squirrel
 - [[https://github.com/placeless/squirrel_config][placeless/ *squirrel_config*]] - Rime 鼠须管小鹤双拼配置
 - [[https://github.com/cnfeat/Rime][cnfeat/ *Rime*]] - 鼠须管 小鹤双拼 输入法配置及配色方案
@@ -56,6 +58,7 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm sti
 - [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS | paid app
 - [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ *SS-Rule-Snippet*]] - Design for Surge, Quantumult, Shadowrocket,
   Surfboard, clash(X)
+- [[https://github.com/lhie1/Rules][lhie1/ *Rules*]] - Surge, Shadowrocket, Surfboard, Clash
 - [[https://github.com/geekdada/surgio][geekdada/ *surgio*]] - Generating rules for Surge, Clash, Quantumult... like a
   PRO
 
@@ -167,6 +170,8 @@ Favorites：
 - [[https://github.com/jwasham/coding-interview-university][jwasham/ *coding-interview-university*]]
 
 ** Resource
+- [[https://github.com/lukasz-madon/awesome-remote-job][lukasz-madon/ *awesome-remote-job*]] - A curated list of awesome remote jobs and
+  resources
 - [[https://github.com/greatghoul/remote-working][greatghoul/ *remote-working*]] - 本列表只收录中国国内的资源或者对国内受众友好的国外资源
 
 ** Experience
@@ -282,8 +287,12 @@ jobs:
 - [[https://blog.knownsec.com/Knownsec_RD_Checklist/index.html][知道创宇研发技能表]] - "聪明的人，会根据每个tip自驱动扩展"
 
 ** Functional Programming
+- [[https://bitemyapp.com/blog/functional-education/][Chris Allen - Functional Education]]
+  - and his book [[https://haskellbook.com/][Haskell Programming]]
+
 *** Haskell
 - [[http://learnyouahaskell.com/chapters][Learn You a Haskell for Great Good!]]
+- [[https://www.seas.upenn.edu/~cis194/fall16/index.html][CIS194]]
 
 **** Environment Setup
 - [[https://www.haskell.org/platform/][Haskell Platform]] - Installs GHC, Cabal, and some other tools, along with a
@@ -292,6 +301,14 @@ jobs:
   #+BEGIN_SRC shell
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 curl -sSL https://get.haskellstack.org/ | sh
+  #+END_SRC
+
+- Using Homebrew
+
+  #+BEGIN_SRC shell
+brew install cabal-install ghc
+brew haskell-stack
+stack setup
   #+END_SRC
 
 ** Python
@@ -374,105 +391,11 @@ const plugins = [
 - [[https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter][dirkolbrich/ *hugo-theme-tailwindcss-starter*]] - Starter files for a Hugo theme
   with Tailwindcss
 
-** Nginx Configuration
-[[https://gist.github.com/fotock/9cf9afc2fd0f813828992ebc4fdaad6f][fotock/ *nginx.conf*]] - Nginx SSL 安全配置最佳实践
-
-#+BEGIN_SRC shell
-# 生成 dhparam.pem 文件, 在命令行执行任一方法:
-
-# 方法1: 很慢
-openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
-
-# 方法2: 较快
-# 与方法1无明显区别. 2048位也足够用, 4096更强
-openssl dhparam -dsaparam -out /etc/nginx/ssl/dhparam.pem 4096
-#+END_SRC
-
-*** nginx.conf
-
-#+BEGIN_SRC conf
-# 阅读更多 http://tautt.com/best-nginx-configuration-for-security/
-
-# 不发送Nginx版本号
-server_tokens off;
-
-# 不允许浏览器在frame或iframe中显示页面
-# 避免 点击劫持(clickjacking) http://en.wikipedia.org/wiki/Clickjacking
-# 如果需要允许 [i]frames, 你可以用 SAMEORIGIN 或者用ALLOW-FROM uri 设置单个uri
-# https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options
-add_header X-Frame-Options SAMEORIGIN;
-
-# 服务用户提供的内容时, 包含 X-Content-Type-Options: nosniff 头选项，配合 Content-Type: 头选项,
-# 来禁用某些浏览器的 content-type 探测.
-# https://www.owasp.org/index.php/List_of_useful_HTTP_headers
-# 当前支持 IE > 8 http://blogs.msdn.com/b/ie/archive/2008/09/02/ie8-security-part-vi-beta-2-update.aspx
-# http://msdn.microsoft.com/en-us/library/ie/gg622941(v=vs.85).aspx
-# 火狐 '不久'支持 https://bugzilla.mozilla.org/show_bug.cgi?id=471020
-add_header X-Content-Type-Options nosniff;
-
-# 启用大部分现代浏览器内置的 the Cross-site scripting (XSS) 过滤.
-# 通常缺省情况下已经启用, 所以本选项为为本网站重启过滤器，以防其被用户禁用.
-# https://www.owasp.org/index.php/List_of_useful_HTTP_headers
-add_header X-XSS-Protection "1; mode=block";
-
-# 启用 Content Security Policy (CSP) (和支持它的浏览器(http://caniuse.com/#feat=contentsecuritypolicy)后,
-# 你可以告诉浏览器它仅能从你明确允许的域名下载内容
-# http://www.html5rocks.com/en/tutorials/security/content-security-policy/
-# https://www.owasp.org/index.php/Content_Security_Policy
-# 修改应用代码, 通过禁用css和js的 'unsafe-inline' 'unsafe-eval' 指标提高安全性
-# (对内联css和js同样适用).
-# 更多: http://www.html5rocks.com/en/tutorials/security/content-security-policy/#inline-code-considered-harmful
-add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ssl.google-analytics.com https://assets.zendesk.com https://connect.facebook.net; img-src 'self' https://ssl.google-analytics.com https://s-static.ak.facebook.com https://assets.zendesk.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.zendesk.com; font-src 'self' https://themes.googleusercontent.com; frame-src https://assets.zendesk.com https://www.facebook.com https://s-static.ak.facebook.com https://tautt.zendesk.com; object-src 'none'";
-
-# 将所有 http 跳转至 https
-server {
-  listen 80 default_server;
-  listen [::]:80 default_server;
-  server_name .forgott.com;
-  return 301 https://$host$request_uri;
-}
-
-server {
-  listen 443 ssl http2;
-  listen [::]:443 ssl http2;
-  server_name .forgott.com;
-
-  ssl_certificate /etc/nginx/ssl/star_forgott_com.crt;
-  ssl_certificate_key /etc/nginx/ssl/star_forgott_com.key;
-
-  # 启用 session resumption 提高HTTPS性能
-  # http://vincent.bernat.im/en/blog/2011-ssl-session-reuse-rfc5077.html
-  ssl_session_cache shared:SSL:50m;
-  ssl_session_timeout 1d;
-  ssl_session_tickets off;
-
-  # DHE密码器的Diffie-Hellman参数, 推荐 2048 位
-  ssl_dhparam /etc/nginx/ssl/dhparam.pem;
-
-  # 启用服务器端保护, 防止 BEAST 攻击
-  # http://blog.ivanristic.com/2013/09/is-beast-still-a-threat.html
-  ssl_prefer_server_ciphers on;
-  # 禁用 SSLv3(enabled by default since nginx 0.8.19) since it's less secure then TLS http://en.wikipedia.org/wiki/Secure_Sockets_Layer#SSL_3.0
-  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-  # ciphers chosen for forward secrecy and compatibility
-  # http://blog.ivanristic.com/2013/08/configuring-apache-nginx-and-openssl-for-forward-secrecy.html
-  ssl_ciphers 'ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS';
-
-  # 启用 ocsp stapling (网站可以以隐私保护、可扩展的方式向访客传达证书吊销信息的机制)
-  # http://blog.mozilla.org/security/2013/07/29/ocsp-stapling-in-firefox/
-  resolver 8.8.8.8 8.8.4.4;
-  ssl_stapling on;
-  ssl_stapling_verify on;
-  ssl_trusted_certificate /etc/nginx/ssl/star_forgott_com.crt;
-
-  # 启用 HSTS(HTTP Strict Transport Security) https://developer.mozilla.org/en-US/docs/Security/HTTP_Strict_Transport_Security
-  # 避免 ssl stripping https://en.wikipedia.org/wiki/SSL_stripping#SSL_stripping
-  # 或 https://hstspreload.org/
-  add_header Strict-Transport-Security "max-age=31536000; includeSubdomains; preload";
-
-  # ... 其他配置
-}
-#+END_SRC
+** Web Browser
+*** Chrome Extensions
+- uBlacklist
+  - [[https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist][cobaltdisco/ *Google-Chinese-Results-Blocklist*]]
+  - [[https://github.com/gyli/Blocklist][gyli/ *Blocklist*]]
 
 ** Resource
 - [[https://favicon.io/favicon-generator/][The best Favicon Generator (completely free) | Favicon.io]]
@@ -606,6 +529,9 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 #+END_SRC
 
 * Text Editor
+- [[https://editorconfig.org/][EditorConfig]]
+  - [[https://github.com/editorconfig/editorconfig-emacs][editorconfig-emacs]] - EditorConfig plugin for Emacs
+
 ** Emacs
 - [[https://emacs-china.org/][Emacs China]]
 - [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][*mastering-emacs-in-one-year-guide* /guide-zh.org]]
@@ -645,113 +571,16 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 
 - [[https://github.com/syl20bnr/spacemacs/blob/develop/EXPERIMENTAL.org#spacemacs-dumps-using-the-portable-dumper][Spacemacs dumps using the portable dumper]]
 
-*** Dotfile Configuration
+*** Configuration
 A dotdirectory =/.spacemacs.d= can be used instead of a dotfile. If you want
 to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
 
-可参考 [[https://github.com/zilongshanren/spacemacs-private][子龙山人的个人配置]] 和 GeekPlux 的 [[https://github.com/geekplux/dotfiles][dotfiles]]
+My configuration [[https://github.com/exuanbo/dotfiles/tree/master/.spacemacs.d][exuanbo/ *dotfiles/.spacemacs.d*]]
 
-#+BEGIN_SRC emacs-lisp
-dotspacemacs-configuration-layers
-'(
-  (auto-completion :variables
-                  auto-completion-idle-delay 0
-                  auto-completion-enable-snippets-in-popup t
-                  auto-completion-enable-sort-by-usage t
-                  :disabled-for org markdown)
+for reference:
 
-  syntax-checking
-  (spell-checking :variables
-                  ;;spell-checking-enable-by-default nil
-                  enable-flyspell-auto-completion t)
-
-  ivy
-  lsp
-  (c-c++ :variables c-c++-backend 'lsp-ccls)
-  (python :variables python-backend 'lsp)
-  (javascript :variables javascript-backend 'lsp)
-  html
-  emacs-lisp
-  (org :variables
-      org-projectile-file "TODOs.org"
-      org-want-todo-bindings t)
-
-  latex
-  markdown
-  yaml
-  (colors :variables colors-enable-nyan-cat-progress-bar t)
-  (shell :variables
-        shell-default-shell 'ansi-term
-        shell-default-term-shell "/bin/zsh")
-
-  treemacs
-  git
-  better-defaults
-  osx)
-#+END_SRC
-
-#+BEGIN_SRC emacs-lisp
-dotspacemacs-additional-packages
-'(
-  eterm-256color)
-#+END_SRC
-
-#+BEGIN_SRC emacs-lisp
-dotspacemacs-excluded-packages
-'(
-  ;; auto-completion layer
-  auto-complete
-  company-quickhelp
-
-  ;; spell-checking layer
-  auto-dictionary
-
-  ;; colors layer
-  rainbow-identifiers)
-#+END_SRC
-
-#+BEGIN_SRC emacs-lisp
-(defun dotspacemacs/init ()
-  (setq-default
-    dotspacemacs-elpa-https nil
-    dotspacemacs-loading-progress-bar nil
-    dotspacemacs-maximized-at-startup t
-    dotspacemacs-whitespace-cleanup 'trailing))
-#+END_SRC
-
-#+BEGIN_SRC emacs-lisp
-(defun dotspacemacs/user-init ()
-  (add-to-list 'default-frame-alist
-               '(ns-transparent-titlebar . t))
-  (add-to-list 'default-frame-alist
-               '(ns-appearance . dark)))
-#+END_SRC
-
-#+BEGIN_SRC emacs-lisp
-(defun dotspacemacs/user-config ()
-  (add-hook 'term-mode-hook 'eterm-256color-mode)
-
-  (setq-default evil-escape-key-sequence "jk"
-                evil-escape-delay 0.2)
-
-  (with-eval-after-load 'org
-    (setq org-startup-indented nil
-          org-export-with-sub-superscripts nil
-          org-html-doctype "html5"
-          org-html-html5-fancy t
-          org-html-head-include-default-style nil
-          org-html-htmlize-output-type 'css))
-
-  (with-eval-after-load 'org-agenda
-    (require 'org-projectile)
-    (mapcar '(lambda (file)
-               (when (file-exists-p file)
-                 (push file org-agenda-files)))
-            (org-projectile-todo-files)))
-
-  (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
-  (load custom-file 'no-error 'no-message))
-#+END_SRC
+- [[https://github.com/zilongshanren/spacemacs-private][zilongshanren/ *spacemacs-private*]]
+- [[https://github.com/geekplux/dotfiles][geekplus/ *dotfiles/.spacemacs.d*]]
 
 *** Layers
 - [[https://develop.spacemacs.org/layers/+checkers/spell-checking/README.html][Spell Checking layer]]
@@ -768,29 +597,13 @@ dotspacemacs-excluded-packages
 [[https://github.com/hlissner/doom-emacs][hlissner/ *doom-emacs*]] - An Emacs configuration for the stubborn martian vimmer
 
 - [[https://github.com/hlissner/emacs-doom-themes][hlissner/ *emacs-doom-themes*]]
-
-  #+BEGIN_SRC emacs-lisp
-(use-package doom-themes
-  :config
-  ;; Global settings (defaults)
-  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
-        doom-themes-enable-italic t) ; if nil, italics is universally disabled
-  (load-theme 'doom-one t)
-
-  ;; Enable flashing mode-line on errors
-  (doom-themes-visual-bell-config)
-
-  ;; Enable custom neotree theme (all-the-icons must be installed!)
-  (doom-themes-neotree-config)
-  ;; or for treemacs users
-  (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
-  (doom-themes-treemacs-config)
-
-  ;; Corrects (and improves) org-mode's native fontification.
-  (doom-themes-org-config))
-  #+END_SRC
-
 - [[https://github.com/hlissner/doom-snippets][hlissner/ *doom-snippets*]] - The Doom Emacs snippets library
+
+My configuration [[https://github.com/exuanbo/.doom.d][.doom.d]]
+
+*** Modules
+- [[https://github.com/hlissner/doom-emacs/blob/develop/modules/term/vterm/README.org][term/vterm]] - =+vterm/toggle= (=SPC o t=): Toggle vterm pop up window in the
+  current project
 
 *** Hacks
 - [[https://github.com/hlissner/doom-emacs/issues/397][Need doom/toggle-maximized command #397]]
@@ -826,11 +639,6 @@ dotspacemacs-excluded-packages
   #+END_SRC
 
   Or disable the =:ui doom-dashboard= & =:tools magit= modules (see [[https://github.com/hlissner/doom-emacs/issues/1170][#1170]]).
-
-*** Modules
-- [[https://github.com/hlissner/doom-emacs/blob/develop/modules/term/vterm/README.org][term/vterm]] - =+vterm/toggle= (=SPC o t=): Toggle vterm pop up window in the
-  current project
-- [[https://github.com/hlissner/doom-snippets][editor/snippets]]
 
 ** Other configuration
 - [[https://github.com/purcell/emacs.d][*purcell* /emacs.d]] - An Emacs configuration bundle with batteries included
@@ -1104,6 +912,106 @@ iconutil -c icns MyIcon.iconset
 
 This is a list of Free Software network services and web applications which can
 be hosted locally. Non-Free software is listed on the Non-Free page.
+
+** Nginx Configuration
+[[https://gist.github.com/fotock/9cf9afc2fd0f813828992ebc4fdaad6f][fotock/ *nginx.conf*]] - Nginx SSL 安全配置最佳实践
+
+#+BEGIN_SRC shell
+# 生成 dhparam.pem 文件, 在命令行执行任一方法:
+
+# 方法1: 很慢
+openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
+
+# 方法2: 较快
+# 与方法1无明显区别. 2048位也足够用, 4096更强
+openssl dhparam -dsaparam -out /etc/nginx/ssl/dhparam.pem 4096
+#+END_SRC
+
+*** nginx.conf
+
+#+BEGIN_SRC conf
+# 阅读更多 http://tautt.com/best-nginx-configuration-for-security/
+
+# 不发送Nginx版本号
+server_tokens off;
+
+# 不允许浏览器在frame或iframe中显示页面
+# 避免 点击劫持(clickjacking) http://en.wikipedia.org/wiki/Clickjacking
+# 如果需要允许 [i]frames, 你可以用 SAMEORIGIN 或者用ALLOW-FROM uri 设置单个uri
+# https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options
+add_header X-Frame-Options SAMEORIGIN;
+
+# 服务用户提供的内容时, 包含 X-Content-Type-Options: nosniff 头选项，配合 Content-Type: 头选项,
+# 来禁用某些浏览器的 content-type 探测.
+# https://www.owasp.org/index.php/List_of_useful_HTTP_headers
+# 当前支持 IE > 8 http://blogs.msdn.com/b/ie/archive/2008/09/02/ie8-security-part-vi-beta-2-update.aspx
+# http://msdn.microsoft.com/en-us/library/ie/gg622941(v=vs.85).aspx
+# 火狐 '不久'支持 https://bugzilla.mozilla.org/show_bug.cgi?id=471020
+add_header X-Content-Type-Options nosniff;
+
+# 启用大部分现代浏览器内置的 the Cross-site scripting (XSS) 过滤.
+# 通常缺省情况下已经启用, 所以本选项为为本网站重启过滤器，以防其被用户禁用.
+# https://www.owasp.org/index.php/List_of_useful_HTTP_headers
+add_header X-XSS-Protection "1; mode=block";
+
+# 启用 Content Security Policy (CSP) (和支持它的浏览器(http://caniuse.com/#feat=contentsecuritypolicy)后,
+# 你可以告诉浏览器它仅能从你明确允许的域名下载内容
+# http://www.html5rocks.com/en/tutorials/security/content-security-policy/
+# https://www.owasp.org/index.php/Content_Security_Policy
+# 修改应用代码, 通过禁用css和js的 'unsafe-inline' 'unsafe-eval' 指标提高安全性
+# (对内联css和js同样适用).
+# 更多: http://www.html5rocks.com/en/tutorials/security/content-security-policy/#inline-code-considered-harmful
+add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ssl.google-analytics.com https://assets.zendesk.com https://connect.facebook.net; img-src 'self' https://ssl.google-analytics.com https://s-static.ak.facebook.com https://assets.zendesk.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.zendesk.com; font-src 'self' https://themes.googleusercontent.com; frame-src https://assets.zendesk.com https://www.facebook.com https://s-static.ak.facebook.com https://tautt.zendesk.com; object-src 'none'";
+
+# 将所有 http 跳转至 https
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+  server_name .forgott.com;
+  return 301 https://$host$request_uri;
+}
+
+server {
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
+  server_name .forgott.com;
+
+  ssl_certificate /etc/nginx/ssl/star_forgott_com.crt;
+  ssl_certificate_key /etc/nginx/ssl/star_forgott_com.key;
+
+  # 启用 session resumption 提高HTTPS性能
+  # http://vincent.bernat.im/en/blog/2011-ssl-session-reuse-rfc5077.html
+  ssl_session_cache shared:SSL:50m;
+  ssl_session_timeout 1d;
+  ssl_session_tickets off;
+
+  # DHE密码器的Diffie-Hellman参数, 推荐 2048 位
+  ssl_dhparam /etc/nginx/ssl/dhparam.pem;
+
+  # 启用服务器端保护, 防止 BEAST 攻击
+  # http://blog.ivanristic.com/2013/09/is-beast-still-a-threat.html
+  ssl_prefer_server_ciphers on;
+  # 禁用 SSLv3(enabled by default since nginx 0.8.19) since it's less secure then TLS http://en.wikipedia.org/wiki/Secure_Sockets_Layer#SSL_3.0
+  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+  # ciphers chosen for forward secrecy and compatibility
+  # http://blog.ivanristic.com/2013/08/configuring-apache-nginx-and-openssl-for-forward-secrecy.html
+  ssl_ciphers 'ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS';
+
+  # 启用 ocsp stapling (网站可以以隐私保护、可扩展的方式向访客传达证书吊销信息的机制)
+  # http://blog.mozilla.org/security/2013/07/29/ocsp-stapling-in-firefox/
+  resolver 8.8.8.8 8.8.4.4;
+  ssl_stapling on;
+  ssl_stapling_verify on;
+  ssl_trusted_certificate /etc/nginx/ssl/star_forgott_com.crt;
+
+  # 启用 HSTS(HTTP Strict Transport Security) https://developer.mozilla.org/en-US/docs/Security/HTTP_Strict_Transport_Security
+  # 避免 ssl stripping https://en.wikipedia.org/wiki/SSL_stripping#SSL_stripping
+  # 或 https://hstspreload.org/
+  add_header Strict-Transport-Security "max-age=31536000; includeSubdomains; preload";
+
+  # ... 其他配置
+}
+#+END_SRC
 
 ** Analytics
 [[https://ackee.electerious.com/][Ackee]] - Self-hosted analytics tool for those who care about privacy. =MIT= =Nodejs=
