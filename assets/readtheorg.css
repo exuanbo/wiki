@@ -138,7 +138,6 @@ hr{display:block;height:1px;border:0;border-top:1px solid #e1e4e5;margin:24px 0;
 #table-of-contents a:hover{background-color:#4e4a4a;cursor:pointer}
 #table-of-contents .active a:hover{background-color:#eee}
 #toggle-sidebar{display:none}
-.sticky{position:fixed;width:calc(100vw - 1.5em);top:0;z-index:100}
 @media screen and (max-width:768px){
 #toggle-sidebar{display:block;background-color:#e0d6e9;text-align:center;padding:.6em;margin-bottom:.6em}
 #toggle-sidebar h2{margin:0;padding:0}

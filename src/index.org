@@ -50,10 +50,13 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm sti
 - [[https://github.com/cnfeat/Rime][cnfeat/ *Rime*]] - 鼠须管 小鹤双拼 输入法配置及配色方案
 
 ** Bypass GFW
+*** Server
 - [[https://www.v2ray.com/][V2Ray]]
   - [[https://guide.v2fly.org/advanced/wss_and_web.html][WebSocket + TLS + Web]]
 - [[https://github.com/trojan-gfw/trojan][trojan]]
   - [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/ *Trojan-Qt5*]] - Windows, macOS, Linux
+
+*** Client
 - [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ *ClashX*]] - macOS
 - [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS | paid app
 - [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ *SS-Rule-Snippet*]] - Design for Surge, Quantumult, Shadowrocket,
@@ -61,6 +64,9 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm sti
 - [[https://github.com/lhie1/Rules][lhie1/ *Rules*]] - Surge, Shadowrocket, Surfboard, Clash
 - [[https://github.com/geekdada/surgio][geekdada/ *surgio*]] - Generating rules for Surge, Clash, Quantumult... like a
   PRO
+
+*** Other
+- [[https://github.com/googlehosts/hosts][GoogleHosts]]
 
 ** Marathon
 - 知乎圆桌[[https://www.zhihu.com/roundtable/marathon2015/][《马拉松之路》]]
@@ -151,6 +157,14 @@ Favorites：
 - [[http://web.archive.org/web/20160604093615/http://antiwave.net/][反波 Antiwave - web.archive.org]]
 
 *** Episode
+- [[https://kernelpanic.fm/12][数学与编程 | 内核恐慌 #12]]
+
+  特别嘉宾木遥与 Rio 和吴涛讨论了数学与编程之间的联系。话题包括但不限于：数学系
+  的发展、统计学、数学与科学的关联、明尼苏达的天气、数学背景对于成为程序员的助益、
+  Google 的工程师驱动特性、人们嘲讽新泽西的原因、养猫的经验、抽象几何学、Haskell、
+  编程动手能力的来源、学习编程语言的意义、可视化编程、Lisp、FORTRAN、Go、C++、
+  Swift、Optional、Google 的激励机制、欧洲的社会保障体制、技术变革带来的社会影响、
+  中国政治坐标系测试、和食物替代饮料 Soylent。
 
 ** Subscriptions
 *** App
@@ -229,7 +243,9 @@ Favorites：
 * Design
 - [[https://sspai.com/tag/%E8%AE%BE%E8%AE%A1][#设计 - 少数派]]
 
-* Open Source
+* Free & Open
+- [[https://www.gnu.org/philosophy/free-sw.en.html][What is free software?]]
+- [[https://www.gnu.org/philosophy/open-source-misses-the-point.html][Why Open Source Misses the Point of Free Software]]
 - [[https://opensource.guide/][Open Source Guides]]
 - [[https://github.phodal.com/][GitHub 漫游指南]] by [[https://www.phodal.com/][Phodal Huang]]
 
@@ -282,6 +298,7 @@ jobs:
 - [[https://www.bilibili.com/video/av21376839/][Crash Course Computer Science]] - 中英字幕
 
 * Programming
+- [[http://norvig.com/21-days.html][Teach Yourself Programming in Ten Years]]
 - [[http://coolshell.cn/articles/4990.html][程序员技术练级攻略 - 2011年07月]]
   - [[https://exuanbo.xyz/posts/programmer/][2018 新版索引]]
 - [[https://blog.knownsec.com/Knownsec_RD_Checklist/index.html][知道创宇研发技能表]] - "聪明的人，会根据每个tip自驱动扩展"
@@ -289,6 +306,7 @@ jobs:
 ** Functional Programming
 - [[https://bitemyapp.com/blog/functional-education/][Chris Allen - Functional Education]]
   - and his book [[https://haskellbook.com/][Haskell Programming]]
+- [[http://www.cs.cornell.edu/courses/cs3110/][CS 3110 Spring 2020]]
 
 *** Haskell
 - [[http://learnyouahaskell.com/chapters][Learn You a Haskell for Great Good!]]
@@ -310,6 +328,10 @@ brew install cabal-install ghc
 brew haskell-stack
 stack setup
   #+END_SRC
+
+*** Emacs Lisp
+- [[https://github.com/bbatsov/emacs-lisp-style-guide][bbatsov/ *emacs-lisp-style-guide*]]
+- [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html][Tips - GNU Emacs Lisp Reference Manual]]
 
 ** Python
 *** Installation
@@ -412,6 +434,25 @@ const plugins = [
 - [[https://indienova.com/groups/14][我们都爱像素风 - Indienova 小组]]
 
 * Git
+- ~git reset~
+
+  #+BEGIN_EXAMPLE
+
+               (default)
+      --soft    --mixed   --hard
+----------------------------------------- commit (repository)
+         |         |         |
+         V         |         |
+----------------------------------------- stage (index)
+                   |         |
+                   V         |
+----------------------------------------- unstage (working tree)
+                             |
+                             V
+                          discard
+
+  #+END_EXAMPLE
+
 ** Hacks
 *** Hook
 - auto sync to Dropbox after commit
@@ -533,13 +574,11 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
   - [[https://github.com/editorconfig/editorconfig-emacs][editorconfig-emacs]] - EditorConfig plugin for Emacs
 
 ** Emacs
-- [[https://emacs-china.org/][Emacs China]]
-- [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][*mastering-emacs-in-one-year-guide* /guide-zh.org]]
-- [[http://planet.emacsen.org/][Planet Emacsen]]
 
 #+BEGIN_EXAMPLE
-        +===============================+
-        |                               |
+
+       +================================+
+       |                                |
     +===============================+   |
     |                               |   |
 +===============================+   |   |
@@ -551,24 +590,63 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 |   Window 3   |                |
 |              |                | ............. Frame 1
 +-------------------------------+
+
 #+END_EXAMPLE
 
-#+BEGIN_SRC emacs-lisp
-;; evil
-(setq-default evil-escape-key-sequence "jk"
-              evil-escape-delay 0.2)
-#+END_SRC
+*** Resource
+- [[https://emacs-china.org/][Emacs China]]
+- [[https://emacs.stackexchange.com/][Emacs Stack Exchange]]
+- [[https://www.reddit.com/r/emacs/][M-x emacs-reddit]]
+
+**** Blog
+- [[https://planet.emacslife.com/][Planet Emacslife]]
+- [[https://sachachua.com/][Living an awesome Life - Sacha Chua]]
+
+**** GitHub
+- [[https://github.com/search?p=1&q=stars%3A%3E20+extension%3Ael+language%3Aelisp&ref=searchresults&type=Repositories][Github Search · stars:>20 extension:el language:elisp]]
+- [[https://github.com/lujun9972/emacs-document][lujun9972/ *emacs-document*]] - translate emacs documents to Chinese for
+  convenient reference
+- [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][*mastering-emacs-in-one-year-guide* /guide-zh.org]]
+
+**** Tutorial
+- [[http://ergoemacs.org/emacs/buy_xah_emacs_tutorial.html][Buy Xah Emacs Tutorial]]
+- [[http://steve-yegge.blogspot.com/2008/01/emergency-elisp.html][Stevey's Blog Rants: Emergency Elisp]]
+
+*** Tips
+- [[https://stackoverflow.com/questions/2736087/eval-after-load-vs-mode-hook][eval-after-load vs. mode hook - Stack Overflow]]
+  - [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Hooks-for-Loading.html][Hooks for Loading - GNU Emacs Lisp Reference Manual]]
+
+  Code wrapped in ~eval-after-load~ will be executed only once, so it is
+  typically used to perform one-time setup such as setting default global values
+  and behaviour. An example might be setting up a default keymap for a
+  particular mode. In ~eval-after-load~ code, there's no notion of the "current
+  buffer".
+
+  Mode hooks execute once for every buffer in which the mode is enabled, so
+  they're used for /per-buffer/ configuration. Mode hooks are therefore run later
+  than ~eval-after-load~ code; this lets them take actions based upon such
+  information as whether other modes are enabled in the current buffer.
+
+- [[https://stackoverflow.com/questions/18172728/the-difference-between-setq-and-setq-default-in-emacs-lisp][The difference between setq and setq-default in Emacs Lisp]]
+
+  Some variables in Emacs are "buffer-local", meaning that each buffer is
+  allowed to have a separate value for that variable that overrides the global
+  default. ~tab-width~ is a good example of a buffer-local variable.
+
+  If a variable is buffer-local, then ~setq~ sets its local value in the current
+  buffer and ~setq-default~ sets the global default value.
+
+  If a variable is not buffer-local, then ~setq~ and ~setq-default~ do the same
+  thing.
 
 *** Packages
 - [[https://github.com/NicolasPetton/gulp-task-runner][NicolasPetton/ *gulp-task-runner*]] - Run gulp tasks from Emacs =M-x gulp=
 - [[https://magit.vc/][It's Magit! A Git Porcelain inside Emacs]]
-  status buffer
-- [[https://github.com/hlissner/emacs-solaire-mode][hlissner/ *emacs-solaire-mode*]] - helps visually distinguish visiting windows
-  from other types of windows by giving them a slightly different background
 
 ** Spacemacs
 [[https://github.com/syl20bnr/spacemacs][syl20bnr/ *spacemacs*]] - A community-driven Emacs distribution
 
+- [[http://book.emacs-china.org/][Master Emacs in 21 Days]]
 - [[https://github.com/syl20bnr/spacemacs/blob/develop/EXPERIMENTAL.org#spacemacs-dumps-using-the-portable-dumper][Spacemacs dumps using the portable dumper]]
 
 *** Configuration
@@ -674,6 +752,13 @@ My configuration [[https://github.com/exuanbo/.doom.d][.doom.d]]
 
   #+BEGIN_SRC emacs-lisp
 (setq org-adapt-indentation nil)
+  #+END_SRC
+
+- [[https://emacs.stackexchange.com/questions/9472/org-mode-source-block-doesnt-respect-parent-buffer-indentation][Org-mode: Source block doesn't respect parent buffer indentation]]
+
+  #+BEGIN_SRC emacs-lisp
+(setq org-src-preserve-indentation nil
+      org-edit-src-content-indentation 0)
   #+END_SRC
 
 *** for Spacemacs

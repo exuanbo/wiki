@@ -5,20 +5,6 @@ $('document').ready(function () {
   var toggleSidebar = $('<div id="toggle-sidebar"><a href="#table-of-contents"><h2>Table of Contents</h2></a></div>');
   $('#content').prepend(toggleSidebar);
 
-  var stickyNavTop = $('#toggle-sidebar').offset().top;
-  var stickyNav = function () {
-    var scrollTop = $(window).scrollTop();
-    if (scrollTop > stickyNavTop) {
-      $('#toggle-sidebar').addClass('sticky');
-    } else {
-      $('#toggle-sidebar').removeClass('sticky');
-    }
-  };
-  stickyNav();
-  $(window).scroll(function () {
-    stickyNav();
-  });
-
   var closeBtn = $('<a class="close-sidebar" href="#">Close</a>');
   var tocTitle = $('#table-of-contents').find('h2');
   tocTitle.append(closeBtn);
