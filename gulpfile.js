@@ -16,14 +16,14 @@ const css = () => {
     purgecss({
       content: ['src/index.html'],
       fontFace: true,
-      whitelist: ['active', 'nav', 'toggle-sidebar', 'sticky', 'close-sidebar', 'permalink']
+      whitelist: ['active', 'nav', 'toggle-sidebar', 'close-sidebar', 'permalink']
     }),
     cssnano({
       preset: ['default', { discardComments: { removeAll: true } }]
     }),
     autoprefixer()
   ]
-  return src(['assets/default.css', 'assets/readtheorg.css'])
+  return src(['assets/default.css', 'assets/spacemacs-light.css', 'assets/spacemacs-doc.css'])
     .pipe(concatCss('style.css'))
     .pipe(postcss(plugins))
     .pipe(dest('dist'))

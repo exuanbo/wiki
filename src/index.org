@@ -8,7 +8,7 @@
 #+AUTHOR: Exuanbo
 
 #+BEGIN_CENTER
-This document is built using Emacs [[https://orgmode.org/][Org mode]] with [[https://gulpjs.com/][gulp.js]], inspired by [[https://geekplux.com/][GeekPlux]].
+This page is built using Emacs [[https://orgmode.org/][Org mode]] with [[https://gulpjs.com/][gulp.js]], inspired by [[https://geekplux.com/][GeekPlux]].
 Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm still learning and exploring the amazing
 [[https://orgmode.org/][Org mode]].
 #+END_CENTER
@@ -20,6 +20,10 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm sti
 
 * Life
 ** Minimalism
+- [[https://manuelmoreale.com/thoughts/mgtm-introduction][Introduction: What Minimalism is and is not – Manu]]
+  - To me, Minimalism has nothing to do with anything visual.
+  - I wouldn't call minimalism a lifestyle. I'd much rather refer to it as a
+    mindset or a guiding principle.
 
 ** IME
 *** 双拼
@@ -249,6 +253,9 @@ Favorites：
 - [[https://opensource.guide/][Open Source Guides]]
 - [[https://github.phodal.com/][GitHub 漫游指南]] by [[https://www.phodal.com/][Phodal Huang]]
 
+** Resource
+- [[https://awesomeopensource.com/][Find Open Source By Searching, Browsing and Combining 7,000 Topics]]
+
 ** Github Pages
 - [[https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages][How to fix HTTP 404 on Github Pages?]]
 
@@ -316,14 +323,14 @@ jobs:
 - [[https://www.haskell.org/platform/][Haskell Platform]] - Installs GHC, Cabal, and some other tools, along with a
   starter set of libraries in a global location on your system.
 
-  #+BEGIN_SRC shell
+  #+BEGIN_SRC sh
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 curl -sSL https://get.haskellstack.org/ | sh
   #+END_SRC
 
 - Using Homebrew
 
-  #+BEGIN_SRC shell
+  #+BEGIN_SRC sh
 brew install cabal-install ghc
 brew haskell-stack
 stack setup
@@ -339,7 +346,7 @@ stack setup
 *** Tips
 - [[https://stackoverflow.com/questions/11248073/what-is-the-easiest-way-to-remove-all-packages-installed-by-pip][What is the easiest way to remove all packages installed by pip?]]
 
-  #+BEGIN_SRC shell
+  #+BEGIN_SRC sh
 pip freeze > requirements.txt
 pip uninstall -r requirements.txt -y
 
@@ -357,7 +364,7 @@ pip uninstall -y -r <(pip freeze)
 ** Gulp.js
 [[https://gulpjs.com/][gulp.js]] - The streaming build system
 
-#+BEGIN_SRC javascript
+#+BEGIN_SRC js
 function defaultTask(cb) {
   // place code for your default task here
   cb();
@@ -391,7 +398,7 @@ exports.default = defaultTask
 - autoprefixer
 - cssnano - A modular minifier based on the PostCSS ecosystem
 
-  #+BEGIN_SRC javascript
+  #+BEGIN_SRC js
 const plugins = [
   cssnano({
     preset: ['default', { discardComments: { removeAll: true } }]
@@ -420,12 +427,15 @@ const plugins = [
   - [[https://github.com/gyli/Blocklist][gyli/ *Blocklist*]]
 
 ** Resource
+*** Icons
 - [[https://favicon.io/favicon-generator/][The best Favicon Generator (completely free) | Favicon.io]]
+- [[https://github.com/yoksel/url-encoder/][Url encoder for SVG]]
+- [[https://iconmonstr.com/][iconmonstr - Free simple icons for your next project]]
 - [[https://simpleicons.org/][Simple Icons]] - Free SVG icons for popular brands
 - [[https://github.com/refactoringui/heroicons][refactoringui/ *heroicons*]] - A set of free MIT-licensed high-quality SVG icons
   for UI development
-- [[https://iconmonstr.com/][iconmonstr - Free simple icons for your next project]]
-- [[https://github.com/yoksel/url-encoder/][Url encoder for SVG]]
+- [[https://github.com/tabler/tabler-icons][tabler/ *tabler-icons*]] - A set of over 300 free MIT-licensed high-quality SVG
+  icons for you to use in your web projects
 
 * iOS
 
@@ -495,7 +505,7 @@ rsync -arv --delete-after --delete-excluded --progress \
 
 ** Command
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
 git init  # 在当前目录新建一个 Git 代码库
 git clone [url]  # 下载一个项目和它的整个代码历史
 git config --list # 显示当前的 Git 配置
@@ -728,6 +738,7 @@ My configuration [[https://github.com/exuanbo/.doom.d][.doom.d]]
   configuration for vim
 
 ** Visual Studio Code
+- [[https://github.com/viatsko/awesome-vscode][awesome-vscode]] - A curated list of delightful VS Code packages and resources
 - [[https://zhuanlan.zhihu.com/p/73561114][从 Emacs 和 Vim 到 VSCode - 知乎]]
 - [[https://github.com/VSpaceCode/VSpaceCode][VSpaceCode]] - Spacemacs' like keybindings for Visual Studio Code
 
@@ -902,18 +913,23 @@ background of code to whatever theme I'm using's background"
 
 * LaTeX
 
+* Research
+** Tools
+- [[https://www.zotero.org/][Zotero | Your personal research assistant]]
+  - [[https://sspai.com/post/59035][文献管理利器 Zotero 设置技巧 - 少数派]]
+
 * OS
 - [[https://www.atlassian.com/git/tutorials/dotfiles][How to store dotfiles | Atlassian Git Tutorial]] - The best way to store your
   dotfiles: A bare Git repository
 
-  #+BEGIN_SRC shell
+  #+BEGIN_SRC sh
 git init --bare $HOME/.cfg
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
 echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.zshrc
   #+END_SRC
 
-  #+BEGIN_SRC shell
+  #+BEGIN_SRC sh
 config status
 config add .vimrc
 config commit -m "Add vimrc"
@@ -926,6 +942,7 @@ config push
 *** Server
 
 ** MacOS
+- [[https://www.danrodney.com/mac/][Mac Keyboard Shortcuts & Keystrokes | Dan Rodney]]
 - [[https://github.com/jaywcjlove/awesome-mac][Awesome Mac]]
 - [[https://github.com/serhii-londar/open-source-mac-os-apps][Awesome macOS open source applications]]
 - [[https://github.com/robbyrussell/oh-my-zsh][oh-my-zsh]]
@@ -936,10 +953,10 @@ config push
   - [[https://github.com/ggPeti/homebrew-rmrec][ggPeti/ *homebrew-rmrec*]] - Quick and simple command to remove a Homebrew
     package and its dependencies
 
-      #+BEGIN_SRC shell
+    #+BEGIN_SRC sh
 brew tap ggpeti/rmrec
 brew rmrec pkgname
-      #+END_SRC
+    #+END_SRC
 
 - [[https://github.com/gnachman/iTerm2][iTerm2]]
   - [[https://iterm2.com/documentation-shell-integration.html][Shell Integration - iTerm2]]
@@ -951,7 +968,7 @@ brew rmrec pkgname
 - [[http://sourabhbajaj.com/mac-setup/index.html][Mac OS X Setup Guide]]
 - 改变 Launchpad 中应用图标的大小
 
-  #+BEGIN_SRC shell
+  #+BEGIN_SRC sh
 defaults write com.apple.dock springboard-columns -int 列数
 defaults write com.apple.dock springboard-rows -int 行数
 defaults write com.apple.dock ResetLaunchPad -bool TRUE
@@ -969,7 +986,7 @@ produce output or assume the shell is attached to a tty.
 
   from [[https://stackoverflow.com/questions/12306223/how-to-manually-create-icns-files-using-iconutil][stackoverflow.com/questions/12306223]]
 
-  #+BEGIN_SRC shell
+  #+BEGIN_SRC sh
 mkdir MyIcon.iconset
 
 # convert a 1024x1024 png (named "Icon1024.png") to the required icns file
@@ -1001,7 +1018,7 @@ be hosted locally. Non-Free software is listed on the Non-Free page.
 ** Nginx Configuration
 [[https://gist.github.com/fotock/9cf9afc2fd0f813828992ebc4fdaad6f][fotock/ *nginx.conf*]] - Nginx SSL 安全配置最佳实践
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
 # 生成 dhparam.pem 文件, 在命令行执行任一方法:
 
 # 方法1: 很慢
