@@ -9,24 +9,20 @@
 
 #+BEGIN_CENTER
 This page is built using Emacs [[https://orgmode.org/][Org mode]] with [[https://gulpjs.com/][gulp.js]], inspired by [[https://geekplux.com/][GeekPlux]].
-Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm still learning and exploring the amazing
-[[https://orgmode.org/][Org mode]].
+Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
 #+END_CENTER
 
-- [[http://catb.org/~esr/faqs/hacker-howto.html][How To Become A Hacker]]
-- [[http://catb.org/~esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]]
-- [[https://uses.tech/][/uses]] - A list of =/uses= pages detailing developer setups, gear, software and
-  configs.
-
 * Life
-** Minimalism
+** Style
+*** Minimalism
 - [[https://manuelmoreale.com/thoughts/mgtm-introduction][Introduction: What Minimalism is and is not – Manu]]
   - To me, Minimalism has nothing to do with anything visual.
   - I wouldn't call minimalism a lifestyle. I'd much rather refer to it as a
     mindset or a guiding principle.
 
-** IME
-*** 双拼
+** Skill
+*** Typing
+**** 双拼
 - [[https://sspai.com/post/33019][选择输入法的哲学：兼论双拼的优缺点 - 少数派]]
   - 录入文字的过程可以简单分为两个环节：1. 大脑将思考的内容转化为可以通过键盘录
     入的内容（比如字形、字音）；2. 通过键盘将字形或字音录入电脑并组合为最终文字。
@@ -37,30 +33,30 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm sti
   - 双拼输入法是拼音输入法的一种，因此它继承了拼音输入法在第一环节的优势；而由于
     简化了复合声母和韵母，在第二环节的效率追平甚至超过了五笔输入法。
 
-**** Practice
+***** Practice
 - 强制替换电脑和手机上的输入法
 - 打印键位并贴到墙上
 - 使用讯飞输入法键位皮肤
 - 微信聊天背景设为键位图
 
-**** Resource
+***** Resource
 - [[https://www.flypy.com/][小鹤双拼·小鹤音形 - 官方网站]]
 
-*** RIME
+**** RIME
 - [[https://github.com/alswl/Rime][alswl/ *Rime*]] - Rime configuration for Squirrel (macOS) & fcitx-rime
 
-**** Squirrel
+***** Squirrel
 - [[https://github.com/placeless/squirrel_config][placeless/ *squirrel_config*]] - Rime 鼠须管小鹤双拼配置
 - [[https://github.com/cnfeat/Rime][cnfeat/ *Rime*]] - 鼠须管 小鹤双拼 输入法配置及配色方案
 
-** Bypass GFW
-*** Server
+*** Bypass GFW
+**** Server
 - [[https://www.v2ray.com/][V2Ray]]
   - [[https://guide.v2fly.org/advanced/wss_and_web.html][WebSocket + TLS + Web]]
 - [[https://github.com/trojan-gfw/trojan][trojan]]
   - [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/ *Trojan-Qt5*]] - Windows, macOS, Linux
 
-*** Client
+**** Client
 - [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ *ClashX*]] - macOS
 - [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS | paid app
 - [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ *SS-Rule-Snippet*]] - Design for Surge, Quantumult, Shadowrocket,
@@ -69,10 +65,14 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm sti
 - [[https://github.com/geekdada/surgio][geekdada/ *surgio*]] - Generating rules for Surge, Clash, Quantumult... like a
   PRO
 
-*** Other
+**** Other
 - [[https://github.com/googlehosts/hosts][GoogleHosts]]
 
-** Marathon
+**** Tutorial
+- [[https://trojan-tutor.github.io/2019/04/10/p41.html][自建梯子教程 --Trojan版本 | trojan-tutor]]
+
+** Hobby
+*** Marathon
 - 知乎圆桌[[https://www.zhihu.com/roundtable/marathon2015/][《马拉松之路》]]
 - [[https://www.zhihu.com/question/21557037][有哪些配合马拉松训练的核心力量训练项目或计划？ - 知乎]]
 
@@ -93,7 +93,7 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm sti
       一条起跑线上。不论最后是成功或失败，在这个当下，都取决于自己这幅身躯。正因
       为如此，才会有快乐，有痛苦，最后是无上的自由。
 
-** Podcast
+*** Podcast
 - [[https://sspai.com/post/58577][播客届的京派与海派 - 少数派]]
 
   时隔近百年，当下的中文播客圈，听众之中流行着一个说法，将中文播客分类为「陪伴型
@@ -103,14 +103,14 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]]. I'm sti
   客节目。前者往往以北京为核心，主要是北方语系；后者则以上海为中心，且基本有海外
   背景。
 
-*** App
+**** App
 泛用型播客客户端：
 
 - [[https://castro.fm/][Castro]] - iOS | Recommand
 - [[https://overcast.fm/][Overcast]] - iOS
 - [[https://www.pocketcasts.com/][Pocket Casts]] - Android & iOS
 
-*** Explore
+**** Explore
 - [[https://letter.getpodcast.xyz/][播客 Feed 订阅]]
 - [[https://typlog.com/podlist/][中文独立播客]] - 发现与推荐高质量的中文独立播客
 
@@ -126,7 +126,7 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言：
 这是要从内容本身出发去判断的，真正「独立」的内容会散发出独一无二的气质。
 #+end_quote
 
-*** Subscription
+**** Subscription
 Favorites：
 
 - [[https://teacherluke.co.uk/][Luke's English Podcast]]
@@ -160,7 +160,7 @@ Favorites：
 - [[http://feed.tangsuanradio.com/gadio.xml][机核网 GADIO 游戏广播]]
 - [[http://web.archive.org/web/20160604093615/http://antiwave.net/][反波 Antiwave - web.archive.org]]
 
-*** Episode
+**** Episode
 - [[https://kernelpanic.fm/12][数学与编程 | 内核恐慌 #12]]
 
   特别嘉宾木遥与 Rio 和吴涛讨论了数学与编程之间的联系。话题包括但不限于：数学系
@@ -169,13 +169,6 @@ Favorites：
   编程动手能力的来源、学习编程语言的意义、可视化编程、Lisp、FORTRAN、Go、C++、
   Swift、Optional、Google 的激励机制、欧洲的社会保障体制、技术变革带来的社会影响、
   中国政治坐标系测试、和食物替代饮料 Soylent。
-
-** Subscriptions
-*** App
-
-*** Web Service
-
-*** Entertainment
 
 * Job
 ** Prepare
@@ -253,6 +246,11 @@ Favorites：
 - [[https://opensource.guide/][Open Source Guides]]
 - [[https://github.phodal.com/][GitHub 漫游指南]] by [[https://www.phodal.com/][Phodal Huang]]
 
+** Eric S. Raymond's
+- [[http://catb.org/~esr/][Home Page]]
+- [[http://catb.org/~esr/faqs/hacker-howto.html][How To Become A Hacker]]
+- [[http://catb.org/~esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]]
+
 ** Resource
 - [[https://awesomeopensource.com/][Find Open Source By Searching, Browsing and Combining 7,000 Topics]]
 
@@ -302,6 +300,7 @@ jobs:
 * Computer Science
 - [[https://github.com/ossu/computer-science][ossu/ *computer-science*]] - Path to a free self-taught education in Computer
   Science
+- [[https://teachyourselfcs.com/][Teach Yourself Computer Science]]
 - [[https://www.bilibili.com/video/av21376839/][Crash Course Computer Science]] - 中英字幕
 
 * Programming
@@ -335,10 +334,6 @@ brew install cabal-install ghc
 brew haskell-stack
 stack setup
   #+END_SRC
-
-*** Emacs Lisp
-- [[https://github.com/bbatsov/emacs-lisp-style-guide][bbatsov/ *emacs-lisp-style-guide*]]
-- [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html][Tips - GNU Emacs Lisp Reference Manual]]
 
 ** Python
 *** Installation
@@ -603,24 +598,13 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 
 #+END_EXAMPLE
 
-*** Resource
-- [[https://emacs-china.org/][Emacs China]]
-- [[https://emacs.stackexchange.com/][Emacs Stack Exchange]]
-- [[https://www.reddit.com/r/emacs/][M-x emacs-reddit]]
+*** Emacs Lisp
+- [[https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html][Programming in Emacs Lisp]]
+- [[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html#Top][GNU Emacs Lisp Reference Manual]]
 
-**** Blog
-- [[https://planet.emacslife.com/][Planet Emacslife]]
-- [[https://sachachua.com/][Living an awesome Life - Sacha Chua]]
-
-**** GitHub
-- [[https://github.com/search?p=1&q=stars%3A%3E20+extension%3Ael+language%3Aelisp&ref=searchresults&type=Repositories][Github Search · stars:>20 extension:el language:elisp]]
-- [[https://github.com/lujun9972/emacs-document][lujun9972/ *emacs-document*]] - translate emacs documents to Chinese for
-  convenient reference
-- [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][*mastering-emacs-in-one-year-guide* /guide-zh.org]]
-
-**** Tutorial
-- [[http://ergoemacs.org/emacs/buy_xah_emacs_tutorial.html][Buy Xah Emacs Tutorial]]
-- [[http://steve-yegge.blogspot.com/2008/01/emergency-elisp.html][Stevey's Blog Rants: Emergency Elisp]]
+**** Style
+- [[https://github.com/bbatsov/emacs-lisp-style-guide][bbatsov/ *emacs-lisp-style-guide*]]
+- [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html][Appendix D Tips and Conventions - GNU Emacs Lisp Reference Manual]]
 
 *** Tips
 - [[https://stackoverflow.com/questions/2736087/eval-after-load-vs-mode-hook][eval-after-load vs. mode hook - Stack Overflow]]
@@ -648,6 +632,25 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 
   If a variable is not buffer-local, then ~setq~ and ~setq-default~ do the same
   thing.
+
+*** Resource
+- [[https://emacs-china.org/][Emacs China]]
+- [[https://emacs.stackexchange.com/][Emacs Stack Exchange]]
+- [[https://www.reddit.com/r/emacs/][M-x emacs-reddit]]
+
+**** Blog
+- [[https://planet.emacslife.com/][Planet Emacslife]]
+- [[https://sachachua.com/][Living an awesome Life - Sacha Chua]]
+
+**** GitHub
+- [[https://github.com/search?p=1&q=stars%3A%3E20+extension%3Ael+language%3Aelisp&ref=searchresults&type=Repositories][Github Search · stars:>20 extension:el language:elisp]]
+- [[https://github.com/lujun9972/emacs-document][lujun9972/ *emacs-document*]] - translate emacs documents to Chinese for
+  convenient reference
+- [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][*mastering-emacs-in-one-year-guide* /guide-zh.org]]
+
+**** Tutorial
+- [[http://ergoemacs.org/emacs/buy_xah_emacs_tutorial.html][Buy Xah Emacs Tutorial]]
+- [[http://steve-yegge.blogspot.com/2008/01/emergency-elisp.html][Stevey's Blog Rants: Emergency Elisp]]
 
 *** Packages
 - [[https://github.com/NicolasPetton/gulp-task-runner][NicolasPetton/ *gulp-task-runner*]] - Run gulp tasks from Emacs =M-x gulp=
@@ -1009,6 +1012,9 @@ iconutil -c icns MyIcon.iconset
 * Hardware
 - [[https://www.caldigit.com/][CalDigit – Considerate. Authentic. Design.]]
 
+** DIY
+- [[https://github.com/blanboom/awesome-technical-diy-cn][awesome-technical-diy-cn]]
+
 * Self-hosting
 [[https://github.com/awesome-selfhosted/awesome-selfhosted][awesome-selfhosted]]
 
@@ -1187,3 +1193,6 @@ server {
     }
 }
 #+END_SRC
+* Uncategorized
+- [[https://uses.tech/][/uses]] - A list of =/uses= pages detailing developer setups, gear, software and
+  configs.
