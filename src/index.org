@@ -54,7 +54,9 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
 - [[https://www.v2ray.com/][V2Ray]]
   - [[https://guide.v2fly.org/advanced/wss_and_web.html][WebSocket + TLS + Web]]
 - [[https://github.com/trojan-gfw/trojan][trojan]]
-  - [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/ *Trojan-Qt5*]] - Windows, macOS, Linux
+  - [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/ *Trojan-Qt5*]] - A cross-platform trojan GUI client based on
+    Shadowsocks-qt
+  - [[https://github.com/Jrohy/trojan][Jrohy/ *trojan*]] - trojan多用户管理部署程序, 支持web页面管理
 
 **** Client
 - [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ *ClashX*]] - macOS
@@ -92,6 +94,12 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
     - 无论你处于什么立场、曾经有过什么样的遭遇，面对跑步这件事，所有人都得站在同
       一条起跑线上。不论最后是成功或失败，在这个当下，都取决于自己这幅身躯。正因
       为如此，才会有快乐，有痛苦，最后是无上的自由。
+
+**** Gear
+- [[https://www.garmin.com/][Garmin]]
+  - [[https://sspai.com/post/55892][戴上 Garmin245，感受迎面吹拂的风 - 少数派]]
+  - [[https://byte.coffee/54][Byte.Coffee: Episode 53: Always-on and beat yesterday]]
+- [[https://ultimatedirection.com/][Ultimate Direction | Athlete-Inspired Hydration Packs & Water Belts]]
 
 *** Podcast
 - [[https://sspai.com/post/58577][播客届的京派与海派 - 少数派]]
@@ -425,6 +433,7 @@ const plugins = [
 *** Icons
 - [[https://favicon.io/favicon-generator/][The best Favicon Generator (completely free) | Favicon.io]]
 - [[https://github.com/yoksel/url-encoder/][Url encoder for SVG]]
+- [[https://ikonate.com/][Ikonate – fully customisable & accessible vector icons]]
 - [[https://iconmonstr.com/][iconmonstr - Free simple icons for your next project]]
 - [[https://simpleicons.org/][Simple Icons]] - Free SVG icons for popular brands
 - [[https://github.com/refactoringui/heroicons][refactoringui/ *heroicons*]] - A set of free MIT-licensed high-quality SVG icons
@@ -941,6 +950,23 @@ config commit -m "Add zshrc"
 config push
   #+END_SRC
 
+- [[https://github.com/robbyrussell/oh-my-zsh][oh-my-zsh]]
+- [[https://unix.stackexchange.com/questions/231316/exiting-terminal-running-nohup-my-script-you-have-running-jobs-ok-to][zsh - Exiting terminal running "nohup ./my_script &" => "You have running
+  job...]]
+
+  If you want to not see that message, simply pass the job id to disown, like
+  so:
+
+  #+BEGIN_SRC shell
+disown %1
+  #+END_SRC
+
+  Or, start the job with ~&!~ (zsh-specific trick):
+
+  #+BEGIN_SRC shell
+nohup ./my_script.sh &!
+  #+END_SRC
+
 ** Linux
 *** Server
 
@@ -948,7 +974,6 @@ config push
 - [[https://www.danrodney.com/mac/][Mac Keyboard Shortcuts & Keystrokes | Dan Rodney]]
 - [[https://github.com/jaywcjlove/awesome-mac][Awesome Mac]]
 - [[https://github.com/serhii-londar/open-source-mac-os-apps][Awesome macOS open source applications]]
-- [[https://github.com/robbyrussell/oh-my-zsh][oh-my-zsh]]
 - [[http://brew.sh/][Homebrew]]
   - [[https://github.com/phinze/homebrew-cask][homebrew-cask]]
   - ~brew leavese~ Show installed formulae that are not dependencies of another

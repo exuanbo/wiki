@@ -18,7 +18,7 @@ jobs:
 
       - name: Setup Gulp.js
         run: |
-          npm install -g gulp-cli
+          npm i -g gulp-cli
           npm ci
 
       - name: Build
