@@ -1,17 +1,34 @@
-const { series, parallel } = require('gulp')
-const { src, dest } = require('gulp')
-const concatCss = require('gulp-concat-css')
+const { src, dest, series, parallel } = require('gulp')
+
+// clean
+const del = require('del')
+
+// css
+const concatCSS = require('gulp-concat-css')
 const postcss = require('gulp-postcss')
 const purgecss = require('@fullhuman/postcss-purgecss')
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
+
+// js
 const concat = require('gulp-concat')
-const uglify = require('gulp-uglify')
+const uglify = require('gulp-uglify-es').default
+
+// html
 const injectInline = require('gulp-inject-inline')
 const htmlmin = require('gulp-htmlmin')
-const del = require('del')
 
-const css = () => {
+// functions
+//
+function preClean() {
+  return del(['build', 'dist'])
+}
+
+function postClean() {
+  return del(['build'])
+}
+
+function css() {
   const plugins = [
     purgecss({
       content: ['src/index.html'],
@@ -23,25 +40,26 @@ const css = () => {
     }),
     autoprefixer()
   ]
+
   return src(['assets/default.css', 'assets/spacemacs-light.css', 'assets/spacemacs-doc.css'])
-    .pipe(concatCss('style.css'))
+    .pipe(concatCSS('style.css'))
     .pipe(postcss(plugins))
-    .pipe(dest('dist'))
+    .pipe(dest('build'))
 }
 
-const js = () => {
+function js() {
   return src(['assets/jquery.slim.js', 'assets/scrollspy.js', 'assets/readtheorg.js'])
     .pipe(concat('script.js'))
-    .pipe(uglify())
-    .pipe(dest('dist'))
+    .pipe(uglify({ toplevel: true }))
+    .pipe(dest('build'))
 }
 
-const favicon = () => {
+function favicon() {
   return src(['assets/favicon/*'])
     .pipe(dest('dist'))
 }
 
-const html = () => {
+function html() {
   return src('src/index.html')
     .pipe(injectInline())
     .pipe(htmlmin({
@@ -51,12 +69,4 @@ const html = () => {
     .pipe(dest('dist'))
 }
 
-const clean = () => {
-  return del(['dist/style.css', 'dist/script.js'])
-}
-
-exports.default = series(parallel(css, js, favicon), html, clean)
-exports.css = css
-exports.js = js
-exports.html = html
-exports.clean = clean
+exports.default = series(preClean, parallel(css, js, favicon), html, postClean)

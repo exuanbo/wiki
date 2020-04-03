@@ -1,5 +1,4 @@
-#+begin_src shell
-npm install -g gulp-cli
+#+BEGIN_SRC shell
 npm install
-gulp
-#+end_Src
+npx gulp
+#+END_SRC
