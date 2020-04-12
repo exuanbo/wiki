@@ -1,8 +1,8 @@
 # -*- mode: org; -*-
 
 #+HTML_HEAD: [ inject-inline ./../assets/head.html ]
-#+HTML_HEAD: <style type="text/css">[ inject-inline ./../dist/style.css ]</style>
-#+HTML_HEAD: <script type="text/javascript">[ inject-inline ./../dist/script.js ]</script>
+#+HTML_HEAD: <style>[ inject-inline ./../build/style.css ]</style>
+#+HTML_HEAD: <script>[ inject-inline ./../build/script.js ]</script>
 
 #+TITLE: Exuanbo's Wiki
 #+AUTHOR: Exuanbo
@@ -57,15 +57,21 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
   - [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/ *Trojan-Qt5*]] - A cross-platform trojan GUI client based on
     Shadowsocks-qt
   - [[https://github.com/Jrohy/trojan][Jrohy/ *trojan*]] - trojan多用户管理部署程序, 支持web页面管理
+- [[https://github.com/p4gefau1t/trojan-go][p4gefau1t/ *trojan-go*]] - Golang实现的Trojan代理，支持自动证书申请/多路复用/路
+  由功能/CDN中转，多平台，无依赖
 
 **** Client
 - [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ *ClashX*]] - macOS
+- [[https://github.com/lzdnico/ClashWeb/tree/ClashWeb1.6.3][lzdnico/ *ClashWeb*]] - Windows
 - [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS | paid app
+- [[https://github.com/tindy2013/subconverter][tindy2013/ *subconverter*]] - Utility to convert between various subscription format
+- [[https://bianyuan.xyz/][Sabrina Rule Generator]]
+- [[https://github.com/geekdada/surgio][geekdada/ *surgio*]] - Generating rules for Surge, Clash, Quantumult... like a
+  PRO
+- [[https://github.com/ConnersHua/Profiles/tree/master][ConnersHua/ *Profiles* at master]]
 - [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ *SS-Rule-Snippet*]] - Design for Surge, Quantumult, Shadowrocket,
   Surfboard, clash(X)
 - [[https://github.com/lhie1/Rules][lhie1/ *Rules*]] - Surge, Shadowrocket, Surfboard, Clash
-- [[https://github.com/geekdada/surgio][geekdada/ *surgio*]] - Generating rules for Surge, Clash, Quantumult... like a
-  PRO
 
 **** Other
 - [[https://github.com/googlehosts/hosts][GoogleHosts]]
@@ -246,6 +252,7 @@ Favorites：
 * Writing
 
 * Design
+- [[https://dribbble.com/][Dribbble - Discover the World’s Top Designers & Creative Professionals]]
 - [[https://sspai.com/tag/%E8%AE%BE%E8%AE%A1][#设计 - 少数派]]
 
 * Free & Open
@@ -363,7 +370,17 @@ pip uninstall -y -r <(pip freeze)
 - [[https://github.com/gothinkster/realworld][gothinkster/ *realworld*]] - Exemplary fullstack Medium.com clone powered by
   React, Angular, Node, Django, and many more
 
+** Javascript
+- [[https://github.com/trekhleb/javascript-algorithms][trekhleb/ *javascript-algorithms*]] - Algorithms and data structures implemented
+  in JavaScript with explanations and links to further readings
+
+** Typescript
+- [[https://typedoc.org/][Home | TypeDoc]] - A documentation generator for TypeScript projects
+
 ** Node.js
+** NPM
+- [[https://developer.aliyun.com/mirror/NPM][NPM镜像-NPM下载地址-NPM安装教程-阿里巴巴开源镜像站]]
+
 ** Gulp.js
 [[https://gulpjs.com/][gulp.js]] - The streaming build system
 
@@ -382,12 +399,11 @@ exports.default = defaultTask
 
 **** Javascript
 - gulp-concat
-- gulp-uglify
+- gulp-uglify-es
 
 **** CSS
 - gulp-concat-css
 - gulp-postcss
-- gulp-purgecss
 
 **** HTML
 - gulp-htmlmin
@@ -420,11 +436,16 @@ const plugins = [
 
 ** Static Site Generator
 *** Hugo
+- [[https://github.com/fenneclab/hugo-bin][fenneclab/ *hugo-bin*]] - Binary wrapper for Hugo
 - [[https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter][dirkolbrich/ *hugo-theme-tailwindcss-starter*]] - Starter files for a Hugo theme
   with Tailwindcss
 
-** Web Browser
-*** Chrome Extensions
+** Browser
+*** Userscript
+- [[https://greasyfork.org/][Greasy Fork - safe and useful user scripts]]
+
+*** Chrome
+**** Chrome Extensions
 - uBlacklist
   - [[https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist][cobaltdisco/ *Google-Chinese-Results-Blocklist*]]
   - [[https://github.com/gyli/Blocklist][gyli/ *Blocklist*]]
@@ -444,6 +465,10 @@ const plugins = [
 * iOS
 
 * Game
+** General
+*** Articles
+- [[https://www.gcores.com/articles/120777][《毁灭战士》究竟讲了一个什么故事？ | 机核 GCORES]]
+
 ** Development
 - [[https://indienova.com/groups/14][我们都爱像素风 - Indienova 小组]]
 
@@ -696,6 +721,7 @@ for reference:
 ** Doom Emacs
 [[https://github.com/hlissner/doom-emacs][hlissner/ *doom-emacs*]] - An Emacs configuration for the stubborn martian vimmer
 
+- [[https://github.com/hlissner/doom-emacs/blob/develop/docs/index.org][Doom Emacs Documentation]]
 - [[https://github.com/hlissner/emacs-doom-themes][hlissner/ *emacs-doom-themes*]]
 - [[https://github.com/hlissner/doom-snippets][hlissner/ *doom-snippets*]] - The Doom Emacs snippets library
 
@@ -951,6 +977,8 @@ config push
   #+END_SRC
 
 - [[https://github.com/robbyrussell/oh-my-zsh][oh-my-zsh]]
+- [[https://github.com/romkatv/powerlevel10k][romkatv/ *powerlevel10k*]] -  A Zsh theme. It emphasizes speed, flexibility and
+  out-of-the-box experience.
 - [[https://unix.stackexchange.com/questions/231316/exiting-terminal-running-nohup-my-script-you-have-running-jobs-ok-to][zsh - Exiting terminal running "nohup ./my_script &" => "You have running
   job...]]
 

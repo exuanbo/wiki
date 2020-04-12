@@ -50,7 +50,7 @@ function css() {
 function js() {
   return src(['assets/jquery.slim.js', 'assets/scrollspy.js', 'assets/readtheorg.js'])
     .pipe(concat('script.js'))
-    .pipe(uglify({ toplevel: true }))
+    .pipe(uglify())
     .pipe(dest('build'))
 }
 

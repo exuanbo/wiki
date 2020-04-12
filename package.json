@@ -2,16 +2,11 @@
   "name": "wiki",
   "version": "1.0.0",
   "description": "My wiki built with Emacs Org mode and gulp.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/exuanbo/wiki.git"
-  },
   "author": "exuanbo",
   "license": "MIT",
-  "homepage": "https://github.com/exuanbo/wiki#readme",
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
-    "autoprefixer": "^9.7.5",
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
