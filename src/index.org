@@ -61,17 +61,24 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
   由功能/CDN中转，多平台，无依赖
 
 **** Client
+***** App
 - [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ *ClashX*]] - macOS
+- [[https://github.com/paradiseduo/ShadowsocksX-NG-R8][paradiseduo/ *ShadowsocksX-NG-R8*]] - macOS
 - [[https://github.com/lzdnico/ClashWeb/tree/ClashWeb1.6.3][lzdnico/ *ClashWeb*]] - Windows
 - [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS | paid app
+
+***** Subscription
 - [[https://github.com/tindy2013/subconverter][tindy2013/ *subconverter*]] - Utility to convert between various subscription format
 - [[https://bianyuan.xyz/][Sabrina Rule Generator]]
+- [[https://gfwsb.114514.best/][Subscription Converter]]
+
+***** Rules
 - [[https://github.com/geekdada/surgio][geekdada/ *surgio*]] - Generating rules for Surge, Clash, Quantumult... like a
   PRO
-- [[https://github.com/ConnersHua/Profiles/tree/master][ConnersHua/ *Profiles* at master]]
+- [[https://github.com/ConnersHua/Profiles/tree/master][ConnersHua/ *Profiles* at master]] - 神机规则
+- [[https://github.com/lhie1/Rules][lhie1/ *Rules*]] - 洞主规则
 - [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ *SS-Rule-Snippet*]] - Design for Surge, Quantumult, Shadowrocket,
   Surfboard, clash(X)
-- [[https://github.com/lhie1/Rules][lhie1/ *Rules*]] - Surge, Shadowrocket, Surfboard, Clash
 
 **** Other
 - [[https://github.com/googlehosts/hosts][GoogleHosts]]
@@ -118,7 +125,7 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
   背景。
 
 **** App
-泛用型播客客户端：
+泛用型播客客户端:
 
 - [[https://castro.fm/][Castro]] - iOS | Recommand
 - [[https://overcast.fm/][Overcast]] - iOS
@@ -128,9 +135,9 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
 - [[https://letter.getpodcast.xyz/][播客 Feed 订阅]]
 - [[https://typlog.com/podlist/][中文独立播客]] - 发现与推荐高质量的中文独立播客
 
-Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言：
+Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言:
 
-#+begin_quote
+#+BEGIN_QUOTE
 独立 = 创作过程不受限制、影响。
 
 这个限制和影响可能来自资本、技术、商业、受众。但你不可能找到一个一刀切的标准来定义「独立」。
@@ -138,11 +145,9 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言：
 小众厂牌 Spotify 独占，能叫独立音乐吗？微软独占的《Cuphead》叫独立游戏吗？
 
 这是要从内容本身出发去判断的，真正「独立」的内容会散发出独一无二的气质。
-#+end_quote
+#+END_QUOTE
 
 **** Subscription
-Favorites：
-
 - [[https://teacherluke.co.uk/][Luke's English Podcast]]
 - [[https://casticle.fm/][Casticle]]
 
