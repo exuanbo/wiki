@@ -175,18 +175,6 @@ article ol li {
   margin-left: 24px
 }
 
-#content .section ol li p:last-child,
-#content ol li p:last-child,
-article ol li p:last-child {
-  margin-bottom: 0
-}
-
-#content .section ol li ul,
-#content ol li ul,
-article ol li ul {
-  margin-bottom: 0
-}
-
 #content .section ol li ul li,
 #content ol li ul li,
 article ol li ul li {
