@@ -41,14 +41,14 @@ function css() {
     autoprefixer()
   ]
 
-  return src(['assets/default.css', 'assets/spacemacs-light.css', 'assets/spacemacs-doc.css'])
+  return src(['assets/css/default.css', 'assets/css/spacemacs-light.css', 'assets/css/spacemacs-doc.css'])
     .pipe(concatCSS('style.css'))
     .pipe(postcss(plugins))
     .pipe(dest('build'))
 }
 
 function js() {
-  return src(['assets/jquery.slim.js', 'assets/scrollspy.js', 'assets/readtheorg.js'])
+  return src(['assets/js/jquery.slim.js', 'assets/js/scrollspy.js', 'assets/js/readtheorg.js'])
     .pipe(concat('script.js'))
     .pipe(uglify())
     .pipe(dest('build'))

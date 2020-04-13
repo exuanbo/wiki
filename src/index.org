@@ -261,6 +261,11 @@ Favorites：
 - [[https://opensource.guide/][Open Source Guides]]
 - [[https://github.phodal.com/][GitHub 漫游指南]] by [[https://www.phodal.com/][Phodal Huang]]
 
+** Privacy
+- [[https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Daemon+-+Stubby][DNS Privacy Daemon - Stubby - DNS Privacy Project - Global Site]]
+- [[https://www.logcg.com/archives/3127.html][DoT DoH 除了 DNSCrypt，你还可以了解一下更好的 DNS 加密方案 | 落格博客]]
+- [[https://developers.cloudflare.com/1.1.1.1/dns-over-https/cloudflared-proxy/][Running a DNS over HTTPS Client - Cloudflare Resolver]]
+
 ** Eric S. Raymond's
 - [[http://catb.org/~esr/][Home Page]]
 - [[http://catb.org/~esr/faqs/hacker-howto.html][How To Become A Hacker]]
@@ -269,13 +274,67 @@ Favorites：
 ** Resource
 - [[https://awesomeopensource.com/][Find Open Source By Searching, Browsing and Combining 7,000 Topics]]
 
-** Github Pages
+** Github
+*** Github Pages
 - [[https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages][How to fix HTTP 404 on Github Pages?]]
 
   If you don't use Jekyll, the workaround is to place a file named =.nojekyll=
   in the root directory.
 
-** Github Actions
+*** Github Actions
+- [[https://p3terx.com/archives/github-actions-started-tutorial.html][GitHub Actions 入门教程 - P3TERX ZONE]]
+- [[https://p3terx.com/archives/github-actions-manual-trigger.html][GitHub Actions 手动触发方式 - P3TERX ZONE]]
+  - Star
+    #+BEGIN_SRC yaml
+name: Test
+
+on:
+  watch:
+    types: started
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+
+    steps:
+       - name: Checkout
+         uses: actions/checkout@v2
+# ...
+    #+END_SRC
+
+  - Webhook
+    #+BEGIN_SRC yaml
+name: Webhook Test
+
+on:
+  repository_dispatch:
+    types: [helloworld, test, none]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Hello World
+      if: contains(github.event.action, 'hello')
+      run: |
+        echo My name is P3TERX.
+        echo Hello World!
+
+    - name: TEST
+      if: github.event.action == 'test'
+      run: |
+        echo test
+    #+END_SRC
+
+    #+BEGIN_SRC shell
+curl -X POST https://api.github.com/repos/:owner/:repo/dispatches \
+    -H "Accept: application/vnd.github.everest-preview+json" \
+    -H "Authorization: token ACTIONS_TRIGGER_TOKEN" \
+    --data '{"event_type": "TRIGGER_KEYWORDS"}'
+    #+END_SRC
+
 - [[https://help.github.com/en/actions/configuring-and-managing-workflows/caching-dependencies-to-speed-up-workflows][Caching dependencies to speed up workflows - GitHub Help]]
 
   #+BEGIN_SRC yaml
@@ -468,6 +527,7 @@ const plugins = [
 ** General
 *** Articles
 - [[https://www.gcores.com/articles/120777][《毁灭战士》究竟讲了一个什么故事？ | 机核 GCORES]]
+- [[https://www.gcores.com/articles/122421][致敬《盟军敢死队》：开宗立派，但无来者可追 | 机核 GCORES]]
 
 ** Development
 - [[https://indienova.com/groups/14][我们都爱像素风 - Indienova 小组]]
