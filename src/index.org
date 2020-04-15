@@ -8,7 +8,7 @@
 #+AUTHOR: Exuanbo
 
 #+BEGIN_CENTER
-This page is built using Emacs [[https://orgmode.org/][Org mode]] with [[https://gulpjs.com/][gulp.js]], inspired by [[https://geekplux.com/][GeekPlux]].
+This page is built using Emacs [[https://orgmode.org/][Org mode]] with [[https://gulpjs.com/][Gulp.js]], inspired by [[https://geekplux.com/][GeekPlux]].
 Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
 #+END_CENTER
 
@@ -19,6 +19,8 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
   - To me, Minimalism has nothing to do with anything visual.
   - I wouldn't call minimalism a lifestyle. I'd much rather refer to it as a
     mindset or a guiding principle.
+
+*** Self-control
 
 ** Skill
 *** Typing
@@ -43,41 +45,41 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
 - [[https://www.flypy.com/][小鹤双拼·小鹤音形 - 官方网站]]
 
 **** RIME
-- [[https://github.com/alswl/Rime][alswl/ *Rime*]] - Rime configuration for Squirrel (macOS) & fcitx-rime
+- [[https://github.com/alswl/Rime][alswl/ Rime]] - Rime configuration for Squirrel (macOS) & fcitx-rime
 
 ***** Squirrel
-- [[https://github.com/placeless/squirrel_config][placeless/ *squirrel_config*]] - Rime 鼠须管小鹤双拼配置
-- [[https://github.com/cnfeat/Rime][cnfeat/ *Rime*]] - 鼠须管 小鹤双拼 输入法配置及配色方案
+- [[https://github.com/placeless/squirrel_config][placeless/ squirrel_config]] - Rime 鼠须管小鹤双拼配置
+- [[https://github.com/cnfeat/Rime][cnfeat/ Rime]] - 鼠须管 小鹤双拼 输入法配置及配色方案
 
 *** Bypass GFW
 **** Server
 - [[https://www.v2ray.com/][V2Ray]]
   - [[https://guide.v2fly.org/advanced/wss_and_web.html][WebSocket + TLS + Web]]
 - [[https://github.com/trojan-gfw/trojan][trojan]]
-  - [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/ *Trojan-Qt5*]] - A cross-platform trojan GUI client based on
+  - [[https://github.com/TheWanderingCoel/Trojan-Qt5][TheWanderingCoel/ Trojan-Qt5]] - A cross-platform trojan GUI client based on
     Shadowsocks-qt
-  - [[https://github.com/Jrohy/trojan][Jrohy/ *trojan*]] - trojan多用户管理部署程序, 支持web页面管理
-- [[https://github.com/p4gefau1t/trojan-go][p4gefau1t/ *trojan-go*]] - Golang实现的Trojan代理，支持自动证书申请/多路复用/路
+  - [[https://github.com/Jrohy/trojan][Jrohy/ trojan]] - trojan多用户管理部署程序, 支持web页面管理
+- [[https://github.com/p4gefau1t/trojan-go][p4gefau1t/ trojan-go]] - Golang实现的Trojan代理，支持自动证书申请/多路复用/路
   由功能/CDN中转，多平台，无依赖
 
 **** Client
 ***** App
-- [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ *ClashX*]] - macOS
-- [[https://github.com/paradiseduo/ShadowsocksX-NG-R8][paradiseduo/ *ShadowsocksX-NG-R8*]] - macOS
-- [[https://github.com/lzdnico/ClashWeb/tree/ClashWeb1.6.3][lzdnico/ *ClashWeb*]] - Windows
+- [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ ClashX]] - macOS
+- [[https://github.com/paradiseduo/ShadowsocksX-NG-R8][paradiseduo/ ShadowsocksX-NG-R8]] - macOS
+- [[https://github.com/lzdnico/ClashWeb/tree/ClashWeb1.6.3][lzdnico/ ClashWeb]] - Windows
 - [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS | paid app
 
 ***** Subscription
-- [[https://github.com/tindy2013/subconverter][tindy2013/ *subconverter*]] - Utility to convert between various subscription format
+- [[https://github.com/tindy2013/subconverter][tindy2013/ subconverter]] - Utility to convert between various subscription format
 - [[https://bianyuan.xyz/][Sabrina Rule Generator]]
 - [[https://gfwsb.114514.best/][Subscription Converter]]
 
 ***** Rules
-- [[https://github.com/geekdada/surgio][geekdada/ *surgio*]] - Generating rules for Surge, Clash, Quantumult... like a
+- [[https://github.com/geekdada/surgio][geekdada/ surgio]] - Generating rules for Surge, Clash, Quantumult... like a
   PRO
-- [[https://github.com/ConnersHua/Profiles/tree/master][ConnersHua/ *Profiles* at master]] - 神机规则
-- [[https://github.com/lhie1/Rules][lhie1/ *Rules*]] - 洞主规则
-- [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ *SS-Rule-Snippet*]] - Design for Surge, Quantumult, Shadowrocket,
+- [[https://github.com/ConnersHua/Profiles/tree/master][ConnersHua/ Profiles at master]] - 神机规则
+- [[https://github.com/lhie1/Rules][lhie1/ Rules]] - 洞主规则
+- [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ SS-Rule-Snippet]] - Design for Surge, Quantumult, Shadowrocket,
   Surfboard, clash(X)
 
 **** Other
@@ -85,6 +87,14 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
 
 **** Tutorial
 - [[https://trojan-tutor.github.io/2019/04/10/p41.html][自建梯子教程 --Trojan版本 | trojan-tutor]]
+
+** Tool
+- [[https://sspai.com/post/58805][在工具应用选择上，为什么我开始相信 Unix 哲学？ - 少数派]]
+  - [[https://en.wikipedia.org/wiki/Unix_philosophy][Unix philosophy - Wikipedia]]
+  - 理念 1. 一个应用，一个目标
+  - 理念 2. 组合胜过单干
+  - 理念 3. 一切皆文件
+  - 最后， 寻找心中的「独角兽」
 
 ** Hobby
 *** Marathon
@@ -132,6 +142,11 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
 - [[https://www.pocketcasts.com/][Pocket Casts]] - Android & iOS
 
 **** Explore
+- [[https://www.listennotes.com/][Listen Notes: The best podcast search engine]]
+
+  The most comprehensive podcast database online. Discover best podcasts. Search
+  podcast show notes and audio transcripts by people, places, or topics.
+
 - [[https://letter.getpodcast.xyz/][播客 Feed 订阅]]
 - [[https://typlog.com/podlist/][中文独立播客]] - 发现与推荐高质量的中文独立播客
 
@@ -189,20 +204,23 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言:
   Swift、Optional、Google 的激励机制、欧洲的社会保障体制、技术变革带来的社会影响、
   中国政治坐标系测试、和食物替代饮料 Soylent。
 
+** Digest
+- [[https://sspai.com/post/59182][推荐丨2010s：我们仍在「故事」的中途 - 少数派]]
+
 * Job
 ** Prepare
 - [[https://www.zhihu.com/question/24099873][如何得到 Google 的工作机会？ - 知乎]]
-- [[https://github.com/geekcompany/ResumeSample][geekcompany/ *ResumeSample*]] - 程序员简历模板系列
-- [[https://github.com/azl397985856/fe-interview][azl397985856/ *fe-interview*]] - 大前端面试宝典
+- [[https://github.com/geekcompany/ResumeSample][geekcompany/ ResumeSample]] - 程序员简历模板系列
+- [[https://github.com/azl397985856/fe-interview][azl397985856/ fe-interview]] - 大前端面试宝典
 - [[https://labuladong.gitbook.io/algo/][labuladong的算法小抄]]
 
 *** Interview
-- [[https://github.com/jwasham/coding-interview-university][jwasham/ *coding-interview-university*]]
+- [[https://github.com/jwasham/coding-interview-university][jwasham/ coding-interview-university]]
 
 ** Resource
-- [[https://github.com/lukasz-madon/awesome-remote-job][lukasz-madon/ *awesome-remote-job*]] - A curated list of awesome remote jobs and
+- [[https://github.com/lukasz-madon/awesome-remote-job][lukasz-madon/ awesome-remote-job]] - A curated list of awesome remote jobs and
   resources
-- [[https://github.com/greatghoul/remote-working][greatghoul/ *remote-working*]] - 本列表只收录中国国内的资源或者对国内受众友好的国外资源
+- [[https://github.com/greatghoul/remote-working][greatghoul/ remote-working]] - 本列表只收录中国国内的资源或者对国内受众友好的国外资源
 
 ** Experience
 - [[https://www.zhihu.com/question/39610449][在谷歌日本(Google Japan)工作是怎样一番体验？ - 知乎]]
@@ -377,7 +395,7 @@ jobs:
   #+END_SRC
 
 * Computer Science
-- [[https://github.com/ossu/computer-science][ossu/ *computer-science*]] - Path to a free self-taught education in Computer
+- [[https://github.com/ossu/computer-science][ossu/ computer-science]] - Path to a free self-taught education in Computer
   Science
 - [[https://teachyourselfcs.com/][Teach Yourself Computer Science]]
 - [[https://www.bilibili.com/video/av21376839/][Crash Course Computer Science]] - 中英字幕
@@ -415,7 +433,8 @@ stack setup
   #+END_SRC
 
 ** Python
-*** Installation
+- [[https://github.com/satwikkansal/wtfpython][satwikkansal/ wtfpython]] - Exploring and understanding Python through
+  surprising snippets
 
 *** Tips
 - [[https://stackoverflow.com/questions/11248073/what-is-the-easiest-way-to-remove-all-packages-installed-by-pip][What is the easiest way to remove all packages installed by pip?]]
@@ -431,12 +450,43 @@ pip uninstall -y -r <(pip freeze)
 * Web
 - [[https://codeguide.co/][Code Guide by @mdo]] - Standards for developing consistent, flexible, and
   sustainable HTML and CSS
-- [[https://github.com/gothinkster/realworld][gothinkster/ *realworld*]] - Exemplary fullstack Medium.com clone powered by
+- [[https://github.com/gothinkster/realworld][gothinkster/ realworld]] - Exemplary fullstack Medium.com clone powered by
   React, Angular, Node, Django, and many more
 
 ** Javascript
-- [[https://github.com/trekhleb/javascript-algorithms][trekhleb/ *javascript-algorithms*]] - Algorithms and data structures implemented
+- [[https://github.com/trekhleb/javascript-algorithms][trekhleb/ javascript-algorithms]] - Algorithms and data structures implemented
   in JavaScript with explanations and links to further readings
+- [[https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript][jQuery.getScript alternative in native JavaScript - Stack Overflow]]
+
+  #+BEGIN_SRC javascript
+const loadScript = (source, options) => {
+  return new Promise((resolve, reject) => {
+    let script = document.createElement('script')
+    const prior = document.getElementsByTagName('script')[0]
+
+    function onloadHander(_, isAbort) {
+      if (isAbort || !script.readyState || /loaded|complete/.test(script.readyState)) {
+        script.onload = null
+        script.onreadystatechange = null
+        script = undefined
+
+        isAbort ? reject(new Error('Failed to load script')) : resolve()
+      }
+    }
+
+    if (options) {
+      for (const i in options) {
+        script[i] = options[i]
+      }
+    }
+
+    script.onload = onloadHander
+    script.onreadystatechange = onloadHander
+    script.src = source
+    prior.parentNode.insertBefore(script, prior)
+  })
+}
+  #+END_SRC
 
 ** Typescript
 - [[https://typedoc.org/][Home | TypeDoc]] - A documentation generator for TypeScript projects
@@ -476,7 +526,7 @@ exports.default = defaultTask
 [[https://postcss.org/][PostCSS - a tool for transforming CSS with JavaScript]]
 
 *** Plugins
-- [[https://github.com/postcss/postcss-import][postcss/ *postcss-import*]] - PostCSS plugin to inline @import rules content
+- [[https://github.com/postcss/postcss-import][postcss/ postcss-import]] - PostCSS plugin to inline @import rules content
 - @fullhuman/postcss-purgecss
 - autoprefixer
 - cssnano - A modular minifier based on the PostCSS ecosystem
@@ -493,15 +543,15 @@ const plugins = [
 [[https://tailwindcss.com/][Tailwind CSS - A Utility-First CSS Framework for Rapidly Building Custom Designs]]
 
 ** CSS
-- [[https://github.com/robsheldon/sscaffold-css][robsheldon/ *sscaffold-css*]] - Combines css rules from normalize.css and
+- [[https://github.com/robsheldon/sscaffold-css][robsheldon/ sscaffold-css]] - Combines css rules from normalize.css and
   skeleton.css
 - [[https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/][Let's Make a Grid-Powered Resume! | CSS-Tricks]]
 - [[https://css-tricks.com/scale-svg/][How to Scale SVG | CSS-Tricks]]
 
 ** Static Site Generator
 *** Hugo
-- [[https://github.com/fenneclab/hugo-bin][fenneclab/ *hugo-bin*]] - Binary wrapper for Hugo
-- [[https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter][dirkolbrich/ *hugo-theme-tailwindcss-starter*]] - Starter files for a Hugo theme
+- [[https://github.com/fenneclab/hugo-bin][fenneclab/ hugo-bin]] - Binary wrapper for Hugo
+- [[https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter][dirkolbrich/ hugo-theme-tailwindcss-starter]] - Starter files for a Hugo theme
   with Tailwindcss
 
 ** Browser
@@ -511,8 +561,8 @@ const plugins = [
 *** Chrome
 **** Chrome Extensions
 - uBlacklist
-  - [[https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist][cobaltdisco/ *Google-Chinese-Results-Blocklist*]]
-  - [[https://github.com/gyli/Blocklist][gyli/ *Blocklist*]]
+  - [[https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist][cobaltdisco/ Google-Chinese-Results-Blocklist]]
+  - [[https://github.com/gyli/Blocklist][gyli/ Blocklist]]
 
 ** Resource
 *** Icons
@@ -521,9 +571,9 @@ const plugins = [
 - [[https://ikonate.com/][Ikonate – fully customisable & accessible vector icons]]
 - [[https://iconmonstr.com/][iconmonstr - Free simple icons for your next project]]
 - [[https://simpleicons.org/][Simple Icons]] - Free SVG icons for popular brands
-- [[https://github.com/refactoringui/heroicons][refactoringui/ *heroicons*]] - A set of free MIT-licensed high-quality SVG icons
+- [[https://github.com/refactoringui/heroicons][refactoringui/ heroicons]] - A set of free MIT-licensed high-quality SVG icons
   for UI development
-- [[https://github.com/tabler/tabler-icons][tabler/ *tabler-icons*]] - A set of over 300 free MIT-licensed high-quality SVG
+- [[https://github.com/tabler/tabler-icons][tabler/ tabler-icons]] - A set of over 300 free MIT-licensed high-quality SVG
   icons for you to use in your web projects
 
 * iOS
@@ -702,7 +752,7 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 - [[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html#Top][GNU Emacs Lisp Reference Manual]]
 
 **** Style
-- [[https://github.com/bbatsov/emacs-lisp-style-guide][bbatsov/ *emacs-lisp-style-guide*]]
+- [[https://github.com/bbatsov/emacs-lisp-style-guide][bbatsov/ emacs-lisp-style-guide]]
 - [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html][Appendix D Tips and Conventions - GNU Emacs Lisp Reference Manual]]
 
 *** Tips
@@ -743,20 +793,20 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 
 **** GitHub
 - [[https://github.com/search?p=1&q=stars%3A%3E20+extension%3Ael+language%3Aelisp&ref=searchresults&type=Repositories][Github Search · stars:>20 extension:el language:elisp]]
-- [[https://github.com/lujun9972/emacs-document][lujun9972/ *emacs-document*]] - translate emacs documents to Chinese for
+- [[https://github.com/lujun9972/emacs-document][lujun9972/ emacs-document]] - translate emacs documents to Chinese for
   convenient reference
-- [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][*mastering-emacs-in-one-year-guide* /guide-zh.org]]
+- [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][mastering-emacs-in-one-year-guide /guide-zh.org]]
 
 **** Tutorial
 - [[http://ergoemacs.org/emacs/buy_xah_emacs_tutorial.html][Buy Xah Emacs Tutorial]]
 - [[http://steve-yegge.blogspot.com/2008/01/emergency-elisp.html][Stevey's Blog Rants: Emergency Elisp]]
 
 *** Packages
-- [[https://github.com/NicolasPetton/gulp-task-runner][NicolasPetton/ *gulp-task-runner*]] - Run gulp tasks from Emacs =M-x gulp=
+- [[https://github.com/NicolasPetton/gulp-task-runner][NicolasPetton/ gulp-task-runner]] - Run gulp tasks from Emacs =M-x gulp=
 - [[https://magit.vc/][It's Magit! A Git Porcelain inside Emacs]]
 
 ** Spacemacs
-[[https://github.com/syl20bnr/spacemacs][syl20bnr/ *spacemacs*]] - A community-driven Emacs distribution
+[[https://github.com/syl20bnr/spacemacs][syl20bnr/ spacemacs]] - A community-driven Emacs distribution
 
 - [[http://book.emacs-china.org/][Master Emacs in 21 Days]]
 - [[https://github.com/syl20bnr/spacemacs/blob/develop/EXPERIMENTAL.org#spacemacs-dumps-using-the-portable-dumper][Spacemacs dumps using the portable dumper]]
@@ -765,12 +815,12 @@ git revert [commit] # 新建一个 commit，用来撤销指定 commit，后者�
 A dotdirectory =/.spacemacs.d= can be used instead of a dotfile. If you want
 to use this option, move =/.spacemacs= to =/.spacemacs.d/init.el=.
 
-My configuration [[https://github.com/exuanbo/dotfiles/tree/master/.spacemacs.d][exuanbo/ *dotfiles/.spacemacs.d*]]
+My configuration [[https://github.com/exuanbo/dotfiles/tree/master/.spacemacs.d][exuanbo/ dotfiles/.spacemacs.d]]
 
 for reference:
 
-- [[https://github.com/zilongshanren/spacemacs-private][zilongshanren/ *spacemacs-private*]]
-- [[https://github.com/geekplux/dotfiles][geekplus/ *dotfiles/.spacemacs.d*]]
+- [[https://github.com/zilongshanren/spacemacs-private][zilongshanren/ spacemacs-private]]
+- [[https://github.com/geekplux/dotfiles][geekplus/ dotfiles]]
 
 *** Layers
 - [[https://develop.spacemacs.org/layers/+checkers/spell-checking/README.html][Spell Checking layer]]
@@ -784,11 +834,11 @@ for reference:
   ~dotspacemacs/user-init~
 
 ** Doom Emacs
-[[https://github.com/hlissner/doom-emacs][hlissner/ *doom-emacs*]] - An Emacs configuration for the stubborn martian vimmer
+[[https://github.com/hlissner/doom-emacs][hlissner/ doom-emacs]] - An Emacs configuration for the stubborn martian vimmer
 
 - [[https://github.com/hlissner/doom-emacs/blob/develop/docs/index.org][Doom Emacs Documentation]]
-- [[https://github.com/hlissner/emacs-doom-themes][hlissner/ *emacs-doom-themes*]]
-- [[https://github.com/hlissner/doom-snippets][hlissner/ *doom-snippets*]] - The Doom Emacs snippets library
+- [[https://github.com/hlissner/emacs-doom-themes][hlissner/ emacs-doom-themes]]
+- [[https://github.com/hlissner/doom-snippets][hlissner/ doom-snippets]] - The Doom Emacs snippets library
 
 My configuration [[https://github.com/exuanbo/.doom.d][.doom.d]]
 
@@ -832,10 +882,10 @@ My configuration [[https://github.com/exuanbo/.doom.d][.doom.d]]
   Or disable the =:ui doom-dashboard= & =:tools magit= modules (see [[https://github.com/hlissner/doom-emacs/issues/1170][#1170]]).
 
 ** Other configuration
-- [[https://github.com/purcell/emacs.d][*purcell* /emacs.d]] - An Emacs configuration bundle with batteries included
+- [[https://github.com/purcell/emacs.d][purcell /emacs.d]] - An Emacs configuration bundle with batteries included
 
 ** Vim
-- [[https://github.com/amix/vimrc][amix/ *vimrc*]] - The ultimate Vim configuration
+- [[https://github.com/amix/vimrc][amix/ vimrc]] - The ultimate Vim configuration
   - [[https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim][basic.vim]]
 - [[https://github.com/editor-bootstrap/vim-bootstrap][vim-bootstrap]] - is generator provides a simple method of generating a .vimrc
   configuration for vim
@@ -848,7 +898,7 @@ My configuration [[https://github.com/exuanbo/.doom.d][.doom.d]]
 * Org Mode
 - [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]]
 - [[https://orgmode.org/worg/index.html][Hello Worg, the Org-Mode Community!]]
-- [[https://github.com/fniessen/refcard-org-mode][fniessen/ *refcard-org-mode*]] - Org mode syntax
+- [[https://github.com/fniessen/refcard-org-mode][fniessen/ refcard-org-mode]] - Org mode syntax
 
 ** Configuration
 *** General
@@ -890,7 +940,7 @@ dotspacemacs-configuration-layers
     (setq ... )))
 #+END_SRC
 
-*** [[https://github.com/gongzhitaao/orgcss][gongzhitaao/ *orgcss*]]
+*** [[https://github.com/gongzhitaao/orgcss][gongzhitaao/ orgcss]]
 
 When exported to HTML, there are three options for code highlighting, controlled
 by the variable ~org-html-htmlize-output-type~.
@@ -979,11 +1029,11 @@ background of code to whatever theme I'm using's background"
 - [[https://stackoverflow.com/questions/19614104/how-to-tell-org-mode-to-embed-my-css-file-on-html-export][emacs - how to tell org-mode to embed my css file on HTML export? - Stack
   Ove...]]
 - [[https://emacs-china.org/t/org-mode-html/10120][有没有办法让org-mode导出的html页面漂亮一点？ - Emacs-general - Emacs China]]
-- [[https://github.com/rgb-24bit/org-html-theme-list][rgb-24bit/ *org-html-theme-list*]] - 这个仓库用于存放我收集的
+- [[https://github.com/rgb-24bit/org-html-theme-list][rgb-24bit/ org-html-theme-list]] - 这个仓库用于存放我收集的
   =org-export-to-html= 样式或主题
 - [[https://github.com/hlissner/doom-emacs/pull/461][Feature: +style feature that provide better org HTML export default by
   fuxialexander · Pull Request #461 · hlissner/doom-emacs]]
-- [[https://github.com/MetroWind/dotfiles-mac/blob/a202acf00072e9bfa2271fec41dcce2421552ae9/emacs/files/.emacs-pkgs/mw-org.el#L134][MetroWind/ *dotfiles-mac*]]
+- [[https://github.com/MetroWind/dotfiles-mac/blob/a202acf00072e9bfa2271fec41dcce2421552ae9/emacs/files/.emacs-pkgs/mw-org.el#L134][MetroWind/ dotfiles-mac]]
 
   #+BEGIN_SRC emacs-lisp
 ;; Embed inline CSS read from a file.
@@ -1042,7 +1092,7 @@ config push
   #+END_SRC
 
 - [[https://github.com/robbyrussell/oh-my-zsh][oh-my-zsh]]
-- [[https://github.com/romkatv/powerlevel10k][romkatv/ *powerlevel10k*]] -  A Zsh theme. It emphasizes speed, flexibility and
+- [[https://github.com/romkatv/powerlevel10k][romkatv/ powerlevel10k]] -  A Zsh theme. It emphasizes speed, flexibility and
   out-of-the-box experience.
 - [[https://unix.stackexchange.com/questions/231316/exiting-terminal-running-nohup-my-script-you-have-running-jobs-ok-to][zsh - Exiting terminal running "nohup ./my_script &" => "You have running
   job...]]
@@ -1071,7 +1121,7 @@ nohup ./my_script.sh &!
   - [[https://github.com/phinze/homebrew-cask][homebrew-cask]]
   - ~brew leavese~ Show installed formulae that are not dependencies of another
     installed formula
-  - [[https://github.com/ggPeti/homebrew-rmrec][ggPeti/ *homebrew-rmrec*]] - Quick and simple command to remove a Homebrew
+  - [[https://github.com/ggPeti/homebrew-rmrec][ggPeti/ homebrew-rmrec]] - Quick and simple command to remove a Homebrew
     package and its dependencies
 
     #+BEGIN_SRC sh
@@ -1140,7 +1190,8 @@ This is a list of Free Software network services and web applications which can
 be hosted locally. Non-Free software is listed on the Non-Free page.
 
 ** Nginx Configuration
-[[https://gist.github.com/fotock/9cf9afc2fd0f813828992ebc4fdaad6f][fotock/ *nginx.conf*]] - Nginx SSL 安全配置最佳实践
+- [[https://ssl-config.mozilla.org/][Mozilla SSL Configuration Generator]]
+- [[https://gist.github.com/fotock/9cf9afc2fd0f813828992ebc4fdaad6f][fotock/ nginx.conf]] - Nginx SSL 安全配置最佳实践
 
 #+BEGIN_SRC sh
 # 生成 dhparam.pem 文件, 在命令行执行任一方法:
@@ -1153,91 +1204,7 @@ openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
 openssl dhparam -dsaparam -out /etc/nginx/ssl/dhparam.pem 4096
 #+END_SRC
 
-*** nginx.conf
-
-#+BEGIN_SRC conf
-# 阅读更多 http://tautt.com/best-nginx-configuration-for-security/
-
-# 不发送Nginx版本号
-server_tokens off;
-
-# 不允许浏览器在frame或iframe中显示页面
-# 避免 点击劫持(clickjacking) http://en.wikipedia.org/wiki/Clickjacking
-# 如果需要允许 [i]frames, 你可以用 SAMEORIGIN 或者用ALLOW-FROM uri 设置单个uri
-# https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options
-add_header X-Frame-Options SAMEORIGIN;
-
-# 服务用户提供的内容时, 包含 X-Content-Type-Options: nosniff 头选项，配合 Content-Type: 头选项,
-# 来禁用某些浏览器的 content-type 探测.
-# https://www.owasp.org/index.php/List_of_useful_HTTP_headers
-# 当前支持 IE > 8 http://blogs.msdn.com/b/ie/archive/2008/09/02/ie8-security-part-vi-beta-2-update.aspx
-# http://msdn.microsoft.com/en-us/library/ie/gg622941(v=vs.85).aspx
-# 火狐 '不久'支持 https://bugzilla.mozilla.org/show_bug.cgi?id=471020
-add_header X-Content-Type-Options nosniff;
-
-# 启用大部分现代浏览器内置的 the Cross-site scripting (XSS) 过滤.
-# 通常缺省情况下已经启用, 所以本选项为为本网站重启过滤器，以防其被用户禁用.
-# https://www.owasp.org/index.php/List_of_useful_HTTP_headers
-add_header X-XSS-Protection "1; mode=block";
-
-# 启用 Content Security Policy (CSP) (和支持它的浏览器(http://caniuse.com/#feat=contentsecuritypolicy)后,
-# 你可以告诉浏览器它仅能从你明确允许的域名下载内容
-# http://www.html5rocks.com/en/tutorials/security/content-security-policy/
-# https://www.owasp.org/index.php/Content_Security_Policy
-# 修改应用代码, 通过禁用css和js的 'unsafe-inline' 'unsafe-eval' 指标提高安全性
-# (对内联css和js同样适用).
-# 更多: http://www.html5rocks.com/en/tutorials/security/content-security-policy/#inline-code-considered-harmful
-add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ssl.google-analytics.com https://assets.zendesk.com https://connect.facebook.net; img-src 'self' https://ssl.google-analytics.com https://s-static.ak.facebook.com https://assets.zendesk.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.zendesk.com; font-src 'self' https://themes.googleusercontent.com; frame-src https://assets.zendesk.com https://www.facebook.com https://s-static.ak.facebook.com https://tautt.zendesk.com; object-src 'none'";
-
-# 将所有 http 跳转至 https
-server {
-  listen 80 default_server;
-  listen [::]:80 default_server;
-  server_name .forgott.com;
-  return 301 https://$host$request_uri;
-}
-
-server {
-  listen 443 ssl http2;
-  listen [::]:443 ssl http2;
-  server_name .forgott.com;
-
-  ssl_certificate /etc/nginx/ssl/star_forgott_com.crt;
-  ssl_certificate_key /etc/nginx/ssl/star_forgott_com.key;
-
-  # 启用 session resumption 提高HTTPS性能
-  # http://vincent.bernat.im/en/blog/2011-ssl-session-reuse-rfc5077.html
-  ssl_session_cache shared:SSL:50m;
-  ssl_session_timeout 1d;
-  ssl_session_tickets off;
-
-  # DHE密码器的Diffie-Hellman参数, 推荐 2048 位
-  ssl_dhparam /etc/nginx/ssl/dhparam.pem;
-
-  # 启用服务器端保护, 防止 BEAST 攻击
-  # http://blog.ivanristic.com/2013/09/is-beast-still-a-threat.html
-  ssl_prefer_server_ciphers on;
-  # 禁用 SSLv3(enabled by default since nginx 0.8.19) since it's less secure then TLS http://en.wikipedia.org/wiki/Secure_Sockets_Layer#SSL_3.0
-  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-  # ciphers chosen for forward secrecy and compatibility
-  # http://blog.ivanristic.com/2013/08/configuring-apache-nginx-and-openssl-for-forward-secrecy.html
-  ssl_ciphers 'ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS';
-
-  # 启用 ocsp stapling (网站可以以隐私保护、可扩展的方式向访客传达证书吊销信息的机制)
-  # http://blog.mozilla.org/security/2013/07/29/ocsp-stapling-in-firefox/
-  resolver 8.8.8.8 8.8.4.4;
-  ssl_stapling on;
-  ssl_stapling_verify on;
-  ssl_trusted_certificate /etc/nginx/ssl/star_forgott_com.crt;
-
-  # 启用 HSTS(HTTP Strict Transport Security) https://developer.mozilla.org/en-US/docs/Security/HTTP_Strict_Transport_Security
-  # 避免 ssl stripping https://en.wikipedia.org/wiki/SSL_stripping#SSL_stripping
-  # 或 https://hstspreload.org/
-  add_header Strict-Transport-Security "max-age=31536000; includeSubdomains; preload";
-
-  # ... 其他配置
-}
-#+END_SRC
+- [[https://www.howtoing.com/how-to-host-a-website-using-cloudflare-and-nginx-on-ubuntu-16-04][如何在Ubuntu 16.04上使用Cloudflare和Nginx来托管网站]]
 
 ** Analytics
 [[https://ackee.electerious.com/][Ackee]] - Self-hosted analytics tool for those who care about privacy. =MIT= =Nodejs=
@@ -1311,6 +1278,7 @@ server {
     }
 }
 #+END_SRC
+
 * Uncategorized
 - [[https://uses.tech/][/uses]] - A list of =/uses= pages detailing developer setups, gear, software and
   configs.
