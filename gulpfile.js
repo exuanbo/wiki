@@ -21,7 +21,7 @@ const htmlmin = require('gulp-htmlmin')
 // functions
 //
 function preClean() {
-  return del(['build', 'dist'])
+  return del(['public'])
 }
 
 function postClean() {
@@ -50,13 +50,13 @@ function css() {
 function js() {
   return src(['assets/js/jquery.slim.js', 'assets/js/scrollspy.js', 'assets/js/readtheorg.js'])
     .pipe(concat('script.js'))
-    .pipe(uglify())
+    .pipe(uglify({ output: { comments: false } }))
     .pipe(dest('build'))
 }
 
 function favicon() {
   return src(['assets/favicon/*'])
-    .pipe(dest('dist'))
+    .pipe(dest('public'))
 }
 
 function html() {
@@ -66,7 +66,7 @@ function html() {
       collapseWhitespace: true,
       conservativeCollapse: true
     }))
-    .pipe(dest('dist'))
+    .pipe(dest('public'))
 }
 
 exports.default = series(preClean, parallel(css, js, favicon), html, postClean)
