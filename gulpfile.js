@@ -15,7 +15,7 @@ const concat = require('gulp-concat')
 const uglify = require('gulp-uglify-es').default
 
 // html
-const injectInline = require('gulp-inject-inline')
+const injectInline = require('@exuanbo/gulp-inject-inline')
 const htmlmin = require('gulp-htmlmin')
 
 // functions

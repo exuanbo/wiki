@@ -1,8 +1,8 @@
 # -*- mode: org; -*-
 
-#+HTML_HEAD: [ inject-inline ./../assets/head.html ]
-#+HTML_HEAD: <style>[ inject-inline ./../build/style.css ]</style>
-#+HTML_HEAD: <script>[ inject-inline ./../build/script.js ]</script>
+#+HTML_HEAD:  <!-- inject-inline: /assets/head.html -->
+#+HTML_HEAD: <style>/* inject-inline: /build/style.css */</style>
+#+HTML_HEAD: <script>/* inject-inline: /build/script.js */</script>
 
 #+TITLE: Exuanbo's Wiki
 #+AUTHOR: Exuanbo
@@ -282,7 +282,9 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言:
 - [[https://www.gnu.org/philosophy/free-sw.en.html][What is free software?]]
 - [[https://www.gnu.org/philosophy/open-source-misses-the-point.html][Why Open Source Misses the Point of Free Software]]
 - [[https://opensource.guide/][Open Source Guides]]
-- [[https://github.phodal.com/][GitHub 漫游指南]] by [[https://www.phodal.com/][Phodal Huang]]
+- [[https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html][如何选择开源许可证？ - 阮一峰的网络日志]]
+
+  [[https://www.ruanyifeng.com/blogimg/asset/201105/free_software_licenses.png]]
 
 ** Privacy
 - [[https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Daemon+-+Stubby][DNS Privacy Daemon - Stubby - DNS Privacy Project - Global Site]]
@@ -298,6 +300,9 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言:
 - [[https://awesomeopensource.com/][Find Open Source By Searching, Browsing and Combining 7,000 Topics]]
 
 ** Github
+- [[https://github.phodal.com/][GitHub 漫游指南]] by [[https://www.phodal.com/][Phodal Huang]]
+- [[https://rietta.com/blog/github-merge-types/][What's the Difference Between the 3 Github Merge Methods?]]
+
 *** Github Pages
 - [[https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages][How to fix HTTP 404 on Github Pages?]]
 
@@ -432,6 +437,14 @@ brew haskell-stack
 stack setup
   #+END_SRC
 
+** C++
+- [[https://github.com/TheLartians/ModernCppStarter][TheLartians/ ModernCppStarter]] - Kick-start your C++! A template for modern C++
+  projects using CMake, CI, code coverage, clang-format, reproducible dependency
+  management and more
+
+** Java
+- [[https://github.com/hollischuang/toBeTopJavaer][hollischuang/ toBeTopJavaer]] - Java工程师成神之路
+
 ** Python
 - [[https://github.com/satwikkansal/wtfpython][satwikkansal/ wtfpython]] - Exploring and understanding Python through
   surprising snippets
@@ -458,7 +471,7 @@ pip uninstall -y -r <(pip freeze)
   in JavaScript with explanations and links to further readings
 - [[https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript][jQuery.getScript alternative in native JavaScript - Stack Overflow]]
 
-  #+BEGIN_SRC javascript
+  #+BEGIN_SRC js
 const loadScript = (source, options) => {
   return new Promise((resolve, reject) => {
     let script = document.createElement('script')
@@ -474,10 +487,19 @@ const loadScript = (source, options) => {
       }
     }
 
+    const attributes = {
+      async: false,
+      defer: true
+    }
+
     if (options) {
       for (const i in options) {
-        script[i] = options[i]
+        attributes[i] = options[i]
       }
+    }
+
+    for (const i in attributes) {
+      script[i] = attributes[i]
     }
 
     script.onload = onloadHander
@@ -487,6 +509,9 @@ const loadScript = (source, options) => {
   })
 }
   #+END_SRC
+
+- [[https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver][IntersectionObserver - Web APIs | MDN]]
+- [[https://github.com/JSMonk/hegel][JSMonk/ hegel]] - An advanced static type checker
 
 ** Typescript
 - [[https://typedoc.org/][Home | TypeDoc]] - A documentation generator for TypeScript projects
@@ -506,6 +531,51 @@ function defaultTask(cb) {
 
 exports.default = defaultTask
 #+END_SRC
+
+*** Example
+- same ~src~ and ~dest~
+
+  #+BEGIN_SRC js
+function html() {
+  return src('public/**/*.html', { base: '.' })
+    .pipe(
+      htmlmin({
+        collapseWhitespace: true,
+        conservativeCollapse: true,
+      })
+    )
+    .pipe(dest('.'))
+}
+  #+END_SRC
+
+- ~gulp.watch()~ + browser-sync
+
+  #+BEGIN_SRC js
+const browserSync = require('browser-sync').create()
+
+function server() {
+  browserSync.init({
+    server: {
+      baseDir: './public',
+    },
+  })
+  watch(
+    [
+      'assets/**',
+      '!assets/build/**',
+      'content/**',
+      'layouts/**',
+      'static/**',
+      'config.toml',
+    ],
+    { ignoreInitial: false },
+    series('default')
+  )
+  watch('public/**').on('change', browserSync.reload)
+}
+
+exports.server = server
+  #+END_SRC
 
 *** Plugins
 - gulp-rename
@@ -554,6 +624,10 @@ const plugins = [
 - [[https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter][dirkolbrich/ hugo-theme-tailwindcss-starter]] - Starter files for a Hugo theme
   with Tailwindcss
 
+*** Saber
+[[https://github.com/saberland/saber][saberland /saber]] ()==[:::::::::::::> Build static sites in Vue.js, without the
+hassle
+
 ** Browser
 *** Userscript
 - [[https://greasyfork.org/][Greasy Fork - safe and useful user scripts]]
@@ -563,6 +637,8 @@ const plugins = [
 - uBlacklist
   - [[https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist][cobaltdisco/ Google-Chinese-Results-Blocklist]]
   - [[https://github.com/gyli/Blocklist][gyli/ Blocklist]]
+- [[https://github.com/truedread/netflix-1080p][truedread/ netflix-1080p]] - Chrome extension to play Netflix in 1080p and 5.1
+- [[https://chrome.google.com/webstore/detail/sync-sofa-beta-online-vid/kgpnhgmpijhpkefpddoehhminpfiddmg][Sync Sofa (beta) - Online Video Synchronizer - Chrome Web Store]]
 
 ** Resource
 *** Icons
@@ -1176,6 +1252,8 @@ iconutil -c icns MyIcon.iconset
   #+END_SRC
 
 ** Windows
+- [[https://github.com/t1m0thyj/WinDynamicDesktop][t1m0thyj /WinDynamicDesktop]] - Port of macOS Mojave Dynamic Desktop feature to
+  Windows 10
 
 * Hardware
 - [[https://www.caldigit.com/][CalDigit – Considerate. Authentic. Design.]]
@@ -1281,4 +1359,6 @@ server {
 
 * Uncategorized
 - [[https://uses.tech/][/uses]] - A list of =/uses= pages detailing developer setups, gear, software and
-  configs.
+  configs
+- [[https://github.com/mayswind/AriaNg-Native][mayswind/ AriaNg-Native]] - A better aria2 desktop frontend than AriaNg,
+  containing all features of AriaNg and has more features for desktop
