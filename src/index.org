@@ -1,6 +1,6 @@
 # -*- mode: org; -*-
 
-#+HTML_HEAD:  <!-- inject-inline: /assets/head.html -->
+#+HTML_HEAD: <!-- inject-inline: /assets/head.html -->
 #+HTML_HEAD: <style>/* inject-inline: /build/style.css */</style>
 #+HTML_HEAD: <script>/* inject-inline: /build/script.js */</script>
 
@@ -279,6 +279,7 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言:
 - [[https://sspai.com/tag/%E8%AE%BE%E8%AE%A1][#设计 - 少数派]]
 
 * Free & Open
+- [[https://a.temporaryrecord.com/][a (not so) temporary record]]
 - [[https://www.gnu.org/philosophy/free-sw.en.html][What is free software?]]
 - [[https://www.gnu.org/philosophy/open-source-misses-the-point.html][Why Open Source Misses the Point of Free Software]]
 - [[https://opensource.guide/][Open Source Guides]]
@@ -410,6 +411,7 @@ jobs:
 - [[http://coolshell.cn/articles/4990.html][程序员技术练级攻略 - 2011年07月]]
   - [[https://exuanbo.xyz/posts/programmer/][2018 新版索引]]
 - [[https://blog.knownsec.com/Knownsec_RD_Checklist/index.html][知道创宇研发技能表]] - "聪明的人，会根据每个tip自驱动扩展"
+- [[https://regex101.com/][Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript]]
 
 ** Functional Programming
 - [[https://bitemyapp.com/blog/functional-education/][Chris Allen - Functional Education]]
@@ -661,9 +663,12 @@ hassle
 - [[https://www.gcores.com/articles/122421][致敬《盟军敢死队》：开宗立派，但无来者可追 | 机核 GCORES]]
 
 ** Development
+- [[https://academy.zenva.com/][Zenva Academy]]
 - [[https://indienova.com/groups/14][我们都爱像素风 - Indienova 小组]]
 
 * Git
+- [[https://learngitbranching.js.org/][Learn Git Branching]] - the most visual and interactive way to learn Git on the web
+- [[https://github.com/commitizen/cz-cli][commitizen/ cz-cli]] - Simple commit conventions for internet citizens
 - ~git reset~
 
   #+BEGIN_EXAMPLE
@@ -970,6 +975,7 @@ My configuration [[https://github.com/exuanbo/.doom.d][.doom.d]]
 - [[https://github.com/viatsko/awesome-vscode][awesome-vscode]] - A curated list of delightful VS Code packages and resources
 - [[https://zhuanlan.zhihu.com/p/73561114][从 Emacs 和 Vim 到 VSCode - 知乎]]
 - [[https://github.com/VSpaceCode/VSpaceCode][VSpaceCode]] - Spacemacs' like keybindings for Visual Studio Code
+- [[https://zhuanlan.zhihu.com/p/125773296][那些你应该考虑卸载的 VSCode 扩展 - 知乎]]
 
 * Org Mode
 - [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]]
