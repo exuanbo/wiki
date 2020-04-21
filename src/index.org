@@ -64,13 +64,17 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
 
 **** Client
 ***** App
+- [[https://github.com/mellow-io/mellow][mellow-io/ mellow]] - Mellow is a rule-based global transparent
+  proxy client for Windows, macOS and Linux
 - [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ ClashX]] - macOS
 - [[https://github.com/paradiseduo/ShadowsocksX-NG-R8][paradiseduo/ ShadowsocksX-NG-R8]] - macOS
 - [[https://github.com/lzdnico/ClashWeb/tree/ClashWeb1.6.3][lzdnico/ ClashWeb]] - Windows
 - [[https://apps.apple.com/us/app/shadowrocket/id932747118][Shadowroket]] - iOS | paid app
+- [[https://github.com/NetchX/Netch][NetchX/ Netch]] - 开源的 Windows 平台游戏加速工具
 
 ***** Subscription
 - [[https://github.com/tindy2013/subconverter][tindy2013/ subconverter]] - Utility to convert between various subscription format
+- [[https://gist.github.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b][tindy2013/ _subconverter_configs]]
 - [[https://bianyuan.xyz/][Sabrina Rule Generator]]
 - [[https://gfwsb.114514.best/][Subscription Converter]]
 
@@ -81,6 +85,7 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
 - [[https://github.com/lhie1/Rules][lhie1/ Rules]] - 洞主规则
 - [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ SS-Rule-Snippet]] - Design for Surge, Quantumult, Shadowrocket,
   Surfboard, clash(X)
+- [[https://github.com/SNSLogty/pixiv-hosts-1][SNSLogty /pixiv-hosts-1]] - You know what it is
 
 **** Other
 - [[https://github.com/googlehosts/hosts][GoogleHosts]]
@@ -521,6 +526,7 @@ const loadScript = (source, options) => {
 ** Node.js
 ** NPM
 - [[https://developer.aliyun.com/mirror/NPM][NPM镜像-NPM下载地址-NPM安装教程-阿里巴巴开源镜像站]]
+- ~nvm install node --reinstall-packages-from=$(nvm current)~
 
 ** Gulp.js
 [[https://gulpjs.com/][gulp.js]] - The streaming build system
@@ -973,9 +979,11 @@ My configuration [[https://github.com/exuanbo/.doom.d][.doom.d]]
 
 ** Visual Studio Code
 - [[https://github.com/viatsko/awesome-vscode][awesome-vscode]] - A curated list of delightful VS Code packages and resources
+- [[https://glitchbone.github.io/vscode-base16-term/][Base16 Terminal Colors for Visual Studio Code]]
 - [[https://zhuanlan.zhihu.com/p/73561114][从 Emacs 和 Vim 到 VSCode - 知乎]]
 - [[https://github.com/VSpaceCode/VSpaceCode][VSpaceCode]] - Spacemacs' like keybindings for Visual Studio Code
 - [[https://zhuanlan.zhihu.com/p/125773296][那些你应该考虑卸载的 VSCode 扩展 - 知乎]]
+- [[https://github.com/kahole/vscode-magit][kahole /vscode-magit]] - Magit for VSCode
 
 * Org Mode
 - [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]]
@@ -1173,6 +1181,7 @@ config commit -m "Add zshrc"
 config push
   #+END_SRC
 
+- [[https://github.com/SukkaW/dotfiles][SukkaW/ dotfiles]] - My development environment and config
 - [[https://github.com/robbyrussell/oh-my-zsh][oh-my-zsh]]
 - [[https://github.com/romkatv/powerlevel10k][romkatv/ powerlevel10k]] -  A Zsh theme. It emphasizes speed, flexibility and
   out-of-the-box experience.
@@ -1368,3 +1377,4 @@ server {
   configs
 - [[https://github.com/mayswind/AriaNg-Native][mayswind/ AriaNg-Native]] - A better aria2 desktop frontend than AriaNg,
   containing all features of AriaNg and has more features for desktop
+- [[https://www.calendarpedia.com/][Calendarpedia - Your source for calendars]]
