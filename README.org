@@ -1,4 +1,4 @@
 #+BEGIN_SRC shell
 npm install
-npx gulp
+npm run build
 #+END_SRC

@@ -83,6 +83,9 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
   PRO
 - [[https://github.com/ConnersHua/Profiles/tree/master][ConnersHua/ Profiles at master]] - 神机规则
 - [[https://github.com/lhie1/Rules][lhie1/ Rules]] - 洞主规则
+- [[https://github.com/GeQ1an/Rules/tree/master][GeQ1an/ Rules]] - Stick Rules, 本规则适合任意地区使用 Quantumult X、境外使用
+  Quantumult 和 ClashX 的 “小白/懒人” 用户配合相关节点使用，最初通过 lhie1 Rules 修
+  改而来，目前参考了众多优秀规则
 - [[https://github.com/Hackl0us/SS-Rule-Snippet][Hackl0us/ SS-Rule-Snippet]] - Design for Surge, Quantumult, Shadowrocket,
   Surfboard, clash(X)
 - [[https://github.com/SNSLogty/pixiv-hosts-1][SNSLogty /pixiv-hosts-1]] - You know what it is
@@ -268,12 +271,6 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言:
 - [[https://aeon.co/][Aeon | a new world of ideas]]
 - [[https://longform.org/][Longform]]
 
-** Blog
-- [[http://www.yinwang.org/][当然我在扯淡 - 王垠]]
-- [[https://blog.imalan.cn/][无文字 | 三无计划]]
-- [[https://jesor.me/][大破进击]]
-- [[https://www.phodal.com/][Phodal - 狼和凤凰 | Growth Engineer]]
-
 ** Resource
 - [[https://manybooks.net/][50,000+ Free eBooks in the Genres you Love | Manybooks]]
 
@@ -283,6 +280,12 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言:
 - [[https://dribbble.com/][Dribbble - Discover the World’s Top Designers & Creative Professionals]]
 - [[https://sspai.com/tag/%E8%AE%BE%E8%AE%A1][#设计 - 少数派]]
 
+* Blog
+- [[http://www.yinwang.org/][当然我在扯淡 - 王垠]]
+- [[https://blog.imalan.cn/][无文字 | 三无计划]]
+- [[https://jesor.me/][大破进击]]
+- [[https://www.phodal.com/][Phodal - 狼和凤凰 | Growth Engineer]]
+
 * Free & Open
 - [[https://a.temporaryrecord.com/][a (not so) temporary record]]
 - [[https://www.gnu.org/philosophy/free-sw.en.html][What is free software?]]
@@ -291,6 +294,8 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言:
 - [[https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html][如何选择开源许可证？ - 阮一峰的网络日志]]
 
   [[https://www.ruanyifeng.com/blogimg/asset/201105/free_software_licenses.png]]
+
+- [[https://matters.news/@freefromwechat/%E9%80%83%E7%A6%BB%E5%BE%AE%E4%BF%A1%E5%AE%A3%E8%A8%80-free-from-wechat-manifesto-bafyreib7535kdob62z6j7dlfjsl5or2doduvuqpgd7xdji2hzncfrvdws4][逃离微信宣言|FreeFromWechat Manifesto - Matters]]
 
 ** Privacy
 - [[https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Daemon+-+Stubby][DNS Privacy Daemon - Stubby - DNS Privacy Project - Global Site]]
@@ -518,6 +523,7 @@ const loadScript = (source, options) => {
   #+END_SRC
 
 - [[https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver][IntersectionObserver - Web APIs | MDN]]
+- [[https://github.com/verlok/lazyload][verlok/ lazyload]] - written in plain "vanilla" JavaScript
 - [[https://github.com/JSMonk/hegel][JSMonk/ hegel]] - An advanced static type checker
 
 ** Typescript
@@ -627,6 +633,8 @@ const plugins = [
 - [[https://css-tricks.com/scale-svg/][How to Scale SVG | CSS-Tricks]]
 
 ** Static Site Generator
+- [[https://blog.skk.moe/post/img-lazyload-hexo/][图片 lazyload 的学问和在 Hexo 上的最佳实践 | Sukka's Blog]]
+
 *** Hugo
 - [[https://github.com/fenneclab/hugo-bin][fenneclab/ hugo-bin]] - Binary wrapper for Hugo
 - [[https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter][dirkolbrich/ hugo-theme-tailwindcss-starter]] - Starter files for a Hugo theme
@@ -637,6 +645,8 @@ const plugins = [
 hassle
 
 ** Browser
+- [[https://www.runningcheese.com/translation][这大概就是目前最好的翻译解决方案了！ - 奔跑中的奶酪]] - 沙拉查词
+
 *** Userscript
 - [[https://greasyfork.org/][Greasy Fork - safe and useful user scripts]]
 
@@ -928,6 +938,16 @@ for reference:
 - [[https://github.com/hlissner/doom-snippets][hlissner/ doom-snippets]] - The Doom Emacs snippets library
 
 My configuration [[https://github.com/exuanbo/.doom.d][.doom.d]]
+
+*** Tips
+- [[https://github.com/hlissner/doom-emacs/issues/2941][hlissner/doom-emacs#2941 doom upgrade errors with straight.el]]
+
+  [[https://github.com/hlissner/doom-emacs/issues/2937#issuecomment-616211870][hlissner/doom-emacs#2937 Fresh install fails with "destination path ... alrea...]]
+
+  #+BEGIN_SRC shell
+rm -rf ~/.emacs.d/.local/straight/repos/straight.el
+doom sync
+  #+END_SRC
 
 *** Modules
 - [[https://github.com/hlissner/doom-emacs/blob/develop/modules/term/vterm/README.org][term/vterm]] - =+vterm/toggle= (=SPC o t=): Toggle vterm pop up window in the
@@ -1378,3 +1398,7 @@ server {
 - [[https://github.com/mayswind/AriaNg-Native][mayswind/ AriaNg-Native]] - A better aria2 desktop frontend than AriaNg,
   containing all features of AriaNg and has more features for desktop
 - [[https://www.calendarpedia.com/][Calendarpedia - Your source for calendars]]
+- [[https://yaoleifly.github.io/Nonsense-Series/][废话集 | Nonsense-Series]]
+
+  以下为一则清单，包含信息资讯、工具推荐、使用教程、生活感悟、每周一书等，旨在将你引向独立思考
+  和客观理性。我会持续更新和维护，也可以视作本人的「废话集」和 eBooksPlan 公众号文集的备份

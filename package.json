@@ -1,9 +1,13 @@
 {
   "name": "wiki",
   "version": "1.0.0",
-  "description": "My wiki built with Emacs Org mode and gulp.js",
+  "private": true,
+  "description": "Built with Emacs Org mode and gulp.js",
   "author": "exuanbo",
   "license": "MIT",
+  "scripts": {
+    "build": "gulp"
+  },
   "devDependencies": {
     "@exuanbo/gulp-inject-inline": "^1.0.1",
     "@fullhuman/postcss-purgecss": "^2.1.2",
