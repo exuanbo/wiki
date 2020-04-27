@@ -62,10 +62,7 @@ function favicon() {
 function html() {
   return src('src/index.html')
     .pipe(injectInline())
-    .pipe(htmlmin({
-      collapseWhitespace: true,
-      conservativeCollapse: true
-    }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest('public'))
 }
 

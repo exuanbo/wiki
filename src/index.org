@@ -66,6 +66,7 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
 ***** App
 - [[https://github.com/mellow-io/mellow][mellow-io/ mellow]] - Mellow is a rule-based global transparent
   proxy client for Windows, macOS and Linux
+- [[https://github.com/Qv2ray/Qv2ray][Qv2ray/ Qv2ray]] - C++17/Qt5
 - [[https://github.com/yichengchen/clashX/tree/master][yichengchen/ ClashX]] - macOS
 - [[https://github.com/paradiseduo/ShadowsocksX-NG-R8][paradiseduo/ ShadowsocksX-NG-R8]] - macOS
 - [[https://github.com/lzdnico/ClashWeb/tree/ClashWeb1.6.3][lzdnico/ ClashWeb]] - Windows
@@ -92,6 +93,8 @@ Source code is hosted in this [[https://github.com/exuanbo/wiki][repo]].
 
 **** Other
 - [[https://github.com/googlehosts/hosts][GoogleHosts]]
+- [[https://github.com/geph-official/geph2][geph-official/ geph2]] - Geph (迷霧通) is a modular Internet censorship
+  circumvention system designed specifically to deal with national filtering
 
 **** Tutorial
 - [[https://trojan-tutor.github.io/2019/04/10/p41.html][自建梯子教程 --Trojan版本 | trojan-tutor]]
@@ -221,6 +224,7 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言:
 - [[https://github.com/geekcompany/ResumeSample][geekcompany/ ResumeSample]] - 程序员简历模板系列
 - [[https://github.com/azl397985856/fe-interview][azl397985856/ fe-interview]] - 大前端面试宝典
 - [[https://labuladong.gitbook.io/algo/][labuladong的算法小抄]]
+- [[https://github.com/azl397985856/leetcode][azl397985856/ leetcode]] - leetcode题解，记录自己的leetcode解题之路
 
 *** Interview
 - [[https://github.com/jwasham/coding-interview-university][jwasham/ coding-interview-university]]
@@ -324,6 +328,7 @@ Jesse Chan ([[https://twitter.com/Jesoooor][@Jesoooor]]) 言:
 - [[https://p3terx.com/archives/github-actions-started-tutorial.html][GitHub Actions 入门教程 - P3TERX ZONE]]
 - [[https://p3terx.com/archives/github-actions-manual-trigger.html][GitHub Actions 手动触发方式 - P3TERX ZONE]]
   - Star
+ 
     #+BEGIN_SRC yaml
 name: Test
 
@@ -343,6 +348,7 @@ jobs:
     #+END_SRC
 
   - Webhook
+ 
     #+BEGIN_SRC yaml
 name: Webhook Test
 
@@ -367,7 +373,7 @@ jobs:
         echo test
     #+END_SRC
 
-    #+BEGIN_SRC shell
+    #+BEGIN_SRC sh
 curl -X POST https://api.github.com/repos/:owner/:repo/dispatches \
     -H "Accept: application/vnd.github.everest-preview+json" \
     -H "Authorization: token ACTIONS_TRIGGER_TOKEN" \
@@ -409,6 +415,11 @@ jobs:
     - name: Test
       run: npm test
   #+END_SRC
+
+- [[https://github.com/matchai/awesome-pinned-gists][matchai/ awesome-pinned-gists]] - A collection of awesome dynamic
+  pinned gists for GitHub
+  - [[https://github.com/matchai/waka-box][matchai/ waka-box]] - Update a pinned gist to contain your weekly
+    WakaTime stats
 
 * Computer Science
 - [[https://github.com/ossu/computer-science][ossu/ computer-science]] - Path to a free self-taught education in Computer
@@ -453,6 +464,7 @@ stack setup
 - [[https://github.com/TheLartians/ModernCppStarter][TheLartians/ ModernCppStarter]] - Kick-start your C++! A template for modern C++
   projects using CMake, CI, code coverage, clang-format, reproducible dependency
   management and more
+- [[https://github.com/abseil/abseil-cpp][abseil/ abseil-cpp]] - Abseil Common Libraries (C++)
 
 ** Java
 - [[https://github.com/hollischuang/toBeTopJavaer][hollischuang/ toBeTopJavaer]] - Java工程师成神之路
@@ -525,6 +537,8 @@ const loadScript = (source, options) => {
 - [[https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver][IntersectionObserver - Web APIs | MDN]]
 - [[https://github.com/verlok/lazyload][verlok/ lazyload]] - written in plain "vanilla" JavaScript
 - [[https://github.com/JSMonk/hegel][JSMonk/ hegel]] - An advanced static type checker
+- [[https://github.com/alpinejs/alpine][alpinejs/ alpine]] - A rugged, minimal framework for composing JavaScript behavior
+  in your markup. Think of it like Tailwind for JavaScript
 
 ** Typescript
 - [[https://typedoc.org/][Home | TypeDoc]] - A documentation generator for TypeScript projects
@@ -552,12 +566,7 @@ exports.default = defaultTask
   #+BEGIN_SRC js
 function html() {
   return src('public/**/*.html', { base: '.' })
-    .pipe(
-      htmlmin({
-        collapseWhitespace: true,
-        conservativeCollapse: true,
-      })
-    )
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest('.'))
 }
   #+END_SRC
@@ -593,7 +602,7 @@ exports.server = server
 
 *** Plugins
 - gulp-rename
-- gulp-inject-inline
+- @exuanbo/gulp-inject-inline
 
 **** Javascript
 - gulp-concat
@@ -640,9 +649,19 @@ const plugins = [
 - [[https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter][dirkolbrich/ hugo-theme-tailwindcss-starter]] - Starter files for a Hugo theme
   with Tailwindcss
 
+*** Eleventy
+[[https://github.com/11ty/eleventy/][11ty/ eleventy]]
+
+A simpler static site generator. An alternative to Jekyll. Written in JavaScript.
+Transforms a directory of templates (of varying types) into HTML.
+
+Works with HTML, Markdown, Liquid, Nunjucks, Handlebars, Mustache, EJS, Haml, Pug,
+and JavaScript Template Literals.
+
 *** Saber
-[[https://github.com/saberland/saber][saberland /saber]] ()==[:::::::::::::> Build static sites in Vue.js, without the
-hassle
+[[https://github.com/saberland/saber][saberland /saber]]
+
+()==[:::::::::::::> Build static sites in Vue.js, without the hassle
 
 ** Browser
 - [[https://www.runningcheese.com/translation][这大概就是目前最好的翻译解决方案了！ - 奔跑中的奶酪]] - 沙拉查词
