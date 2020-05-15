@@ -484,6 +484,10 @@ pip uninstall -r requirements.txt -y
 pip uninstall -y -r <(pip freeze)
   #+END_SRC
 
+* Algorithm
+- [[https://github.com/TheAlgorithms][The Algorithms · GitHub]] - Open Source resource for learning Data Structures
+  & Algorithms and their implementation in any Programming Language
+
 * Web
 - [[https://codeguide.co/][Code Guide by @mdo]] - Standards for developing consistent, flexible, and
   sustainable HTML and CSS
