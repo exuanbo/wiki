@@ -1,4 +1,0 @@
-#+BEGIN_SRC shell
-npm install
-npm run build
-#+END_SRC
