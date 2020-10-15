@@ -54,8 +54,8 @@ function js() {
     .pipe(dest('build'))
 }
 
-function favicon() {
-  return src(['assets/favicon/*'])
+function static() {
+  return src(['static/*', 'static/.gitattributes'])
     .pipe(dest('public'))
 }
 
@@ -66,4 +66,4 @@ function html() {
     .pipe(dest('public'))
 }
 
-exports.default = series(preClean, parallel(css, js, favicon), html, postClean)
+exports.default = series(preClean, parallel(css, js, static), html, postClean)
