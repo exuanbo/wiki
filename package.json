@@ -10,16 +10,17 @@
   },
   "devDependencies": {
     "@exuanbo/gulp-inject-inline": "1.1.2",
-    "@fullhuman/postcss-purgecss": "2.3.0",
-    "autoprefixer": "10.0.0",
+    "@fullhuman/postcss-purgecss": "3.0.0",
+    "autoprefixer": "10.0.1",
     "cssnano": "4.1.10",
-    "del": "5.1.0",
+    "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-concat": "2.6.1",
     "gulp-concat-css": "3.1.0",
     "gulp-htmlmin": "5.0.1",
-    "gulp-postcss": "8.0.0",
-    "gulp-uglify-es": "2.0.0"
+    "gulp-postcss": "9.0.0",
+    "gulp-uglify-es": "2.0.0",
+    "postcss": "^8.1.1"
   },
   "browserslist": [
     "last 1 version"
