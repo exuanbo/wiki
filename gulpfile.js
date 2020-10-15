@@ -31,14 +31,14 @@ function postClean() {
 function css() {
   const plugins = [
     purgecss({
-      content: ['src/index.html'],
+      content: ['./src/index.html'],
       fontFace: true,
-      whitelist: ['active', 'nav', 'toggle-sidebar', 'close-sidebar', 'permalink']
+      safelist: ['active', 'nav', 'toggle-sidebar', 'close-sidebar', 'permalink']
     }),
+    autoprefixer(),
     cssnano({
       preset: ['default', { discardComments: { removeAll: true } }]
-    }),
-    autoprefixer()
+    })
   ]
 
   return src(['assets/css/default.css', 'assets/css/spacemacs-light.css', 'assets/css/spacemacs-doc.css'])
