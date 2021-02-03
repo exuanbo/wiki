@@ -32,8 +32,13 @@ function css() {
   const plugins = [
     purgecss({
       content: ['./src/index.html'],
-      fontFace: true,
-      safelist: ['active', 'nav', 'toggle-sidebar', 'close-sidebar', 'permalink']
+      safelist: [
+        'active',
+        'nav',
+        'toggle-sidebar',
+        'close-sidebar',
+        'permalink'
+      ]
     }),
     autoprefixer(),
     cssnano({
@@ -41,22 +46,29 @@ function css() {
     })
   ]
 
-  return src(['assets/css/default.css', 'assets/css/spacemacs-light.css', 'assets/css/spacemacs-doc.css'])
+  return src([
+    'assets/css/default.css',
+    'assets/css/spacemacs-light.css',
+    'assets/css/spacemacs-doc.css'
+  ])
     .pipe(concatCSS('style.css'))
     .pipe(postcss(plugins))
     .pipe(dest('build'))
 }
 
 function js() {
-  return src(['assets/js/jquery.slim.js', 'assets/js/scrollspy.js', 'assets/js/readtheorg.js'])
+  return src([
+    'assets/js/jquery.slim.js',
+    'assets/js/scrollspy.js',
+    'assets/js/readtheorg.js'
+  ])
     .pipe(concat('script.js'))
     .pipe(uglify({ output: { comments: false } }))
     .pipe(dest('build'))
 }
 
 function static() {
-  return src(['static/*', 'static/.gitattributes'])
-    .pipe(dest('public'))
+  return src(['static/*', 'static/.gitattributes']).pipe(dest('public'))
 }
 
 function html() {
