@@ -1,8 +1,6 @@
 {
   "name": "wiki",
-  "version": "1.0.0",
   "private": true,
-  "description": "Built with Emacs Org mode and gulp.js",
   "author": "exuanbo",
   "license": "MIT",
   "scripts": {
@@ -10,8 +8,8 @@
   },
   "devDependencies": {
     "@exuanbo/gulp-inject-inline": "1.1.2",
-    "@fullhuman/postcss-purgecss": "3.0.0",
-    "autoprefixer": "10.0.1",
+    "@fullhuman/postcss-purgecss": "4.0.0",
+    "autoprefixer": "10.2.4",
     "cssnano": "4.1.10",
     "del": "6.0.0",
     "gulp": "4.0.2",
@@ -20,7 +18,7 @@
     "gulp-htmlmin": "5.0.1",
     "gulp-postcss": "9.0.0",
     "gulp-uglify-es": "2.0.0",
-    "postcss": "^8.1.1"
+    "postcss": "8.2.4"
   },
   "browserslist": [
     "last 1 version"
